@@ -33,13 +33,13 @@ namespace videoGameReviewer
             {
                 case "1":
                     {
-                        
-                        Console.WriteLine($"See Review");
+
+                        Case1();
                         break;
                     }
                 case "2":
                     {
-                        Console.WriteLine("Write Review");
+                        Case2();
                         break;
                     }
                 case "3":
@@ -48,8 +48,9 @@ namespace videoGameReviewer
                     }
                 default:
                     {
-
-                        break;
+                        Console.WriteLine("Invalid Input");
+                        selection();
+                        return;
                     }
             }
         }
@@ -57,7 +58,10 @@ namespace videoGameReviewer
         {
             Console.WriteLine("See Review");
         }
-
+        public static void Case2()
+        {
+            Console.WriteLine("Write A Review");
+        }
     }
 
 
