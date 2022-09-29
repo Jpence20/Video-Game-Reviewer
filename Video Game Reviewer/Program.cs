@@ -61,7 +61,8 @@ namespace videoGameReviewer
        public static void Case1()
         {
             Console.WriteLine("See Review");
-           
+            VGameReviewer.reviews();
+            selection();
        
         }
         public static void Case2()
@@ -70,30 +71,30 @@ namespace videoGameReviewer
 
             Console.WriteLine("What is your name?");
             string reviewer = Console.ReadLine();
-            VGameReviewer.getreviewer(reviewer);
+            
 
             Console.WriteLine("What is the name of the game you are reviewing?");
             string game = Console.ReadLine();
-            VGameReviewer.getgame(game);
+            
 
             Console.WriteLine("What is your review of the game?");
             string review = Console.ReadLine();
-            VGameReviewer.getReview(review);
+       
 
             Console.WriteLine("How long did you play the game?");
             int timePlayed = int.Parse(Console.ReadLine());
-            VGameReviewer.getTimePlayed(timePlayed);
+           
 
             Console.WriteLine("What is your score for the game out of 10?");
             double score = double.Parse(Console.ReadLine());
-            VGameReviewer.getScore(score);
 
 
-            VGameReviewer.generateReview( reviewer,game,review,timePlayed,score);
+
+            VGameReviewer.generateReview(reviewer, game, review, timePlayed, score);
             selection();
         }
 
-
+        
        
 
     }

@@ -4,12 +4,11 @@ using videoGameReviewer;
 
 public class VGameReviewer
 {
-	string reviewer;
-	string game;
-	string review;
-	int timePlayed;
-	double score;
-
+	public string reviewer { get; set; }
+	public string game { get; set; }
+	public string review { get; set; }
+	public int timePlayed { get; set; }
+	public double score { get; set; }
 	public VGameReviewer(string reviewer, string game, string review, int timePlayed, double score)
 	{
 		this.reviewer = reviewer;
@@ -18,50 +17,14 @@ public class VGameReviewer
 		this.timePlayed = timePlayed;
 		this.score = score;
 	}
-	public static string getreviewer(string reviewer)
-	{
-		return reviewer;
-	}
-	public static string getgame(string game)
-	{
-		return game;
-	}
-	public static string getReview(string review)
-	{
-		return review;
-	}
-	public static int getTimePlayed(int timePlayed)
-	{
-		return timePlayed;
-	}
-	public static double getScore(double score)
-	{
-		return score;
-	}
-	public void setReviewer(string newReviewer)
-	{
-		reviewer = newReviewer;
-	}
-	public void setGame(string newGame)
-	{
-		game = newGame;
-	}
-	public void setReview(string newReview)
-	{
-		review = newReview;
-	}
-	public void setTimePlayed(int newTimePlayed)
-	{
-		timePlayed = newTimePlayed;
-	}
-	public void setScore(double newScore)
-	{
-		score = newScore;
-	}
-    public static void generateReview(string reviewer, string game, string review, int timePlayed, double score)
+	public override string ToString()=>$"\r\nReviewed by {reviewer}:\r\n {game}\r\n {review}\r\n Time Played:{timePlayed}\r\n Final Score:{score}\r\n";
+
+
+
+	public static void generateReview(string reviewer, string game, string review, int timePlayed, double score)
     {
 		
-		Console.WriteLine($"review by {reviewer}");
+		Console.WriteLine($"Reviewed by {reviewer}");
 		Console.WriteLine($"{game}");
 		Console.WriteLine($"{review}");
 		Console.WriteLine($"Time Played:{timePlayed}");
@@ -70,6 +33,11 @@ public class VGameReviewer
 		
 		
     }
-	
+
+	public static void reviews()
+	{
+		VGameReviewer godOfWar = new VGameReviewer("jeremy Pence", "God of war", "Great game!", 40, 10);
+		Console.WriteLine(godOfWar);
+	}
 	
 }
