@@ -1,12 +1,15 @@
 ﻿using System;
+using videoGameReviewer;
 
 namespace videoGameReviewer
 {
    public class program 
     {
         public static String choice;
+        
         static void Main(String[] args)
-        {
+        { 
+            
             selection();
            
         }
@@ -33,12 +36,13 @@ namespace videoGameReviewer
             {
                 case "1":
                     {
-
+                       
                         Case1();
                         break;
                     }
                 case "2":
                     {
+                      
                         Case2();
                         break;
                     }
@@ -54,17 +58,44 @@ namespace videoGameReviewer
                     }
             }
         }
-        public static void Case1()
+       public static void Case1()
         {
             Console.WriteLine("See Review");
+           
+       
         }
         public static void Case2()
         {
             Console.WriteLine("Write A Review");
+            Console.WriteLine("What is your name?");
+            string reviewer = Console.ReadLine();
+            Console.WriteLine("What is the name of the game you are reviewing?");
+            string game = Console.ReadLine();
+            Console.WriteLine("What is your review of the game?");
+            string review = Console.ReadLine();
+            Console.WriteLine("How long did you play the game?");
+            int timePlayed = int.Parse(Console.ReadLine());
+            Console.WriteLine("What is your score for the game out of 10?");
+            double score = double.Parse(Console.ReadLine());
+            
+            generateReview(reviewer,game,review,timePlayed,score);
+            selection();
         }
+
+
+        public static void generateReview(string reviewer,string game, string review,int timePlayed,double score)
+        {
+            Console.WriteLine($"review by {reviewer}");
+            Console.WriteLine($"{game}");
+            Console.WriteLine($"{review}");
+            Console.WriteLine($"Time Played:{timePlayed}");
+            Console.WriteLine($"Final Score: {score}");
+        }
+       
+
     }
 
-
+   
 
 
 
