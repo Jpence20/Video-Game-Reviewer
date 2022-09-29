@@ -62,6 +62,7 @@ namespace videoGameReviewer
         {
             Console.WriteLine("See Review");
             VGameReviewer.reviews();
+           
             selection();
        
         }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using System.Xml.Schema;
 using videoGameReviewer;
 
@@ -23,7 +24,8 @@ public class VGameReviewer
 
 	public static void generateReview(string reviewer, string game, string review, int timePlayed, double score)
     {
-		
+
+   
 		Console.WriteLine($"Reviewed by {reviewer}");
 		Console.WriteLine($"{game}");
 		Console.WriteLine($"{review}");
@@ -31,13 +33,16 @@ public class VGameReviewer
 		Console.WriteLine($"Final Score: {score}");
 		
 		
-		
     }
+	
 
 	public static void reviews()
 	{
+	
 		VGameReviewer godOfWar = new VGameReviewer("jeremy Pence", "God of war", "Great game!", 40, 10);
-		Console.WriteLine(godOfWar);
-	}
+        VGameReviewer persona5 = new VGameReviewer("jeremy Pence", "Persona 5", "Great game!", 100, 10);
+        Console.WriteLine(godOfWar);
+        Console.WriteLine(persona5);
+    }
 	
 }
