@@ -42,7 +42,7 @@ namespace videoGameReviewer
                     }
                 case "2":
                     {
-                      
+                        
                         Case2();
                         break;
                     }
@@ -67,30 +67,33 @@ namespace videoGameReviewer
         public static void Case2()
         {
             Console.WriteLine("Write A Review");
+
             Console.WriteLine("What is your name?");
             string reviewer = Console.ReadLine();
+            VGameReviewer.getreviewer(reviewer);
+
             Console.WriteLine("What is the name of the game you are reviewing?");
             string game = Console.ReadLine();
+            VGameReviewer.getgame(game);
+
             Console.WriteLine("What is your review of the game?");
             string review = Console.ReadLine();
+            VGameReviewer.getReview(review);
+
             Console.WriteLine("How long did you play the game?");
             int timePlayed = int.Parse(Console.ReadLine());
+            VGameReviewer.getTimePlayed(timePlayed);
+
             Console.WriteLine("What is your score for the game out of 10?");
             double score = double.Parse(Console.ReadLine());
-            
-            generateReview(reviewer,game,review,timePlayed,score);
+            VGameReviewer.getScore(score);
+
+
+            VGameReviewer.generateReview( reviewer,game,review,timePlayed,score);
             selection();
         }
 
 
-        public static void generateReview(string reviewer,string game, string review,int timePlayed,double score)
-        {
-            Console.WriteLine($"review by {reviewer}");
-            Console.WriteLine($"{game}");
-            Console.WriteLine($"{review}");
-            Console.WriteLine($"Time Played:{timePlayed}");
-            Console.WriteLine($"Final Score: {score}");
-        }
        
 
     }

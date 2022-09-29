@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Xml.Schema;
+using videoGameReviewer;
 
-public class VideoGameReviewer
+public class VGameReviewer
 {
 	string reviewer;
 	string game;
@@ -8,7 +10,7 @@ public class VideoGameReviewer
 	int timePlayed;
 	double score;
 
-	public void GameReviewer(string reviewer, string game, string review, int timePlayed,double score)
+	public VGameReviewer(string reviewer, string game, string review, int timePlayed, double score)
 	{
 		this.reviewer = reviewer;
 		this.game = game;
@@ -16,23 +18,23 @@ public class VideoGameReviewer
 		this.timePlayed = timePlayed;
 		this.score = score;
 	}
-	public string getreviewer()
+	public static string getreviewer(string reviewer)
 	{
 		return reviewer;
 	}
-	public string getgame()
+	public static string getgame(string game)
 	{
 		return game;
 	}
-	public string getReview()
+	public static string getReview(string review)
 	{
 		return review;
 	}
-	public int getTimePlayed()
+	public static int getTimePlayed(int timePlayed)
 	{
 		return timePlayed;
 	}
-	public double getScore()
+	public static double getScore(double score)
 	{
 		return score;
 	}
@@ -56,4 +58,18 @@ public class VideoGameReviewer
 	{
 		score = newScore;
 	}
+    public static void generateReview(string reviewer, string game, string review, int timePlayed, double score)
+    {
+		
+		Console.WriteLine($"review by {reviewer}");
+		Console.WriteLine($"{game}");
+		Console.WriteLine($"{review}");
+		Console.WriteLine($"Time Played:{timePlayed}");
+		Console.WriteLine($"Final Score: {score}");
+		
+		
+		
+    }
+	
+	
 }
