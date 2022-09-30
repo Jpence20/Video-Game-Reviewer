@@ -2,6 +2,10 @@
 using System.Security.Cryptography.X509Certificates;
 using System.Xml.Schema;
 using videoGameReviewer;
+using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
+using static System.Formats.Asn1.AsnWriter;
+using System.Runtime.CompilerServices;
 
 public class VGameReviewer
 {
@@ -17,7 +21,8 @@ public class VGameReviewer
 		this.review = review;
 		this.timePlayed = timePlayed;
 		this.score = score;
-	}
+       
+    }
 	public override string ToString()=>$"\r\nReviewed by {reviewer}:\r\n {game}\r\n {review}\r\n Time Played:{timePlayed}\r\n Final Score:{score}\r\n";
 
 
@@ -31,18 +36,34 @@ public class VGameReviewer
 		Console.WriteLine($"{review}");
 		Console.WriteLine($"Time Played:{timePlayed}");
 		Console.WriteLine($"Final Score: {score}");
+
+
+		AddGames(reviewer,game,review,timePlayed,score);
+		
 		
 		
     }
 	
 
-	public static void reviews()
+	public static void AddGames(string reviewer,string game,string review,int timepLayed,double score)
 	{
 	
-		VGameReviewer godOfWar = new VGameReviewer("jeremy Pence", "God of war", "Great game!", 40, 10);
-        VGameReviewer persona5 = new VGameReviewer("jeremy Pence", "Persona 5", "Great game!", 100, 10);
-        Console.WriteLine(godOfWar);
-        Console.WriteLine(persona5);
-    }
+	
+      
+	}
+
+	public static List<VGameReviewer> InitializeGames()
+	{
+		List<VGameReviewer> games = new List<VGameReviewer>();
+		
+       games.Add( new VGameReviewer("jeremy Pence", "God of war", "Great game!", 40, 10));
+        games.Add(new VGameReviewer("jeremy Pence", "Persona 5", "Great game!", 100, 10));
+		
+		return games;
+      
+
+
+   
+	}
 	
 }

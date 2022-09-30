@@ -1,5 +1,7 @@
 ﻿using System;
 using videoGameReviewer;
+using System.Collections.Generic;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace videoGameReviewer
 {
@@ -61,7 +63,12 @@ namespace videoGameReviewer
        public static void Case1()
         {
             Console.WriteLine("See Review");
-            VGameReviewer.reviews();
+            Console.WriteLine("Which review do you want to see?");
+
+            List<VGameReviewer> games = VGameReviewer.InitializeGames();
+            Console.WriteLine($"There are {games.Count} reviews ");
+            foreach (VGameReviewer game in games)
+                Console.WriteLine($"{game}");
            
             selection();
        
@@ -89,9 +96,10 @@ namespace videoGameReviewer
             Console.WriteLine("What is your score for the game out of 10?");
             double score = double.Parse(Console.ReadLine());
 
-
+         
 
             VGameReviewer.generateReview(reviewer, game, review, timePlayed, score);
+          
             selection();
         }
 
