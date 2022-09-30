@@ -13,7 +13,7 @@ namespace VideoGameReviewer
 
         public static void selection()
         {
-
+            
             Console.WriteLine("******************************");
             Console.WriteLine("*      Video Game Reviews    *");
             Console.WriteLine("******************************");
@@ -25,7 +25,7 @@ namespace VideoGameReviewer
             ChoiceSelection(choice);
 
 
-            static void ChoiceSelection(string choice)
+             static void ChoiceSelection(string choice)
             {
                 switch (choice)
                 {
@@ -38,7 +38,7 @@ namespace VideoGameReviewer
                     case "2":
                         {
 
-
+                           
                             break;
                         }
                     case "3":
@@ -92,26 +92,13 @@ namespace VideoGameReviewer
                 }
                 selection();
             }
+                    
 
+            
 
+           
 
-
-
-
-
+          
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
