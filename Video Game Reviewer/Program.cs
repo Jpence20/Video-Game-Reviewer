@@ -58,7 +58,13 @@ namespace VideoGameReviewer
 
         public static void case1()
         {
-            Console.WriteLine("Who do you want to see reviews from select 1 for jeremy, and 2 for john");
+            Console.WriteLine("Who do you want to see reviews from?");
+            Console.WriteLine("0.Exit");
+            Console.WriteLine("1.Jeremy");
+            Console.WriteLine("2.John");
+            Console.WriteLine("3.Jessica");
+            Console.WriteLine("4.Brian");
+
             int input = int.Parse(Console.ReadLine());
             if (input == 1)
             {
@@ -76,6 +82,7 @@ namespace VideoGameReviewer
                 }
                 selection();
             }
+
             else if (input == 2)
             {
                 var allReviews = ReviewRepo.InitializeReviewsA();
@@ -92,6 +99,46 @@ namespace VideoGameReviewer
                 }
                 selection();
             }
+
+            else if (input == 3)
+            {
+                var allReviews = ReviewRepo.InitializeReviewsB();
+                Console.WriteLine("What review do you want to read?");
+                string name = Console.ReadLine();
+                reviews answer = allReviews[name];
+                if (answer != null)
+                {
+                    Console.WriteLine($"The review you ask for is {answer}");
+                }
+                else
+                {
+                    Console.WriteLine($"There is no review named {name}");
+                }
+                selection();
+            }
+
+            else if (input == 4)
+            {
+                var allReviews = ReviewRepo.InitializeReviewsC();
+                Console.WriteLine("What review do you want to read?");
+                string name = Console.ReadLine();
+                reviews answer = allReviews[name];
+                if (answer != null)
+                {
+                    Console.WriteLine($"The review you ask for is {answer}");
+                }
+                else
+                {
+                    Console.WriteLine($"There is no review named {name}");
+                }
+                selection();
+            }
+
+            else if(input == 0)
+            {
+                selection();
+            }
+            
 
 
 
