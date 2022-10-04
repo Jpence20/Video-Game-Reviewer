@@ -4,7 +4,7 @@ using System.ComponentModel.Design;
 namespace VideoGameReviewer
 {
 
-    public class prgroam
+    public class program
     {
         static void Main(string[] args)
         {
