@@ -25,9 +25,9 @@ public class Case
             if (select == "1")
             {
                
-              foreach(var reviews in ReviewRepo.InitializeReviews())
+              foreach(reviews review in allReviews.Values)
                 {
-                    Console.WriteLine($"{ reviews}");
+                    Console.WriteLine(review);
                     program.selection();
                 }
             }
