@@ -17,6 +17,21 @@ public class Case
         if (input == "1")
         {
             var allReviews = ReviewRepo.InitializeReviews();
+
+
+            Console.WriteLine("Do you want to see all reviews or chose one to see");
+            string select = Console.ReadLine();
+
+            if (select == "1")
+            {
+               
+              foreach(var reviews in ReviewRepo.InitializeReviews())
+                {
+                    Console.WriteLine($"{ reviews}");
+                    program.selection();
+                }
+            }
+           else 
             Console.WriteLine("What review do you want to read?");
             string name = Console.ReadLine();
             reviews answer = allReviews[name];
