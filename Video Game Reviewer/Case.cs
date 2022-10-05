@@ -20,31 +20,52 @@ public class Case
 
 
             Console.WriteLine("Do you want to see all reviews or chose one to see");
+            Console.WriteLine("1.See all Reviews");
+            Console.WriteLine("2.Find a review");
+            Console.WriteLine("3.Exit");
             string select = Console.ReadLine();
 
             if (select == "1")
             {
-               
-              foreach(reviews review in allReviews.Values)
+
+                foreach (reviews review in allReviews.Values)
                 {
                     Console.WriteLine(review);
+
+                }
+                program.selection();
+            }
+            else if (select == "2")
+            {
+                Console.WriteLine("What review do you want to read?");
+                string name = Console.ReadLine();
+
+
+                bool success = allReviews.ContainsKey(name);
+
+                if (success)
+                {
+                    Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                    program.selection();
+                }
+                else
+                {
+                    Console.WriteLine($"There is no review named {name}");
                     program.selection();
                 }
             }
-           else 
-            Console.WriteLine("What review do you want to read?");
-            string name = Console.ReadLine();
-            reviews answer = allReviews[name];
 
-            if (answer != null)
+            else if (select == "3")
             {
-                Console.WriteLine($"The review you ask for is {answer}");
+                program.selection();
             }
             else
             {
-                Console.WriteLine($"There is no review named {name}");
+                Console.WriteLine("Invalid Input");
+                Case1();
             }
-            program.selection();
+                
+                
            
         }
 
