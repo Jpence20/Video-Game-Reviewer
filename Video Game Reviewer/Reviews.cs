@@ -22,7 +22,7 @@ public class reviews
 
 public class WrittenReviews
 {
-    public string Reviewer { get; }
+    public string Reviewer { get;  }
     public string game { get; }
     public string review { get; }
     public int timePlayed { get; }

@@ -38,7 +38,7 @@ namespace VideoGameReviewer
                     case "2":
                         {
 
-                            Case2();
+                            Case.Case2();
                             break;
                         }
                     case "3":
@@ -56,28 +56,7 @@ namespace VideoGameReviewer
            
 
         }
-        public static void Case2()
-        {
-            Console.WriteLine("What is your name?");
-            string reviewer = Console.ReadLine();
-            Console.WriteLine("What is the name of the game you want to review");
-            string game = Console.ReadLine();
-            Console.WriteLine("Write out your review.");
-            string review = Console.ReadLine();
-            Console.WriteLine("How many hours did you play");
-            int timePlayed = int.Parse(Console.ReadLine());
-            Console.WriteLine("What is your score for the game out of 10");
-            double score = double.Parse(Console.ReadLine());
-
-           var Allreviews = ReviewRepo.WReview(reviewer, game, review, timePlayed, score);
-            foreach (WrittenReviews reviews in Allreviews.Values)
-            {
-                Console.WriteLine(reviews);
-
-            }
-            program.selection();
-
-        }
+       
 
 
     }

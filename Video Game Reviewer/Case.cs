@@ -3,6 +3,8 @@ using VideoGameReviewer;
 
 public class Case
 {
+
+
     public static void Case1()
     {
 
@@ -232,7 +234,79 @@ public class Case
 
 
         }
-       
+        else if (input == "5")
+        {
+            var allReviews = ReviewRepo.WReview();
+
+
+            Console.WriteLine("Do you want to see all reviews or chose one to see");
+            Console.WriteLine("1.See all Reviews");
+            Console.WriteLine("2.Find a review");
+            Console.WriteLine("3.Exit");
+            string select = Console.ReadLine();
+
+            if (select == "1")
+            {
+
+                foreach (WrittenReviews reviews in allReviews.Values)
+                {
+                    Console.WriteLine(reviews);
+
+                }
+                program.selection();
+            }
+            else if (select == "2")
+            {
+                Console.WriteLine("What review do you want to read?");
+                string name = Console.ReadLine();
+
+
+                bool success = allReviews.ContainsKey(name);
+
+                if (success)
+                {
+                    Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                    program.selection();
+                }
+                else
+                {
+                    Console.WriteLine($"There is no review named {name}");
+                    program.selection();
+                }
+            }
+
+            else if (select == "3")
+            {
+                program.selection();
+            }
+            else
+            {
+                Console.WriteLine("Invalid Input");
+                Case1();
+            }
+        }
+    }
+    public static void Case2()
+    {
+        Console.WriteLine("What is your name?");
+        string reviewer = Console.ReadLine();
+        Console.WriteLine("What is the name of the game you want to review");
+        string game = Console.ReadLine();
+        Console.WriteLine("Write out your review.");
+        string review = Console.ReadLine();
+        Console.WriteLine("How many hours did you play");
+        int timePlayed = int.Parse(Console.ReadLine());
+        Console.WriteLine("What is your score for the game out of 10");
+        double score = double.Parse(Console.ReadLine());
+
+        var Allreviews = ReviewRepo.WReview(reviewer, game, review, timePlayed, score);
+        foreach (WrittenReviews reviews in Allreviews.Values)
+        {
+            Console.WriteLine(reviews);
+
+        }
+        program.selection();
+
     }
 }
 
