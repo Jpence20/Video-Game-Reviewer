@@ -43,4 +43,16 @@ public class ReviewRepo
         return reviews;
     }
 
+
+
+    public static Dictionary<string, WrittenReviews> WReview(string reviewer, string game, string review, int timePlayed, double score)
+    {
+        WrittenReviews NewReview = new WrittenReviews($"{reviewer}", $"{game}", $"{review}", timePlayed, score);
+        var reviews = new Dictionary<string, WrittenReviews>
+        {
+            { $"{game}", NewReview}
+        };
+        return reviews;
+    }
+
 }
