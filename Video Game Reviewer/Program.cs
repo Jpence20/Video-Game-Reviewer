@@ -38,7 +38,8 @@ namespace VideoGameReviewer
                     case "2":
                         {
 
-                            Case.Case2();
+                            ReviewRepo.WReview();
+                            selection();
                             break;
                         }
                     case "3":

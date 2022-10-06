@@ -46,15 +46,27 @@ public class ReviewRepo
 
 
   
-    public static Dictionary<string, WrittenReviews> WReview(string reviewer, string game, string review, int timePlayed, double score)
+    public static Dictionary<string, WrittenReviews> WReview()
     {
-       
+        Console.WriteLine("What is your name?");
+        string reviewer = Console.ReadLine();
+        Console.WriteLine("What is the name of the game you want to review");
+        string game = Console.ReadLine();
+        Console.WriteLine("Write out your review.");
+        string review = Console.ReadLine();
+        Console.WriteLine("How many hours did you play");
+        int timePlayed = int.Parse(Console.ReadLine());
+        Console.WriteLine("What is your score for the game out of 10");
+        double score = double.Parse(Console.ReadLine());
+        
+
         WrittenReviews NewReview = new WrittenReviews($"{reviewer}", $"{game}", $"{review}", timePlayed, score);
         var reviews = new Dictionary<string, WrittenReviews>
         {
             { $"{game}", NewReview}
         };
         return reviews;
+       
     }
 
     
