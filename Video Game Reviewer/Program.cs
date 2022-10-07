@@ -31,14 +31,14 @@ namespace VideoGameReviewer
                 {
                     case "1":
                         {
-
-                           Case.Case1();
+                           
+                            Case.Case1();
                             break;
                         }
                     case "2":
                         {
 
-                            Case.Case2();
+                            ReviewRepo.Wreview();
                             selection();
                             break;
                         }

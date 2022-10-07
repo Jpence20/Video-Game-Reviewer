@@ -52,19 +52,30 @@ public class ReviewRepo
     }
 
 
+    
 
-
-   public static Dictionary<string, WrittenReviews> Wreview(string reviewer, string game,string review,int timePlayed,double score)
+    public static Dictionary<string, WrittenReviews> Wreview()
     {
-        
+        string reviewer = makeReview.getReviewer();
+        string game = makeReview.getGame();
+        string review = makeReview.getReview();
+        int timePlayed = makeReview.getTimePlayed();
+        double score = makeReview.getScore();
 
-        WrittenReviews newReview = new WrittenReviews($"{reviewer}", $"{game}", $"{review}",  timePlayed, score);
+        WrittenReviews newReview = new WrittenReviews($"{reviewer}", $"{game}", $"{review}", timePlayed, score);
         var reviews = new Dictionary<string, WrittenReviews>
         {
             { $"{game}", newReview }
         };
         return reviews;
     }
+   
+    
+
+    
+
+    
+
     
     
 }

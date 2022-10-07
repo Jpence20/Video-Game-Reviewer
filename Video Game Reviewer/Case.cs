@@ -228,20 +228,59 @@ public class Case
                 Case1();
             }
         }
+        else if (input == "5")
+        {
+            var allReviews = ReviewRepo.Wreview();
+
+
+            Console.WriteLine("Do you want to see all reviews or chose one to see");
+            Console.WriteLine("1.See all Reviews");
+            Console.WriteLine("2.Find a review");
+            Console.WriteLine("3.Exit");
+            string select = Console.ReadLine();
+
+            if (select == "1")
+            {
+
+                foreach (WrittenReviews review in allReviews.Values)
+                {
+                    Console.WriteLine(review);
+
+                }
+                program.selection();
+            }
+            else if (select == "2")
+            {
+                Console.WriteLine("What review do you want to read?");
+                string name = Console.ReadLine();
+
+
+                bool success = allReviews.ContainsKey(name);
+
+                if (success)
+                {
+                    Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                    program.selection();
+                }
+                else
+                {
+                    Console.WriteLine($"There is no review named {name}");
+                    program.selection();
+                }
+            }
+
+            else if (select == "3")
+            {
+                program.selection();
+            }
+            else
+            {
+                Console.WriteLine("Invalid Input");
+                Case1();
+            }
+        }
     }
-    public static void Case2()
-    {
-        string reviewer = makeReview.getReviewer();
-        string game = makeReview.getGame();
-        string review = makeReview.getReview();
-        int timePlayed = makeReview.getTimePlayed();
-        double score = makeReview.getScore();
-
-        ReviewRepo.Wreview(reviewer, game, review, timePlayed, score);
-
-
-
-    }
+   
 
 }
         
