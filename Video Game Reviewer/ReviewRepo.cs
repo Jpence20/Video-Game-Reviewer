@@ -28,7 +28,7 @@ public class ReviewRepo
         reviews godOfWar = new reviews("John Pence", "God of war", "Great Game", 40, 10);
         var reviews = new Dictionary<string, reviews>
         {
-            { "god of war", godOfWar }
+            { "god of war-a", godOfWar }
         };
         return reviews;
     }
@@ -37,7 +37,7 @@ public class ReviewRepo
         reviews godOfWar = new reviews("Jessica Pence", "God of war", "Okay Game", 40, 8);
         var reviews = new Dictionary<string, reviews>
         {
-            { "god of war", godOfWar }
+            { "god of war-b", godOfWar }
         };
         return reviews;
     }
@@ -46,8 +46,9 @@ public class ReviewRepo
         reviews godOfWar = new reviews("Brian Maggard", "God of war", "Great Game", 60, 10);
         var reviews = new Dictionary<string, reviews>
         {
-            { "god of war", godOfWar }
+            { "god of war-c", godOfWar }
         };
+        
         return reviews;
     }
 
@@ -69,14 +70,13 @@ public class ReviewRepo
         };
         return reviews;
     }
+
+
    
-    
 
-    
 
-    
 
-    
-    
+
+
 }
 

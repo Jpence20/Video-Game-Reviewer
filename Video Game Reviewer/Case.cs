@@ -280,7 +280,27 @@ public class Case
             }
         }
     }
-   
+
+
+   public static void Case2()
+    {
+        var result = ReviewRepo.InitializeReviews().Union(ReviewRepo.InitializeReviewsA()).Union(ReviewRepo.InitializeReviewsB()).Union(ReviewRepo.InitializeReviewsC())
+            .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
+
+       foreach(reviews review in result.Values)
+        {
+            Console.WriteLine(review);
+        }
+    }
+
+
+
+
+
+
+
+
+
 
 }
         
