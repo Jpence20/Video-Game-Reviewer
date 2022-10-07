@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using VideoGameReviewer;
+using static System.Formats.Asn1.AsnWriter;
 
 public class Case
 {
@@ -229,7 +231,8 @@ public class Case
         }
         else if (input == "5")
         {
-            var allReviews = ReviewRepo.WReview();
+
+            var allReviews = ReviewRepo.Wreview();
 
 
             Console.WriteLine("Do you want to see all reviews or chose one to see");
@@ -279,6 +282,26 @@ public class Case
             }
         }
     }
-    
+    public static void Case2()
+    {
+       string reviewer = makeReview.getReviewer();
+        string game =makeReview.getGame();
+        string review = makeReview.getReview();
+        int timePlayed = makeReview.getTimePlayed();
+        double score =makeReview.getScore();
+
+
+
+      
+
 }
+}
+        
+       
+        
+
+       
+    
+
+
 
