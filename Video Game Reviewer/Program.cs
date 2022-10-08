@@ -32,7 +32,7 @@ namespace VideoGameReviewer
                     case "1":
                         {
 
-                            Case.Case2();
+                          
                                 Case.Case1();
                           
                             break;
