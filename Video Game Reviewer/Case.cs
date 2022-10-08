@@ -248,7 +248,20 @@ public class Case
         }
     }
 
+    public static void Case3()
+    {
+        string input = Console.ReadLine();
+        if (input == "1")
+        {
+            var result = ReviewRepo.scoreSearch()
+            .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
 
+            foreach(reviews review in result.Values)
+            {
+                Console.WriteLine($"{review}");
+            }
+        }
+    }
 
 
 
