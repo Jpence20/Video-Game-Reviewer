@@ -18,7 +18,7 @@ public class Case
         Console.WriteLine("4.Brian");
         Console.WriteLine("5.See all Reviews");
 
-        string input = Console.ReadLine();
+        string input = Console.ReadLine() ?? String.Empty;
         if (input == "1")
         {
             var allReviews = ReviewRepo.InitializeReviews();
@@ -28,7 +28,7 @@ public class Case
             Console.WriteLine("1.See all Reviews");
             Console.WriteLine("2.Find a review");
             Console.WriteLine("3.Exit");
-            string select = Console.ReadLine();
+            string select = Console.ReadLine() ?? string.Empty;
 
             if (select == "1")
             {
@@ -43,7 +43,7 @@ public class Case
             else if (select == "2")
             {
                 Console.WriteLine("What review do you want to read?");
-                string name = Console.ReadLine();
+                string name = Console.ReadLine() ?? string.Empty;
 
 
                 bool success = allReviews.ContainsKey(name);
@@ -83,7 +83,7 @@ public class Case
             Console.WriteLine("1.See all Reviews");
             Console.WriteLine("2.Find a review");
             Console.WriteLine("3.Exit");
-            string select = Console.ReadLine();
+            string select = Console.ReadLine() ?? string.Empty;
 
             if (select == "1")
             {
@@ -98,7 +98,7 @@ public class Case
             else if (select == "2")
             {
                 Console.WriteLine("What review do you want to read?");
-                string name = Console.ReadLine();
+                string name = Console.ReadLine() ?? string.Empty;
 
 
                 bool success = allReviews.ContainsKey(name);
@@ -135,7 +135,7 @@ public class Case
             Console.WriteLine("1.See all Reviews");
             Console.WriteLine("2.Find a review");
             Console.WriteLine("3.Exit");
-            string select = Console.ReadLine();
+            string select = Console.ReadLine() ?? string.Empty;
 
             if (select == "1")
             {
@@ -150,7 +150,7 @@ public class Case
             else if (select == "2")
             {
                 Console.WriteLine("What review do you want to read?");
-                string name = Console.ReadLine();
+                string name = Console.ReadLine() ?? string.Empty;
 
 
                 bool success = allReviews.ContainsKey(name);
@@ -187,7 +187,7 @@ public class Case
             Console.WriteLine("1.See all Reviews");
             Console.WriteLine("2.Find a review");
             Console.WriteLine("3.Exit");
-            string select = Console.ReadLine();
+            string select = Console.ReadLine() ?? string.Empty;
 
             if (select == "1")
             {
@@ -202,7 +202,7 @@ public class Case
             else if (select == "2")
             {
                 Console.WriteLine("What review do you want to read?");
-                string name = Console.ReadLine();
+                string name = Console.ReadLine() ?? string.Empty;
 
 
                 bool success = allReviews.ContainsKey(name);
@@ -250,7 +250,7 @@ public class Case
 
     public static void Case3()
     {
-        string input = Console.ReadLine();
+        string input = Console.ReadLine() ?? string.Empty;
         if (input == "1")
         {
             var result = ReviewRepo.scoreSearch()

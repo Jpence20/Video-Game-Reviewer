@@ -6,20 +6,20 @@ public class makeReview
     {
         Console.WriteLine("What is your name?");
 
-        string reviewer = Console.ReadLine();
+        string reviewer = Console.ReadLine() ?? string.Empty;
         return reviewer;
     }
 
     public static string getGame()
     {
         Console.WriteLine("What is the name of the game you want to review");
-        string game = Console.ReadLine();
+        string game = Console.ReadLine() ?? string.Empty;
         return game;
     }
     public static string getReview()
     {
         Console.WriteLine("Write out your review.");
-        string review = Console.ReadLine();
+        string review = Console.ReadLine() ?? string.Empty;
         return review;
     }
     public static int getTimePlayed()

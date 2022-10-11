@@ -21,7 +21,7 @@ namespace VideoGameReviewer
             Console.WriteLine("1.See Review");
             Console.WriteLine("2.Write Review");
             Console.WriteLine("3.Exit");
-            String choice = Console.ReadLine();
+            String choice = Console.ReadLine()?? string.Empty;
             ChoiceSelection(choice);
 
 
