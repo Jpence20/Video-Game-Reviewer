@@ -1,7 +1,4 @@
-﻿using System;
-using System.Security.Cryptography.X509Certificates;
-using VideoGameReviewer;
-using static System.Formats.Asn1.AsnWriter;
+﻿using VideoGameReviewer;
 
 public class Case
 {
@@ -17,9 +14,9 @@ public class Case
         Console.WriteLine("3.Jessica");
         Console.WriteLine("4.Brian");
         Console.WriteLine("5.See all Reviews");
-
+        string Jeremy = "1";
         string input = Console.ReadLine() ?? String.Empty;
-        if (input == "1")
+        if (input == Jeremy)
         {
             var allReviews = ReviewRepo.InitializeReviews();
 
@@ -234,17 +231,18 @@ public class Case
             Case2();
             program.selection();
         }
+
     }
 
 
-   public static void Case2()
+    public static void Case2()
     {
         var result = ReviewRepo.InitializeReviews().Union(ReviewRepo.InitializeReviewsA()).Union(ReviewRepo.InitializeReviewsB()).Union(ReviewRepo.InitializeReviewsC())
             .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
 
-       foreach(reviews review in result.Values)
+        foreach (reviews review in result.Values)
         {
-             Console.WriteLine(review);
+            Console.WriteLine(review);
         }
     }
 
@@ -256,7 +254,7 @@ public class Case
             var result = ReviewRepo.scoreSearch()
             .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
 
-            foreach(reviews review in result.Values)
+            foreach (reviews review in result.Values)
             {
                 Console.WriteLine($"{review}");
             }
@@ -271,12 +269,12 @@ public class Case
 
 
 }
-        
-       
-        
 
-       
-    
+
+
+
+
+
 
 
 

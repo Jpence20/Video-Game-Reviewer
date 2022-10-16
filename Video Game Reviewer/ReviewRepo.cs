@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using VideoGameReviewer;
-using static System.Formats.Asn1.AsnWriter;
-
-public class ReviewRepo
+﻿public class ReviewRepo
 {
 
 
 
-    public static Dictionary<string,reviews> InitializeReviews()
+    public static Dictionary<string, reviews> InitializeReviews()
     {
 
 
@@ -20,7 +14,7 @@ public class ReviewRepo
         {
             { "god of war", godOfWar },
             { "Persona 5", persona5 }
-            
+
         };
 
         return reviews;
@@ -50,12 +44,12 @@ public class ReviewRepo
         {
             { "god of war-c", godOfWar }
         };
-        
+
         return reviews;
     }
 
 
-    
+
 
     public static Dictionary<string, WrittenReviews> Wreview()
     {
@@ -73,7 +67,7 @@ public class ReviewRepo
         return reviews;
     }
 
-   public static Dictionary<string,reviews> scoreSearch()
+    public static Dictionary<string, reviews> scoreSearch()
     {
         reviews godOfWar = new reviews("Jeremy Pence", "God of war", "Great Game", 40, 10);
         reviews persona5 = new reviews("Jeremy Pence", "Persona 5", "Amazing Game", 100, 10);
@@ -84,7 +78,7 @@ public class ReviewRepo
             { "god of war", godOfWar },
             { "persona 5", persona5 },
             {"god of war-a",godOfWarA }
-          
+
 
         };
 

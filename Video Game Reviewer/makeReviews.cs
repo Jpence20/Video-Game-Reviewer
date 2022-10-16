@@ -1,6 +1,4 @@
-﻿using System;
-
-public class makeReview
+﻿public class makeReview
 {
     public static string getReviewer()
     {

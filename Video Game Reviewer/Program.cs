@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel.Design;
-
-namespace VideoGameReviewer
+﻿namespace VideoGameReviewer
 {
 
     public class program
@@ -21,7 +18,7 @@ namespace VideoGameReviewer
             Console.WriteLine("1.See Review");
             Console.WriteLine("2.Write Review");
             Console.WriteLine("3.Exit");
-            String choice = Console.ReadLine()?? string.Empty;
+            String choice = Console.ReadLine() ?? string.Empty;
             ChoiceSelection(choice);
 
 
@@ -32,9 +29,9 @@ namespace VideoGameReviewer
                     case "1":
                         {
 
-                            Case.Case3();
-                                Case.Case1();
-                          
+
+                            Case.Case1();
+
                             break;
                         }
                     case "2":
@@ -50,16 +47,15 @@ namespace VideoGameReviewer
                         }
                     default:
                         {
-                            Console.WriteLine("Invalid Input");
-                            selection();
-                            return;
+                            throw new ApplicationException("Unkown status:" + choice);
+
                         }
                 }
             }
-           
+
 
         }
-       
+
 
 
     }
