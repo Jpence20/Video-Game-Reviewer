@@ -37,7 +37,7 @@
                     case "2":
                         {
 
-                           
+                            Case.saveReview();
                             selection();
                             break;
                         }

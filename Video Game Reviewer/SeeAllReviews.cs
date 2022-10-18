@@ -61,12 +61,22 @@ public class SeeAllReviews
 
     public static void scoreSearching()
     {
-        var result = ReviewRepo.ScoreSearch()
+        var result = SearchByScoreRepos.ScoreSearch10()
            .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
 
         foreach (reviews review in result.Values)
         {
             Console.WriteLine(review);
+        }
+    }
+    public static void myReviews()
+    {
+        var result = ReviewRepo.Wreview
+           .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
+
+        foreach (WrittenReviews writtenReviews in result.Values)
+        {
+            Console.WriteLine(writtenReviews);
         }
     }
 

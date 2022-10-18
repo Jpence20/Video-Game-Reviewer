@@ -1,7 +1,7 @@
 ﻿using System.Collections.Specialized;
 using System.Xml.Schema;
 
-public class ReviewRepo
+public class ReviewRepo 
 {
 
 
@@ -53,44 +53,11 @@ public class ReviewRepo
 
 
 
-    public static Dictionary<string, WrittenReviews> Wreview()
-    {
+    public  static Dictionary<string, WrittenReviews>? Wreview= new Dictionary<string, WrittenReviews>();
+    
+
+      
        
- 
-        string reviewer = makeReview.getReviewer();
-        string game = makeReview.getGame();
-        string review = makeReview.getReview();
-        int timePlayed = makeReview.getTimePlayed();
-        double score = makeReview.getScore();
-
-        WrittenReviews newReview = new WrittenReviews($"{reviewer}", $"{game}", $"{review}", timePlayed, score);
-        var reviews = new Dictionary<string, WrittenReviews>
-        {
-            { $"{game}", newReview }
-        };
-        return reviews;
-       
-    }
-    public static Dictionary<string, reviews> ScoreSearch()
-    {
-
-
-        reviews godOfWar = new reviews("Jeremy Pence", "God of war", "Great Game", 40, 10);
-        reviews persona5 = new reviews("Jeremy Pence", "Persona 5", "Amazing Game", 100, 10);
-
-        var reviews = new Dictionary<string, reviews>
-        {
-            { "god of war", godOfWar },
-            { "Persona 5", persona5 }
-
-        };
-
-        return reviews;
-    }
-
-
-
-
-
+    
 }
 

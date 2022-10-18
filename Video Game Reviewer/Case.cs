@@ -15,12 +15,17 @@ public class Case
         Console.WriteLine("4.Brian");
         Console.WriteLine("5.See all Reviews");
         string Jeremy = "1";
+        string John = "2";
+        string Jessica = "3";
+        string Brian = "4";
+        string seeAllReviews = "5";
+        string Exit = "0";
         
         string input = Console.ReadLine() ?? String.Empty;
         if (input == Jeremy)
         {
             var allReviews = ReviewRepo.InitializeReviews();
-           
+
 
 
             Console.WriteLine("Do you want to see all reviews or chose one to see");
@@ -74,7 +79,7 @@ public class Case
                                     break;
                                 }
                         }
-                            
+
                         break;
                     }
 
@@ -88,7 +93,7 @@ public class Case
 
         }
 
-        else if (input == "2")
+        else if (input == John)
         {
             var allReviews = ReviewRepo.InitializeReviewsA();
 
@@ -137,7 +142,7 @@ public class Case
             }
         }
 
-        else if (input == "3")
+        else if (input == Brian)
         {
             var allReviews = ReviewRepo.InitializeReviewsB();
 
@@ -186,7 +191,7 @@ public class Case
             }
         }
 
-        else if (input == "4")
+        else if (input == Jessica)
         {
             var allReviews = ReviewRepo.InitializeReviewsC();
 
@@ -234,28 +239,42 @@ public class Case
                     break;
             }
         }
-        else if (input == "5")
+        else if (input == seeAllReviews)
         {
             SeeAllReviews.seeAllReviews();
             program.selection();
         }
+        else if (input == Exit)
+        {
+            program.selection();
+        }
+        else if (input == "6") 
+        {
+            SeeAllReviews.myReviews();
+            program.selection();
+           
+
+        }
 
     }
 
-    public WrittenReviews saveReview()
+    public static WrittenReviews saveReview() 
     {
 
-
+        
         string reviewer = makeReview.getReviewer();
         string game = makeReview.getGame();
         string review = makeReview.getReview();
         int timePlayed = makeReview.getTimePlayed();
         double score = makeReview.getScore();
+        
+        WrittenReviews newReview = new WrittenReviews($"{reviewer}", $"{game}", $"{review}", timePlayed, score);
 
-       WrittenReviews newReview = new WrittenReviews($"{reviewer}", $"{game}", $"{review}", timePlayed, score);
-        Console.WriteLine($"{newReview}");
+
+
+        ReviewRepo.Wreview.Add(game, newReview);
+
         return newReview;
-
 
     }
 }
