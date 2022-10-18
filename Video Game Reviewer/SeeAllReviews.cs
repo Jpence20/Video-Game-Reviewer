@@ -59,5 +59,15 @@ public class SeeAllReviews
         }
     }
 
+    public static void scoreSearching()
+    {
+        var result = ReviewRepo.ScoreSearch()
+           .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
+
+        foreach (reviews review in result.Values)
+        {
+            Console.WriteLine(review);
+        }
+    }
 
 }

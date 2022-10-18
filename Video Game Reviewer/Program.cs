@@ -29,7 +29,7 @@
                     case "1":
                         {
 
-
+                            
                             Case.Case1();
 
                             break;
@@ -37,7 +37,7 @@
                     case "2":
                         {
 
-                            ReviewRepo.Wreview();
+                           
                             selection();
                             break;
                         }
@@ -47,6 +47,7 @@
                         }
                     default:
                         {
+                            selection();
                             throw new ApplicationException("Unkown status:" + choice);
 
                         }

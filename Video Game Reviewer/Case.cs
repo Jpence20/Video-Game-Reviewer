@@ -15,10 +15,12 @@ public class Case
         Console.WriteLine("4.Brian");
         Console.WriteLine("5.See all Reviews");
         string Jeremy = "1";
+        
         string input = Console.ReadLine() ?? String.Empty;
         if (input == Jeremy)
         {
             var allReviews = ReviewRepo.InitializeReviews();
+           
 
 
             Console.WriteLine("Do you want to see all reviews or chose one to see");
@@ -27,40 +29,59 @@ public class Case
             Console.WriteLine("3.Exit");
             string select = Console.ReadLine() ?? string.Empty;
 
-            if (select == "1")
+            switch (select)
             {
-
-                SeeAllReviews.seeReviews1();
-                program.selection();
-            }
-            else if (select == "2")
-            {
-                Console.WriteLine("What review do you want to read?");
-                string name = Console.ReadLine() ?? string.Empty;
-
-
-                bool success = allReviews.ContainsKey(name);
-
-                if (success)
-                {
-                    Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                case "1":
+                    SeeAllReviews.seeReviews1();
                     program.selection();
-                }
-                else
-                {
-                    Console.WriteLine($"There is no review named {name}");
-                    program.selection();
-                }
-            }
+                    break;
+                case "2":
+                    {
+                        Console.WriteLine("What review do you want to read?");
+                        string name = Console.ReadLine() ?? string.Empty;
 
-            else if (select == "3")
-            {
-                program.selection();
-            }
-            else
-            {
-                Console.WriteLine("Invalid Input");
-                Case1();
+
+                        bool success = allReviews.ContainsKey(name);
+
+                        if (success)
+                        {
+                            Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                            program.selection();
+                        }
+                        else
+                        {
+                            Console.WriteLine($"There is no review named {name}");
+                            program.selection();
+                        }
+
+                        break;
+                    }
+
+                case "3":
+                    program.selection();
+                    break;
+                case "4":
+                    {
+                        Console.WriteLine("Select a score for 1-10 to see all reviews with that score");
+                        string score = Console.ReadLine();
+
+                        switch (score)
+                        {
+                            case "10":
+                                {
+                                    SeeAllReviews.scoreSearching();
+                                    program.selection();
+                                    break;
+                                }
+                        }
+                            
+                        break;
+                    }
+
+                default:
+                    Console.WriteLine("Invalid Input");
+                    Case1();
+                    break;
             }
 
 
@@ -78,40 +99,41 @@ public class Case
             Console.WriteLine("3.Exit");
             string select = Console.ReadLine() ?? string.Empty;
 
-            if (select == "1")
+            switch (select)
             {
-
-                SeeAllReviews.seeReviews2();
-                program.selection();
-            }
-            else if (select == "2")
-            {
-                Console.WriteLine("What review do you want to read?");
-                string name = Console.ReadLine() ?? string.Empty;
-
-
-                bool success = allReviews.ContainsKey(name);
-
-                if (success)
-                {
-                    Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                case "1":
+                    SeeAllReviews.seeReviews2();
                     program.selection();
-                }
-                else
-                {
-                    Console.WriteLine($"There is no review named {name}");
-                    program.selection();
-                }
-            }
+                    break;
+                case "2":
+                    {
+                        Console.WriteLine("What review do you want to read?");
+                        string name = Console.ReadLine() ?? string.Empty;
 
-            else if (select == "3")
-            {
-                program.selection();
-            }
-            else
-            {
-                Console.WriteLine("Invalid Input");
-                Case1();
+
+                        bool success = allReviews.ContainsKey(name);
+
+                        if (success)
+                        {
+                            Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                            program.selection();
+                        }
+                        else
+                        {
+                            Console.WriteLine($"There is no review named {name}");
+                            program.selection();
+                        }
+
+                        break;
+                    }
+
+                case "3":
+                    program.selection();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Input");
+                    Case1();
+                    break;
             }
         }
 
@@ -126,40 +148,41 @@ public class Case
             Console.WriteLine("3.Exit");
             string select = Console.ReadLine() ?? string.Empty;
 
-            if (select == "1")
+            switch (select)
             {
-
-                SeeAllReviews.seeReviews3();
-                program.selection();
-            }
-            else if (select == "2")
-            {
-                Console.WriteLine("What review do you want to read?");
-                string name = Console.ReadLine() ?? string.Empty;
-
-
-                bool success = allReviews.ContainsKey(name);
-
-                if (success)
-                {
-                    Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                case "1":
+                    SeeAllReviews.seeReviews3();
                     program.selection();
-                }
-                else
-                {
-                    Console.WriteLine($"There is no review named {name}");
-                    program.selection();
-                }
-            }
+                    break;
+                case "2":
+                    {
+                        Console.WriteLine("What review do you want to read?");
+                        string name = Console.ReadLine() ?? string.Empty;
 
-            else if (select == "3")
-            {
-                program.selection();
-            }
-            else
-            {
-                Console.WriteLine("Invalid Input");
-                Case1();
+
+                        bool success = allReviews.ContainsKey(name);
+
+                        if (success)
+                        {
+                            Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                            program.selection();
+                        }
+                        else
+                        {
+                            Console.WriteLine($"There is no review named {name}");
+                            program.selection();
+                        }
+
+                        break;
+                    }
+
+                case "3":
+                    program.selection();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Input");
+                    Case1();
+                    break;
             }
         }
 
@@ -174,40 +197,41 @@ public class Case
             Console.WriteLine("3.Exit");
             string select = Console.ReadLine() ?? string.Empty;
 
-            if (select == "1")
+            switch (select)
             {
-
-                SeeAllReviews.seeReviews4();
-                program.selection();
-            }
-            else if (select == "2")
-            {
-                Console.WriteLine("What review do you want to read?");
-                string name = Console.ReadLine() ?? string.Empty;
-
-
-                bool success = allReviews.ContainsKey(name);
-
-                if (success)
-                {
-                    Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                case "1":
+                    SeeAllReviews.seeReviews4();
                     program.selection();
-                }
-                else
-                {
-                    Console.WriteLine($"There is no review named {name}");
-                    program.selection();
-                }
-            }
+                    break;
+                case "2":
+                    {
+                        Console.WriteLine("What review do you want to read?");
+                        string name = Console.ReadLine() ?? string.Empty;
 
-            else if (select == "3")
-            {
-                program.selection();
-            }
-            else
-            {
-                Console.WriteLine("Invalid Input");
-                Case1();
+
+                        bool success = allReviews.ContainsKey(name);
+
+                        if (success)
+                        {
+                            Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                            program.selection();
+                        }
+                        else
+                        {
+                            Console.WriteLine($"There is no review named {name}");
+                            program.selection();
+                        }
+
+                        break;
+                    }
+
+                case "3":
+                    program.selection();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Input");
+                    Case1();
+                    break;
             }
         }
         else if (input == "5")
@@ -218,10 +242,29 @@ public class Case
 
     }
 
+    public WrittenReviews saveReview()
+    {
 
-   
 
-    public static void Case3()
+        string reviewer = makeReview.getReviewer();
+        string game = makeReview.getGame();
+        string review = makeReview.getReview();
+        int timePlayed = makeReview.getTimePlayed();
+        double score = makeReview.getScore();
+
+       WrittenReviews newReview = new WrittenReviews($"{reviewer}", $"{game}", $"{review}", timePlayed, score);
+        Console.WriteLine($"{newReview}");
+        return newReview;
+
+
+    }
+}
+
+
+
+
+
+    /*public static void Case3()
     {
         string input = Console.ReadLine() ?? string.Empty;
         if (input == "1")
@@ -234,7 +277,7 @@ public class Case
                 Console.WriteLine($"{review}");
             }
         }
-    }
+    }*/
 
 
 
@@ -243,7 +286,7 @@ public class Case
 
 
 
-}
+
 
 
 

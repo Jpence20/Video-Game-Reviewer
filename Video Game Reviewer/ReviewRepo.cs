@@ -1,4 +1,7 @@
-﻿public class ReviewRepo
+﻿using System.Collections.Specialized;
+using System.Xml.Schema;
+
+public class ReviewRepo
 {
 
 
@@ -50,9 +53,10 @@
 
 
 
-
     public static Dictionary<string, WrittenReviews> Wreview()
     {
+       
+ 
         string reviewer = makeReview.getReviewer();
         string game = makeReview.getGame();
         string review = makeReview.getReview();
@@ -65,24 +69,28 @@
             { $"{game}", newReview }
         };
         return reviews;
+       
     }
-
-    public static Dictionary<string, reviews> scoreSearch()
+    public static Dictionary<string, reviews> ScoreSearch()
     {
+
+
         reviews godOfWar = new reviews("Jeremy Pence", "God of war", "Great Game", 40, 10);
         reviews persona5 = new reviews("Jeremy Pence", "Persona 5", "Amazing Game", 100, 10);
-        reviews godOfWarA = new reviews("John Pence", "God of war", "Great Game", 40, 10);
 
         var reviews = new Dictionary<string, reviews>
         {
             { "god of war", godOfWar },
-            { "persona 5", persona5 },
-            {"god of war-a",godOfWarA }
-
+            { "Persona 5", persona5 }
 
         };
 
         return reviews;
     }
+
+
+
+
+
 }
 
