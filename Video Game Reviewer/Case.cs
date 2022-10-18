@@ -30,11 +30,7 @@ public class Case
             if (select == "1")
             {
 
-                foreach (reviews review in allReviews.Values)
-                {
-                    Console.WriteLine(review);
-
-                }
+                SeeAllReviews.seeReviews1();
                 program.selection();
             }
             else if (select == "2")
@@ -85,11 +81,7 @@ public class Case
             if (select == "1")
             {
 
-                foreach (reviews review in allReviews.Values)
-                {
-                    Console.WriteLine(review);
-
-                }
+                SeeAllReviews.seeReviews2();
                 program.selection();
             }
             else if (select == "2")
@@ -137,11 +129,7 @@ public class Case
             if (select == "1")
             {
 
-                foreach (reviews review in allReviews.Values)
-                {
-                    Console.WriteLine(review);
-
-                }
+                SeeAllReviews.seeReviews3();
                 program.selection();
             }
             else if (select == "2")
@@ -189,11 +177,7 @@ public class Case
             if (select == "1")
             {
 
-                foreach (reviews review in allReviews.Values)
-                {
-                    Console.WriteLine(review);
-
-                }
+                SeeAllReviews.seeReviews4();
                 program.selection();
             }
             else if (select == "2")
@@ -228,23 +212,14 @@ public class Case
         }
         else if (input == "5")
         {
-            Case2();
+            SeeAllReviews.seeAllReviews();
             program.selection();
         }
 
     }
 
 
-    public static void Case2()
-    {
-        var result = ReviewRepo.InitializeReviews().Union(ReviewRepo.InitializeReviewsA()).Union(ReviewRepo.InitializeReviewsB()).Union(ReviewRepo.InitializeReviewsC())
-            .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
-
-        foreach (reviews review in result.Values)
-        {
-            Console.WriteLine(review);
-        }
-    }
+   
 
     public static void Case3()
     {
