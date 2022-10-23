@@ -1,4 +1,5 @@
-﻿using System.Collections.Specialized;
+﻿using Microsoft.Win32.SafeHandles;
+using System.Collections.Specialized;
 using System.Xml.Schema;
 
 public class ReviewRepo 
@@ -12,11 +13,13 @@ public class ReviewRepo
 
         reviews godOfWar = new reviews("Jeremy Pence", "God of war", "Great Game", 40, 10);
         reviews persona5 = new reviews("Jeremy Pence", "Persona 5", "Amazing Game", 100, 10);
+        reviews lastofUs = new reviews("Jeremy Pence", "Last of Us", "Once in a generetion Game", 30, 10);
 
         var reviews = new Dictionary<string, reviews>
         {
             { "god of war", godOfWar },
-            { "Persona 5", persona5 }
+            { "Persona 5", persona5 },
+            {"Last of Us",lastofUs }
 
         };
 
