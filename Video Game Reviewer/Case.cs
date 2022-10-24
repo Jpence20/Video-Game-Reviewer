@@ -24,7 +24,7 @@ public class Case
         string input = Console.ReadLine() ?? String.Empty;
         if (input == Jeremy)
         {
-            var allReviews = ReviewRepo.InitializeReviews();
+            var allReviews = ReviewRepo.IGNReviews();
 
 
 

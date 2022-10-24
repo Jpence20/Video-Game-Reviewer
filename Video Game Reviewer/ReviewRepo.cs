@@ -7,7 +7,7 @@ public class ReviewRepo
 
 
 
-    public static Dictionary<string, reviews> InitializeReviews()
+    public static Dictionary<string, reviews> IGNReviews()
     {
 
 

@@ -4,7 +4,7 @@ public class SeeAllReviews
 {
     public static void seeAllReviews()
     {
-        var result = ReviewRepo.InitializeReviews().Union(ReviewRepo.InitializeReviewsA()).Union(ReviewRepo.InitializeReviewsB()).Union(ReviewRepo.InitializeReviewsC())
+        var result = ReviewRepo.IGNReviews().Union(ReviewRepo.InitializeReviewsA()).Union(ReviewRepo.InitializeReviewsB()).Union(ReviewRepo.InitializeReviewsC())
             .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
 
         foreach (reviews review in result.Values)
@@ -15,7 +15,7 @@ public class SeeAllReviews
 
     public static void seeReviews1()
     {
-        var result = ReviewRepo.InitializeReviews()
+        var result = ReviewRepo.IGNReviews()
            .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
 
         foreach (reviews review in result.Values)
