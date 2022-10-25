@@ -33,7 +33,8 @@ public class Case : WriteReview
             Console.WriteLine("Do you want to see all reviews or chose one to see");
             Console.WriteLine("1.See all Reviews");
             Console.WriteLine("2.Find a review");
-            Console.WriteLine("3.Exit");
+            Console.WriteLine("3.Search by score");
+            Console.WriteLine("4.Exit");
             string select = Console.ReadLine() ?? string.Empty;
 
             switch (select)
@@ -64,10 +65,10 @@ public class Case : WriteReview
                         break;
                     }
 
-                case "3":
+                case "4":
                     program.selection();
                     break;
-                case "4":
+                case "3":
                     {
                         Console.WriteLine("Select a score for 1-10 to see all reviews with that score");
                         string score = Console.ReadLine();
