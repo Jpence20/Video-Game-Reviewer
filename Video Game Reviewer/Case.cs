@@ -71,7 +71,7 @@ public class Case : WriteReview
                 case "3":
                     {
                         Console.WriteLine("Select a score for 1-10 to see all reviews with that score");
-                        string score = Console.ReadLine();
+                        string score = Console.ReadLine() ?? string.Empty;
 
                         switch (score)
                         {

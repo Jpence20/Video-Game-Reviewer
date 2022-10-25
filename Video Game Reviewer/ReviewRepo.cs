@@ -56,7 +56,7 @@ public class ReviewRepo
 
 
 
-    public  static Dictionary<string, WrittenReviews>? Wreview= new Dictionary<string, WrittenReviews>();
+    public static Dictionary<string, WrittenReviews>? Wreview= new Dictionary<string, WrittenReviews>();
     
 
       

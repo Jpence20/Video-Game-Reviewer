@@ -22,15 +22,25 @@
     }
     public static int getTimePlayed()
     {
+        int timePlayed;
         Console.WriteLine("How many hours did you play");
-        int timePlayed = int.Parse(Console.ReadLine());
-        return timePlayed;
+        if (int.TryParse(Console.ReadLine(), out timePlayed))
+        {
+            return timePlayed;
+        }
+        else
+        Console.WriteLine("Please Enter a valid Number");
+        return getTimePlayed();
     }
     public static double getScore()
     {
-
+        double score;
         Console.WriteLine("What is your score for the game out of 10");
-        double score = double.Parse(Console.ReadLine());
-        return score;
+        if (double.TryParse(Console.ReadLine(),out score))
+        {
+            return score;
+        }
+        Console.WriteLine("Please Enter a Valid Number");
+        return getScore();
     }
 }
