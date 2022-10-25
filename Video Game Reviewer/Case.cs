@@ -9,20 +9,22 @@ public class Case
 
         Console.WriteLine("Who do you want to see reviews from?");
         Console.WriteLine("0.Exit");
-        Console.WriteLine("1.Jeremy");
-        Console.WriteLine("2.John");
-        Console.WriteLine("3.Jessica");
-        Console.WriteLine("4.Brian");
+        Console.WriteLine("1.IGN");
+        Console.WriteLine("2.Easy Allies");
+        Console.WriteLine("3.GameSpot");
+        Console.WriteLine("4.AngryJoe");
         Console.WriteLine("5.See all Reviews");
-        string Jeremy = "1";
-        string John = "2";
-        string Jessica = "3";
-        string Brian = "4";
+        Console.WriteLine("6.See My reviews");
+        string IGN = "1";
+        string EasyAllies = "2";
+        string GameSpot = "3";
+        string AngryJoe = "4";
         string seeAllReviews = "5";
+        string seeMyReviews = "6";
         string Exit = "0";
         
         string input = Console.ReadLine() ?? String.Empty;
-        if (input == Jeremy)
+        if (input == IGN)
         {
             var allReviews = ReviewRepo.IGNReviews();
 
@@ -93,7 +95,7 @@ public class Case
 
         }
 
-        else if (input == John)
+        else if (input == EasyAllies)
         {
             var allReviews = ReviewRepo.InitializeReviewsA();
 
@@ -142,7 +144,7 @@ public class Case
             }
         }
 
-        else if (input == Brian)
+        else if (input == GameSpot)
         {
             var allReviews = ReviewRepo.InitializeReviewsB();
 
@@ -191,7 +193,7 @@ public class Case
             }
         }
 
-        else if (input == Jessica)
+        else if (input == AngryJoe)
         {
             var allReviews = ReviewRepo.InitializeReviewsC();
 
@@ -248,7 +250,7 @@ public class Case
         {
             program.selection();
         }
-        else if (input == "6") 
+        else if (input == seeMyReviews) 
         {
             SeeAllReviews.myReviews();
             program.selection();
