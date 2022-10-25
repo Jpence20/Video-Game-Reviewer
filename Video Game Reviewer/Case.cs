@@ -98,7 +98,7 @@ public class Case : WriteReview
 
         else if (input == EasyAllies)
         {
-            var allReviews = ReviewRepo.InitializeReviewsA();
+            var allReviews = ReviewRepo.EasyAllies();
 
 
             Console.WriteLine("Do you want to see all reviews or chose one to see");
@@ -147,7 +147,7 @@ public class Case : WriteReview
 
         else if (input == GameSpot)
         {
-            var allReviews = ReviewRepo.InitializeReviewsB();
+            var allReviews = ReviewRepo.GameSpot();
 
 
             Console.WriteLine("Do you want to see all reviews or chose one to see");
@@ -196,7 +196,7 @@ public class Case : WriteReview
 
         else if (input == AngryJoe)
         {
-            var allReviews = ReviewRepo.InitializeReviewsC();
+            var allReviews = ReviewRepo.AngryJoe();
 
 
             Console.WriteLine("Do you want to see all reviews or chose one to see");
