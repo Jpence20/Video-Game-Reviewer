@@ -2,22 +2,39 @@
 {
     public static string getReviewer()
     {
+       
         Console.WriteLine("What is your name?");
-
         string reviewer = Console.ReadLine() ?? string.Empty;
-        return reviewer;
+        if (reviewer == string.Empty)
+        {
+            Console.WriteLine("Please enter a Name");
+            getReviewer();
+        }
+        
+        return reviewer ?? string.Empty;
     }
 
     public static string getGame()
     {
         Console.WriteLine("What is the name of the game you want to review");
         string game = Console.ReadLine() ?? string.Empty;
+        if(game == string.Empty)
+        {
+            Console.WriteLine("Please enter a Game");
+            getScore();
+        }
         return game;
     }
     public static string getReview()
     {
         Console.WriteLine("Write out your review.");
         string review = Console.ReadLine() ?? string.Empty;
+        if(review == string.Empty)
+        {
+            Console.WriteLine("Please enter a Review");
+            getReview();
+
+        }
         return review;
     }
     public static int getTimePlayed()
