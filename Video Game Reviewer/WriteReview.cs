@@ -1,23 +1,26 @@
-﻿public class WriteReview
+﻿namespace Video_Game_Reviewer
 {
-
-    public static WrittenReviews saveReview()
+    public class WriteReview
     {
 
-
-        string reviewer = makeReview.getReviewer();
-        string game = makeReview.getGame();
-        string review = makeReview.getReview();
-        int timePlayed = makeReview.getTimePlayed();
-        double score = makeReview.getScore();
-
-        WrittenReviews newReview = new WrittenReviews($"{reviewer}", $"{game}", $"{review}", timePlayed, score);
+        public static WrittenReviews SaveReview()
+        {
 
 
+            string reviewer = MakeReview.GetReviewer();
+            string game = MakeReview.GetGame();
+            string review = MakeReview.GetReview();
+            int timePlayed = MakeReview.GetTimePlayed();
+            double score = MakeReview.GetScore();
 
-        ReviewRepo.Wreview.Add(game, newReview);
+            WrittenReviews newReview = new($"{reviewer}", $"{game}", $"{review}", timePlayed, score);
 
-        return newReview;
 
+
+            ReviewRepo.Wreview.Add(game, newReview);
+
+            return newReview;
+
+        }
     }
 }

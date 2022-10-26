@@ -1,19 +1,22 @@
-﻿public class SearchByScoreRepos
+﻿namespace Video_Game_Reviewer
 {
-    public static Dictionary<string, reviews> ScoreSearch10()
+    public class SearchByScoreRepos
     {
+        public static Dictionary<string, Reviews> ScoreSearch10()
+        {
 
 
-        reviews godOfWar = new reviews("Jeremy Pence", "God of war", "Great Game", 40, 10);
-        reviews persona5 = new reviews("Jeremy Pence", "Persona 5", "Amazing Game", 100, 10);
+            Reviews godOfWar = new("Jeremy Pence", "God of war", "Great Game", 40, 10);
+            Reviews persona5 = new("Jeremy Pence", "Persona 5", "Amazing Game", 100, 10);
 
-        var reviews = new Dictionary<string, reviews>
+            var reviews = new Dictionary<string, Reviews>
         {
             { "god of war", godOfWar },
             { "Persona 5", persona5 }
 
         };
 
-        return reviews;
+            return reviews;
+        }
     }
 }

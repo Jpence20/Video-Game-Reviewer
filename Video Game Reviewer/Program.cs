@@ -1,14 +1,16 @@
-﻿namespace VideoGameReviewer
+﻿using Video_Game_Reviewer;
+
+namespace VideoGameReviewer
 {
 
-    public class program
+    public class Program
     {
-        static void Main(string[] args)
+       public static void Main(string[] args )
         {
-            selection();
+            Selection();
         }
 
-        public static void selection()
+        public static void Selection()
         {
 
             Console.WriteLine("******************************");
@@ -37,8 +39,8 @@
                     case "2":
                         {
 
-                            WriteReview.saveReview();
-                            selection();
+                            WriteReview.SaveReview();
+                            Selection();
                             break;
                         }
                     case "3":
@@ -47,7 +49,7 @@
                         }
                     default:
                         {
-                            selection();
+                            Selection();
                             throw new ApplicationException("Unkown status:" + choice);
 
                         }

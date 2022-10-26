@@ -1,38 +1,41 @@
-﻿public class reviews
+﻿namespace Video_Game_Reviewer
 {
-    public string reviewer { get; set; }
-    public string game { get; set; }
-    public string review { get; set; }
-    public int timePlayed { get; set; }
-    public double score { get; set; }
-    public reviews(string reviewer, string game, string review, int timePlayed, double score)
+    public class Reviews
     {
-        this.reviewer = reviewer;
-        this.game = game;
-        this.review = review;
-        this.timePlayed = timePlayed;
-        this.score = score;
+        public string Reviewer { get; set; }
+        public string Game { get; set; }
+        public string Review { get; set; }
+        public int TimePlayed { get; set; }
+        public double Score { get; set; }
+        public Reviews(string reviewer, string game, string review, int timePlayed, double score)
+        {
+            this.Reviewer = reviewer;
+            this.Game = game;
+            this.Review = review;
+            this.TimePlayed = timePlayed;
+            this.Score = score;
 
+        }
+        public override string ToString() => $"\r\nReviewed by {Reviewer}:\r\n {Game}\r\n {Review}\r\n Time Played:{TimePlayed}\r\n Final Score:{Score}\r\n";
     }
-    public override string ToString() => $"\r\nReviewed by {reviewer}:\r\n {game}\r\n {review}\r\n Time Played:{timePlayed}\r\n Final Score:{score}\r\n";
-}
 
 
-public class WrittenReviews
-{
-    public string reviewer { get; set; }
-    public string game { get; set; }
-    public string review { get; set; }
-    public int timePlayed { get; set; }
-    public double score { get; set; }
-    public WrittenReviews(string reviewer, string game, string review, int timePlayed, double score)
+    public class WrittenReviews
     {
-        this.reviewer = reviewer;
-        this.game = game;
-        this.review = review;
-        this.timePlayed = timePlayed;
-        this.score = score;
+        public string Reviewer { get; set; }
+        public string Game { get; set; }
+        public string Review { get; set; }
+        public int TimePlayed { get; set; }
+        public double Score { get; set; }
+        public WrittenReviews(string reviewer, string game, string review, int timePlayed, double score)
+        {
+            this.Reviewer = reviewer;
+            this.Game = game;
+            this.Review = review;
+            this.TimePlayed = timePlayed;
+            this.Score = score;
 
+        }
+        public override string ToString() => $"\r\nReviewed by {Reviewer}:\r\n {Game}\r\n {Review}\r\n Time Played:{TimePlayed}\r\n Final Score:{Score}\r\n";
     }
-    public override string ToString() => $"\r\nReviewed by {reviewer}:\r\n {game}\r\n {review}\r\n Time Played:{timePlayed}\r\n Final Score:{score}\r\n";
 }

@@ -1,83 +1,86 @@
 ﻿using System;
 
-public class SeeAllReviews
+namespace Video_Game_Reviewer
 {
-    public static void seeAllReviews()
+    public class SeeAllReviews
     {
-        var result = ReviewRepo.IGNReviews().Union(ReviewRepo.EasyAllies()).Union(ReviewRepo.GameSpot()).Union(ReviewRepo.AngryJoe())
-            .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
-
-        foreach (reviews review in result.Values)
+        public static void SeeAllReviewsGames()
         {
-            Console.WriteLine(review);
+            var result = ReviewRepo.IGNReviews().Union(ReviewRepo.EasyAllies()).Union(ReviewRepo.GameSpot()).Union(ReviewRepo.AngryJoe())
+                .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
+
+            foreach (Reviews review in result.Values)
+            {
+                Console.WriteLine(review);
+            }
         }
-    }
 
-    public static void seeReviews1()
-    {
-        var result = ReviewRepo.IGNReviews()
-           .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
-
-        foreach (reviews review in result.Values)
+        public static void SeeAllIgnReviews()
         {
-            Console.WriteLine(review);
+            var result = ReviewRepo.IGNReviews()
+               .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
+
+            foreach (Reviews review in result.Values)
+            {
+                Console.WriteLine(review);
+            }
         }
-    }
 
 
-    public static void seeReviews2()
-    {
-        var result = ReviewRepo.EasyAllies()
-           .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
-
-        foreach (reviews review in result.Values)
+        public static void SeeAllEasyAlliesReviews()
         {
-            Console.WriteLine(review);
+            var result = ReviewRepo.EasyAllies()
+               .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
+
+            foreach (Reviews review in result.Values)
+            {
+                Console.WriteLine(review);
+            }
         }
-    }
 
-    public static void seeReviews3()
-    {
-        var result = ReviewRepo.GameSpot()
-           .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
-
-        foreach (reviews review in result.Values)
+        public static void SeeAllGameSpotReviews()
         {
-            Console.WriteLine(review);
+            var result = ReviewRepo.GameSpot()
+               .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
+
+            foreach (Reviews review in result.Values)
+            {
+                Console.WriteLine(review);
+            }
         }
-    }
 
 
-    public static void seeReviews4()
-    {
-        var result = ReviewRepo.AngryJoe()
-           .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
-
-        foreach (reviews review in result.Values)
+        public static void SeeAllAngryJoeReviews()
         {
-            Console.WriteLine(review);
+            var result = ReviewRepo.AngryJoe()
+               .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
+
+            foreach (Reviews review in result.Values)
+            {
+                Console.WriteLine(review);
+            }
         }
-    }
 
-    public static void scoreSearching()
-    {
-        var result = SearchByScoreRepos.ScoreSearch10()
-           .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
-
-        foreach (reviews review in result.Values)
+        public static void ScoreSearching()
         {
-            Console.WriteLine(review);
-        }
-    }
-    public static void myReviews()
-    {
-        var result = ReviewRepo.Wreview
-           .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
+            var result = SearchByScoreRepos.ScoreSearch10()
+               .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
 
-        foreach (WrittenReviews writtenReviews in result.Values)
+            foreach (Reviews review in result.Values)
+            {
+                Console.WriteLine(review);
+            }
+        }
+        public static void MyReviews()
         {
-            Console.WriteLine(writtenReviews);
-        }
-    }
+            var result = ReviewRepo.Wreview
+               .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
 
+            foreach (WrittenReviews writtenReviews in result.Values)
+            {
+                Console.WriteLine(writtenReviews);
+            }
+        }
+
+    }
 }

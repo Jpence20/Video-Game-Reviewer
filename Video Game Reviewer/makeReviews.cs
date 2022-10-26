@@ -1,63 +1,64 @@
-﻿public class makeReview
+﻿namespace Video_Game_Reviewer
 {
-    public static string getReviewer()
+    public class MakeReview
     {
-       
-        Console.WriteLine("What is your name?");
-        string reviewer = Console.ReadLine() ?? string.Empty;
-        if (reviewer == string.Empty)
+        public static string GetReviewer()
         {
-            Console.WriteLine("Please enter a Name");
-            getReviewer();
-        }
-        
-        return reviewer ?? string.Empty;
-    }
 
-    public static string getGame()
-    {
-        Console.WriteLine("What is the name of the game you want to review");
-        string game = Console.ReadLine() ?? string.Empty;
-        if(game == string.Empty)
-        {
-            Console.WriteLine("Please enter a Game");
-            getScore();
-        }
-        return game;
-    }
-    public static string getReview()
-    {
-        Console.WriteLine("Write out your review.");
-        string review = Console.ReadLine() ?? string.Empty;
-        if(review == string.Empty)
-        {
-            Console.WriteLine("Please enter a Review");
-            getReview();
+            Console.WriteLine("What is your name?");
+            string reviewer = Console.ReadLine() ?? string.Empty;
+            if (reviewer == string.Empty)
+            {
+                Console.WriteLine("Please enter a Name");
+                GetReviewer();
+            }
 
+            return reviewer ?? string.Empty;
         }
-        return review;
-    }
-    public static int getTimePlayed()
-    {
-        int timePlayed;
-        Console.WriteLine("How many hours did you play");
-        if (int.TryParse(Console.ReadLine(), out timePlayed))
+
+        public static string GetGame()
         {
-            return timePlayed;
+            Console.WriteLine("What is the name of the game you want to review");
+            string game = Console.ReadLine() ?? string.Empty;
+            if (game == string.Empty)
+            {
+                Console.WriteLine("Please enter a Game");
+                GetGame();
+            }
+            return game;
         }
-        else
-        Console.WriteLine("Please Enter a valid Number");
-        return getTimePlayed();
-    }
-    public static double getScore()
-    {
-        double score;
-        Console.WriteLine("What is your score for the game out of 10");
-        if (double.TryParse(Console.ReadLine(),out score))
+        public static string GetReview()
         {
-            return score;
+            Console.WriteLine("Write out your review.");
+            string review = Console.ReadLine() ?? string.Empty;
+            if (review == string.Empty)
+            {
+                Console.WriteLine("Please enter a Review");
+                GetReview();
+
+            }
+            return review;
         }
-        Console.WriteLine("Please Enter a Valid Number");
-        return getScore();
+        public static int GetTimePlayed()
+        {
+            Console.WriteLine("How many hours did you play");
+            if (int.TryParse(Console.ReadLine(), out int timePlayed))
+            {
+                return timePlayed;
+            }
+            else
+                Console.WriteLine("Please Enter a valid Number");
+            return GetTimePlayed();
+        }
+        public static double GetScore()
+        {
+            Console.WriteLine("What is your score for the game out of 10");
+            if (double.TryParse(Console.ReadLine(), out double score))
+            {
+                return score;
+            }
+            Console.WriteLine("Please Enter a Valid Number");
+            return GetScore();
+        }
     }
 }
