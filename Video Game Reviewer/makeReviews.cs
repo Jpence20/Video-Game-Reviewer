@@ -60,5 +60,12 @@
             Console.WriteLine("Please Enter a Valid Number");
             return GetScore();
         }
+        
+        public static string GetDate()
+        {
+            Console.WriteLine("When day do you beat this game");
+            string dateWritten = Console.ReadLine();
+            return dateWritten;
+        }
     }
 }
