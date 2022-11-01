@@ -10,11 +10,11 @@
             string reviewer = MakeReview.GetReviewer();
             string game = MakeReview.GetGame();
             string review = MakeReview.GetReview();
-            int timePlayed = MakeReview.GetTimePlayed();
+            string system = MakeReview.GetReviewSystem();
             double score = MakeReview.GetScore();
             string dateWritten = MakeReview.GetDate();
 
-            WrittenReviews newReview = new($"{reviewer}", $"{game}", $"{review}", timePlayed, score, $"{dateWritten}");
+            WrittenReviews newReview = new($"{reviewer}", $"{game}", $"{review}", $"{system}", score, $"{dateWritten}");
 
 
 

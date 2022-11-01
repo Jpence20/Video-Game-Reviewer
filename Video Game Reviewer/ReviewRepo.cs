@@ -13,15 +13,21 @@ namespace Video_Game_Reviewer
         {
 
 
-            Reviews godOfWar = new("Jeremy Pence", "God of war", "Great Game", 40, 10);
-            Reviews persona5 = new("Jeremy Pence", "Persona 5", "Amazing Game", 100, 10);
-            Reviews lastofUs = new("Jeremy Pence", "Last of Us", "Once in a generetion Game", 30, 10);
+            Reviews modernWarfare2 = new("Matt Purslow", "Call of Duty Modern Warfare 2", "Great Game", "Playstation 5", 6);
+            Reviews GothamKnights = new("Travis Northup", "Gotham Knights", "Amazing Game", "Xbox Series X", 5);
+            Reviews PlagueTaleRequim = new("Travis Northup", "A Plague Tale Requiem", "Once in a generetion Game", "Xbox Series X", 8);
+            Reviews SparksofHope = new("Dan Stapleton", "Mario + Rabbids: Sparks of Hope", "Great Game", "Nitendo Switch", 9);
+            Reviews Overwatch2 = new("Simon Cardy", "Overwatch 2", "okay", "All Platforms", 8);
+            Reviews Fifa23 = new("Jordan Oloman", "Fifa 23", "Good", "PC, Playstation 5 and Xbox Series X", 7);
 
             var reviews = new Dictionary<string, Reviews>
         {
-            { "god of war", godOfWar },
-            { "Persona 5", persona5 },
-            {"Last of Us",lastofUs }
+            { "Call of Duty Modern Warfare 2", modernWarfare2 },
+            { "Gotham Knights", GothamKnights },
+            {"A Plague Tale Requiem",PlagueTaleRequim },
+            {"Mario + Rabbids Sparks of Hope", SparksofHope },
+            {"OverWatch 2",Overwatch2 },
+            {"Fifa 23",Fifa23 },
 
         };
 
@@ -29,7 +35,7 @@ namespace Video_Game_Reviewer
         }
         public static Dictionary<string, Reviews> EasyAllies()
         {
-            Reviews godOfWar = new("John Pence", "God of war", "Great Game", 40, 10);
+            Reviews godOfWar = new("John Pence", "God of war", "Great Game", "", 10);
             var reviews = new Dictionary<string, Reviews>
         {
             { "god of war-a", godOfWar }
@@ -38,7 +44,7 @@ namespace Video_Game_Reviewer
         }
         public static Dictionary<string, Reviews> GameSpot()
         {
-            Reviews godOfWar = new("Jessica Pence", "God of war", "Okay Game", 40, 8);
+            Reviews godOfWar = new("Jessica Pence", "God of war", "Okay Game", "", 8);
             var reviews = new Dictionary<string, Reviews>
         {
             { "god of war-b", godOfWar }
@@ -47,7 +53,7 @@ namespace Video_Game_Reviewer
         }
         public static Dictionary<string, Reviews> AngryJoe()
         {
-            Reviews godOfWar = new("Brian Maggard", "God of war", "Great Game", 60, 10);
+            Reviews godOfWar = new("Brian Maggard", "God of war", "Great Game", "", 10);
             var reviews = new Dictionary<string, Reviews>
         {
             { "god of war-c", godOfWar }

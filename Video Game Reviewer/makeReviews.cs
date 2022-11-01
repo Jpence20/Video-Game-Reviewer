@@ -39,7 +39,7 @@
             }
             return review;
         }
-        public static int GetTimePlayed()
+      /*  public static int GetTimePlayed()
         {
             Console.WriteLine("How many hours did you play");
             if (int.TryParse(Console.ReadLine(), out int timePlayed))
@@ -49,7 +49,22 @@
             else
                 Console.WriteLine("Please Enter a valid Number");
             return GetTimePlayed();
+        }*/
+
+        public static string GetReviewSystem()
+        {
+            Console.WriteLine("Write out your review.");
+            string system = Console.ReadLine() ?? string.Empty;
+            if (system == string.Empty)
+            {
+                Console.WriteLine("Please enter a Review");
+                GetReviewSystem();
+
+            }
+            return system;
         }
+
+
         public static double GetScore()
         {
             Console.WriteLine("What is your score for the game out of 10");

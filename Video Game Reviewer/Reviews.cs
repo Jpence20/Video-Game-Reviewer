@@ -5,18 +5,18 @@
         public string Reviewer { get; set; }
         public string Game { get; set; }
         public string Review { get; set; }
-        public int TimePlayed { get; set; }
+        public string system { get; set; }
         public double Score { get; set; }
-        public Reviews(string reviewer, string game, string review, int timePlayed, double score)
+        public Reviews(string reviewer, string game, string review, string system, double score)
         {
             this.Reviewer = reviewer;
             this.Game = game;
             this.Review = review;
-            this.TimePlayed = timePlayed;
+            this.system = system;
             this.Score = score;
 
         }
-        public override string ToString() => $"\r\nReviewed by {Reviewer}:\r\n {Game}\r\n {Review}\r\n Time Played:{TimePlayed}\r\n Final Score:{Score}\r\n";
+        public override string ToString() => $"\r\nReviewed by {Reviewer}\r\nGame: {Game}\r\nReview: {Review}\r\nReviewed on: {system}\r\nReview Score: {Score}\r\n";
     }
 
 
@@ -24,11 +24,11 @@
     {
         public string DateWritten { get; set; }
 
-        public WrittenReviews(string reviewer, string game, string review, int timePlayed, double score,string dateWritten) : base(reviewer, game, review, timePlayed, score)
+        public WrittenReviews(string reviewer, string game, string review, string system, double score,string dateWritten) : base(reviewer, game, review, system, score)
         {
             this.DateWritten = dateWritten;
 
         }
-        public override string ToString() => $"\r\nReviewed by {Reviewer}:\r\n {Game}\r\n {Review}\r\n Time Played:{TimePlayed}\r\n Final Score:{Score}\r\n Date:{DateWritten}";
+        public override string ToString() => $"\r\nReviewed by {Reviewer}:\r\nGame: {Game}\r\nReview: {Review}\r\nReviewed on:{system}\r\nReview Score:{Score}\r\n Date:{DateWritten}";
     }
 }
