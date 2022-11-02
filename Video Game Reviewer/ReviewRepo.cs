@@ -26,7 +26,7 @@ namespace Video_Game_Reviewer
             { "Gotham Knights", GothamKnights },
             {"A Plague Tale Requiem",PlagueTaleRequim },
             {"Mario + Rabbids Sparks of Hope", SparksofHope },
-            {"OverWatch 2",Overwatch2 },
+            {"Overwatch 2",Overwatch2 },
             {"Fifa 23",Fifa23 },
 
         };
