@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32.SafeHandles;
 using System.Collections.Specialized;
+using System.Net.Http.Headers;
 using System.Xml.Schema;
 
 namespace Video_Game_Reviewer
@@ -11,8 +12,6 @@ namespace Video_Game_Reviewer
 
         public static Dictionary<string, Reviews> IGNReviews()
         {
-
-
             Reviews modernWarfare2 = new("Matt Purslow", "Call of Duty Modern Warfare 2", "Great Game", "Playstation 5", 6);
             Reviews GothamKnights = new("Travis Northup", "Gotham Knights", "Amazing Game", "Xbox Series X", 5);
             Reviews PlagueTaleRequim = new("Travis Northup", "A Plague Tale Requiem", "Once in a generetion Game", "Xbox Series X", 8);
@@ -39,6 +38,55 @@ namespace Video_Game_Reviewer
             Reviews HaloInfinite = new("Ryan Mccaffrey", "Halo Infinite Single Player", "Amazing", "Xbox Series X and PC", 9);
             Reviews MetroidDread = new("Samuel Claiborn", "Metroid Dread", "Amazing", "Nintendo Switch", 9);
             Reviews TalesOfArise = new("Terence Wiggins", "Tales of Arise", "Amazing", "Playstation 5, Xbox Series X, and PC", 9);
+            Reviews GodOfWarRagnarok = new("Simon Cardy", "God Of War Ragnarok", "MasterPiece", "Playstation 5", 10);
+            Reviews DeathLoop = new("Matt Purslow", "DeathLoop", "MasterPiece", "Playstation 5", 10);
+            Reviews RatchetAndClankRiftApart = new("Jonathon Dornbush", "Ratchet And Clank Rift Apart", "Amazing", "Playstation 5", 9);
+            Reviews ItTakesTwo = new("Tristan Ogilive", "It Takes Two", "Amazing", "Xbox Series X", 9);
+            Reviews Hitman3 = new("Luke Reilly", "Hitman 3", "Amazing", "Xbox Series X", 9);
+            Reviews CyberPunk2077 = new("Tom Marks", "Cyberpunk 2077", "Amazing", "PC", 9);
+            Reviews DemonSouls = new("Mitchell Saltzman", "Demon Souls", "Amazing", "Playstation 5", 9);
+            Reviews MilesMorales = new("Jonathon Dornbush", "Marvel's Spider Man Miles Morales", "Amazing", "Playstation 5", 9);
+            Reviews Hades = new("Nick Limon", "Hades", "Amazing", "PC", 9);
+            Reviews GhostOfTsushima = new("Mitchell Saltzman", "Ghost Of Tsushima", "Amazing", "PC", 9);
+            Reviews Valorant = new("Kyle Campbell", "Valorant", "Amazing", "PC", 9);
+            Reviews ResidentEvil3 = new("Lucy O'Brien", "Resident Evil 3", "Amazing", "Playstation 4 Pro", 9);
+            Reviews DoomEternal = new("Ryan Mccaffrey", "Doom Eternal", "Amazing", "PC", 9);
+            Reviews AnimalCrossingNewHorizon = new("Samuel Claiborn", "Animal Crossing New Horizons", "Amazing", "Nintendo Switch", 9);
+            Reviews Nioh2 = new("Mitchell Saltzman", "Nioh 2", "Amazing", "Playstation 4", 9);
+            Reviews OriAndTheWillOfTheWisps = new("Brandin Tyrrel", "Ori And The Will Of The Wisps", "Amazing", "Xbox One X", 9);
+            Reviews StarWarsJediFallenOrder = new("Dan Stapleton", "Star Wars Jedi Fallen Order", "Amazing", "PC,Xbox One X, and Playstation 4 Pro", 9);
+            Reviews PokemonSword = new("Casey Defreitas", "Pokemon Sword", "Amazing", "Nintendo Switch", 9);
+            Reviews PokemonShield = new("Casey Defreitas", "Pokemon Shield", "Amazing", "Nintendo Switch", 9);
+            Reviews LinksAwakening = new("Joe Skrebels", "The Legend Of Zelda Link's Awakening", "Amazing", "Nintendo Switch", 9);
+            Reviews Gears5 = new("Ryan Mccaffrey", "Gears 5","Amazing" ,"Xbox One X", 9);
+            Reviews Borderlands3 = new("James Duggan", "Borderlands 3", "Amazing", "PC", 9);
+            Reviews AstralChain = new("Steven Petite", "Astral Chain", "Amazing", "Nintendo Switch", 9);
+            Reviews FireEmblemThreeHouses = new("Brendan Graeber", "Fire Emblem Three Houses", "Amazing", "Nintendo Switch", 9.5);
+            Reviews SekiroShadowsDieTwice = new("Brandin Tyrrel", "Sekiro Shadows Die Twice", "Amazing", "Playstation 4 Pro", 9.5);
+            Reviews DevilMayCry5 = new("Mitchell Saltzman", "Devil May Cry 5", "Amazing", "Xbox Series X", 9.5);
+            Reviews ResidentEvil2 = new("Daemon Hatfield", "Resident Evil 2", "Amazing", "Xbox One,Playstation 4, and PC", 9);
+            Reviews SuperSmashBrosUltimate = new("Tom Marks", "Super Smash Bros Ultimate", "Amazing", "Nintendo Switch", 9.4);
+            Reviews AssassinsCreedOdyssey = new("Brandin Tyrrel", "Assassin's Creed Odyssey", "Amazing", "Playstation 4 Pro,Playstation 4, Xbox One X, and Xbox One", 9.2);
+            Reviews ShadowOfTheTombRaider = new("Lucy O'Brien", "Shadow Of The Tomb Raider", "Amazing", "Xbox One X", 9);
+            Reviews DeadCells = new("Brandin Tyrrel", "Dead Cells", "Amazing", "Xbox One X,Playstation 4 Pro,PC,and Nintendo Switch", 9.5);
+            Reviews OctopathTraveler = new("Seth G.Macy", "Octopath Traveler", "Amazing", "Nintendo Switch", 9.3);
+            Reviews HollowKinght = new("Tom Marks", "Hollow Knights", "Amazing", "PC and Nintendo Switch", 9.4);
+            Reviews MonsterHunterWorld = new("Joe Skrebels", "Monster Hunter World", "Amazing", "Playstaion 4 Pro", 9.5);
+            Reviews AssassinsCreedOrigins = new("Alanah Pearce", "Assassin's Creed Origins", "Amazing", "Xbox Series X, Playstation 4, and PC", 9);
+            Reviews MarioKart8Deluxe = new("Jose Otero", "Mario Kart 8 Deluxe", "Amazing", "Nintendo Switch", 9.3);
+            Reviews Persona5 = new("Andrew Goldfarb", "Persona 5", "Amazing", "Playstation 4", 9.7);
+            Reviews HorizonZeroDawn = new("Lucy O'Brien", "Horizon Zero Dawn", "Amazing", "Playstation 4", 9.3);
+            Reviews Nioh = new("Chloi Rad", "Nioh", "Amazing", "Playstation 4", 9.6);
+            Reviews GearsOfWar4 = new("Ryan Mccaffrey", "Gears Of War 4", "Amazing", "Xbox One", 9.2);
+            Reviews Overwatch = new("Vince Ingenito", "Overwatch", "Amazing", "PC,Xbox One, and Playstation 4", 9.4);
+            Reviews Uncharted4 = new("Lucy O'Brien","Uncharted 4 A Thief's End", "Amazing", "Playstation 4", 9);
+            Reviews RatchetAndClank = new("Marty Sliva", "Ratchet And Clank", "Amazing", "Playstation 4", 9);
+            Reviews DarkSouls3 = new("Chloi Rad", "Dark Souls 3", "Amazing", "PC", 9.5);
+            Reviews Xcom2 = new("Dan Stapleton", "Xcom 2", "Amazing", "PC", 9.3);
+            Reviews Fallout4 = new("Dan Stapleton", "Fallout 4", "Amazing", "Xbox One,Playstation 4, and PC", 9.5);
+            Reviews Halo5Guardians = new("Brian Albert", "Halo 5 Guardians", "Amazing", "Xbox One", 9);
+            Reviews UnchartedTheNathanDrakeCollection = new("Vince Ingenito", "Uncharted The Nathan Drake Collection", "Amazing", "Playstation 4", 9);
+            Reviews TheWitcher3 = new("Vince Ingenito", "The Witcher 3", "Amazing", "Playstation 4", 9.3);
             var reviews = new Dictionary<string, Reviews>
         {
             {"Call of Duty Modern Warfare 2", modernWarfare2 },
@@ -67,6 +115,58 @@ namespace Video_Game_Reviewer
             {"Halo Infinite",HaloInfinite },
             {"Metroid Dread",MetroidDread },
             {"Tales Of Arise",TalesOfArise },
+            {"God Of War Ragnarok",GodOfWarRagnarok },
+            {"Deathloop",DeathLoop },
+            {"Ratchet And Clank Rift Apart",RatchetAndClankRiftApart },
+            {"It Takes Two",ItTakesTwo },
+            {"Hitman 3",Hitman3 },
+            {"Cyberpunk 2077",CyberPunk2077 },
+            {"Demon Souls",DemonSouls },
+            {"Spider Man Miles Morales",MilesMorales },
+            {"Hades",Hades },
+            {"Ghost Of Tsushima",GhostOfTsushima },
+            {"Valorant",Valorant },
+            {"Resident Evil 3",ResidentEvil3 },
+            {"Doom Eternal",DoomEternal },
+            {"Animal Crossing New Horizons",AnimalCrossingNewHorizon },
+            {"Nioh 2",Nioh2 },
+            {"Ori And The Will Of The Wisps",OriAndTheWillOfTheWisps },
+            {"Star Wars Jedi Fallen Order",StarWarsJediFallenOrder },
+            {"Pokemon Sword",PokemonSword },
+            {"Pokemon Shield",PokemonShield },
+            {"The Legend Of Zelda Link's Awakening",LinksAwakening },
+            {"Gears 5",Gears5 },
+            {"Borderlands 3",Borderlands3 },
+            {"Astral Chain",AstralChain },
+            {"Fire Emblem Three Houses",FireEmblemThreeHouses },
+            {"Sekiro Shadows Die Twice",SekiroShadowsDieTwice },
+            {"Devil May Cry 5",DevilMayCry5 },
+            {"Resident Evil 2",ResidentEvil2 },
+            {"Super Smash Bros Ultimate",SuperSmashBrosUltimate },
+            {"Assassins Creed Odyssey",AssassinsCreedOdyssey },
+            {"Shadow Of The Tomb Raider",ShadowOfTheTombRaider },
+            {"Dead Cells",DeadCells },
+            {"Octopath Traveler",OctopathTraveler },
+            {"Hollow Knight",HollowKinght },
+            {"Monster Hunter World",MonsterHunterWorld },
+            {"Assassins Creed Origins",AssassinsCreedOrigins },
+            {"Mario Kart 8 Deluxe",MarioKart8Deluxe },
+            {"Persona 5",Persona5 },
+            {"Horizon Zero Dawn",HorizonZeroDawn },
+            {"Nioh",Nioh },
+            {"Gears Of War 4",GearsOfWar4 },
+            {"Overwatch",Overwatch },
+            {"Uncharted 4 A Thiefs End",Uncharted4 },
+            {"Ratchet And Clank",RatchetAndClank },
+            {"Dark Souls 3",DarkSouls3 },
+            {"Xcom 2",Xcom2 },
+            {"Fallout 4",Fallout4 },
+            {"Halo 5 Guardians",Halo5Guardians },
+            {"Uncharted The Nathan Drake Collection",UnchartedTheNathanDrakeCollection },
+            {"The Witcher 3",TheWitcher3 },
+
+
+
 
 
         };
