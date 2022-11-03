@@ -55,7 +55,7 @@ namespace Video_Game_Reviewer
 
                             if (success)
                             {
-                                Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                                Console.WriteLine($"The review you ask for is \r\n {allReviews[name]}");
                                 Program.Selection();
                             }
                             else
