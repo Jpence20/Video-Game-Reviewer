@@ -100,7 +100,7 @@ namespace Video_Game_Reviewer
 
             else if (input == EasyAllies)
             {
-                var allReviews = ReviewRepo.EasyAllies();
+                var allReviews = EasyAlliesReviewsRepo.EasyAllies();
 
 
                 Console.WriteLine("Do you want to see all reviews or chose one to see");
@@ -149,7 +149,7 @@ namespace Video_Game_Reviewer
 
             else if (input == GameSpot)
             {
-                var allReviews = ReviewRepo.GameSpot();
+                var allReviews = GameSpotReviewRepo.GameSpot();
 
 
                 Console.WriteLine("Do you want to see all reviews or chose one to see");
@@ -198,7 +198,7 @@ namespace Video_Game_Reviewer
 
             else if (input == AngryJoe)
             {
-                var allReviews = ReviewRepo.AngryJoe();
+                var allReviews = AngryJoeReviewRepo.AngryJoe();
 
 
                 Console.WriteLine("Do you want to see all reviews or chose one to see");

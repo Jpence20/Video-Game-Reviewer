@@ -53,7 +53,7 @@
 
         public static string GetReviewSystem()
         {
-            Console.WriteLine("Write out your review.");
+            Console.WriteLine("What System Did you Play the Game on?.");
             string system = Console.ReadLine() ?? string.Empty;
             if (system == string.Empty)
             {

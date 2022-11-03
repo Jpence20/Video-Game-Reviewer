@@ -18,7 +18,7 @@
 
 
 
-            ReviewRepo.Wreview.Add(game, newReview);
+            MyReviewsRepo.Wreview.Add(game, newReview);
 
             return newReview;
 
