@@ -13,7 +13,7 @@ namespace Video_Game_Reviewer
             Reviews godOfWar = new("Brian Maggard", "God of war", "Great Game", "", 10);
             var reviews = new Dictionary<string, Reviews>
         {
-            { "god of war-c", godOfWar }
+            { "God Of War", godOfWar }
         };
 
             return reviews;

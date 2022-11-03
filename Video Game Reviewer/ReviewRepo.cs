@@ -87,6 +87,53 @@ namespace Video_Game_Reviewer
             Reviews Halo5Guardians = new("Brian Albert", "Halo 5 Guardians", "Amazing", "Xbox One", 9);
             Reviews UnchartedTheNathanDrakeCollection = new("Vince Ingenito", "Uncharted The Nathan Drake Collection", "Amazing", "Playstation 4", 9);
             Reviews TheWitcher3 = new("Vince Ingenito", "The Witcher 3", "Amazing", "Playstation 4", 9.3);
+            Reviews CultOfTheLamb = new("Tom Marks", "Cult Of The Lamb", "Great", "PC", 8);
+            Reviews TinyTinasWonderLand = new("Travis Northup", "Tiny Tina's Wonderlands", "Great", "PC", 8);
+            Reviews ShinMegamiTenseiV = new("Leana Hafer", "Shin Megami Tensei V", "Great", "Nintendo Switch", 8);
+            Reviews GuardiansOfTheGalaxy = new("Tom Marks", "Marvel's Guardians Of The Galaxy", "Great", "Playstation 5", 8);
+            Reviews Back4Blood = new("Kyle Campbell", "Back 4 Blood", "Great", "PC", 8);
+            Reviews FarCry6 = new("Jon Ryan", "Far Cry 6", "Great", "Xbox Series X", 8);
+            Reviews KenaBridgeOfSpirits = new("Mitchell Saltzman", "Kena Bridge Of Spirits","Great","Playstation 5", 8);
+            Reviews ScarletNexus = new("Mitchell Saltzman", "Scarlet Nexus", "Great", "Playstation 5", 8);
+            Reviews ResidentEvilVillage = new("Tristan Ogilvie", "Resident Evil Village", "Great", "Playstation 5", 8);
+            Reviews Returnal = new("Mitchell Saltzman", "Returnal", "Great", "Playstation 5", 8);
+            Reviews SackBoyABigAdventure = new("Tom Marks", "Sackboy A Big Adventure", "Great", "Playstation 5", 8);
+            Reviews BugSnax = new("Simon Cardy", "Bugsnax", "Great", "Playstation 5", 8);
+            Reviews AssassinsCreedValhalla = new("Brandin Tyrrel", "Assassins Creed Valhalla", "Great", "Xbox Series X", 8);
+            Reviews WatchDogsLegion = new("Dan Stapleton", "Watch Dogs Legion", "Great", "PC", 8);
+            Reviews Crash4 = new("Jonathon Dornbush", "Crash Bandicoot 4 Its About Time", "Great", "Playstation 4 Pro", 8);
+            Reviews WasteLand3 = new("Leif Johnson", "Wasteland 3", "Great", "PC", 8);
+            Reviews FinalFantasy7Remake = new("Tom Marks", "Final Fantasy 7 Remake", "Great", "Playstation 5", 8);
+            Reviews CallOfDutyModernWarfare = new("Ryan Mccaffrey", "Call Of Duty Modern Warfare", "Great", "Xbox Series X", 8.2);
+            Reviews Control = new("Jonathon Dornbush", "Control", "Great", "Playstation 4 Pro", 8);
+            Reviews Rage2 = new("Dan Stapleton", "Rage 2", "Great", "PC", 8);
+            Reviews MetroExodus = new("Tristan Ogilvie", "Metro Exodus", "Great", "Xbox One x", 8.5);
+            Reviews SpiderMan = new("Jonathon Dornbush", "Marvel's Spider Man", "Great", "Playstation 4 Pro", 8.7);
+            Reviews KingdomHearts3 = new("Jonathon Dornbush", "Kingdom Hearts 3", "Great", "Playstation 4 Pro", 8.7);
+            Reviews PokemonLetsGoPikachu = new("Miranda Sanchez", "Pokemon Let's Go Pikachu", "Great", "Nintendo Switch", 8.3);
+            Reviews PokemonLetsGoEevee = new("Miranda Sanchez", "Pokemon Let's Go Eevee", "Great", "Nintendo Switch", 8.3);
+            Reviews Dragonquest = new("Jared Petty", "Dragon Quest XI Echoes Of An Elusive Age", "Great", "Playstation 4", 8.8);
+            Reviews FarCry5 = new("Daemon Hatfield", "Far Cry 5", "Great", "Playstation 4 and Xbox One", 8.9);
+            Reviews Cuphead = new("Joe Skrebels", "Cuphead", "Great", "Xbox One", 8.8);
+            Reviews SoulHacker2 = new("Cameron Hawkins", "Soul Hackers 2", "Good", "Xbox Series X", 7);
+            Reviews GhostWireToyko = new("Cam Shea", "Ghostwire Tokyo", "Good", "Playation 5", 7);
+            Reviews DyingLight2 = new("Travis Northup", "Dying Light 2 Stay Human", "Good", "Xbox Series X", 7);
+            Reviews PokemonLegendsArceus = new("Rebekah Valentine", "Pokemon Legends Arceus", "Good", "Nintendo Switch", 7);
+            Reviews BattleField2042 = new("stella Chung", "Battlefield 2042", "Good", "PC", 7);
+            Reviews Outiders = new("Jon Ryan", "Outriders", "Good", "PC", 7);
+            Reviews ImmortalsFenyxRising = new("Cam Shea", "Immortals Fenyx Rising", "Good", "Xbox Series X", 7);
+            Reviews APlagueTaleInnocence = new("Steven Petite", "A Plague Tale Innocence", "Good", "Playstation 4", 7);
+            Reviews FarCryNewDawn = new("Daemon Harfield", "Far Cry New Dawn", "Good", "Playstation 4 Pro,Xbox One X, and PC", 7.5);
+            Reviews BattlefieldV = new("James Duggan", "Battlefield V", "Good", "PC", 7.5);
+            Reviews Hitman2 = new("Ryan Mccaffrey", "Hitman 2", "Good", "Xbox One X, Playstation 4 and PC", 7.7);
+            Reviews StateOfDecay2 = new("Dan Stapleton", "State Of Decay 2", "Good", "Xbox One", 7.5);
+            Reviews MarioRabbidsKingdomBattle = new("Dan Stapleton", "Mario + Rabbids Kingdom Battle", "Good", "Nintendo Switch", 7.7);
+            Reviews UnchartedLostLegacy = new("Marty Sliva", "Uncharted The Lost Legacy", "Good", "Playstation 4", 7.5);
+            Reviews MassEffectAndromeda = new("Dan Stapleton", "Mass Effect Andromeda", "Good", "Playstation 4 and Xbox One", 7.7);
+            Reviews GhostReconWildlands = new("Brian Albert", "Ghost Recon Wildlands", "Good", "Playstation 4, Xbox One, and PC", 7.9);
+            Reviews ResidentEvil7 = new("Chloi Rad", "Resident Evil 7", "Good", "Playstation4, Playstation 4 Pro,Playstation VR, and Xbox One", 7.7);
+            
+            
             var reviews = new Dictionary<string, Reviews>
         {
             {"Call of Duty Modern Warfare 2", modernWarfare2 },
@@ -164,6 +211,53 @@ namespace Video_Game_Reviewer
             {"Halo 5 Guardians",Halo5Guardians },
             {"Uncharted The Nathan Drake Collection",UnchartedTheNathanDrakeCollection },
             {"The Witcher 3",TheWitcher3 },
+            {"Cult Of The Lamb",CultOfTheLamb },
+            {"Tiny Tinas Wonderland",TinyTinasWonderLand },
+            {"Shin Megami Tensei V",ShinMegamiTenseiV },
+            {"Guardians Of The Galaxy",GuardiansOfTheGalaxy },
+            {"Back 4 Blood",Back4Blood },
+            {"Far Cry 6",FarCry6 },
+            {"Kena Bridge Of Spirits",KenaBridgeOfSpirits },
+            {"Scarlet Nexus",ScarletNexus },
+            {"Resident Evil Village",ResidentEvilVillage },
+            {"Returnal",Returnal },
+            {"Sackboy A Big Adventure",SackBoyABigAdventure },
+            {"Bugsnax",BugSnax },
+            {"Assassins Creed Valhalla",AssassinsCreedValhalla },
+            {"Watch Dogs Legion",WatchDogsLegion },
+            {"Crash Bandicoot 4 Its About Time",Crash4 },
+            {"Wasteland 3", WasteLand3},
+            {"Final Fantasy 7 Remake",FinalFantasy7Remake },
+            {"Call Of Duty Modern Warfare",CallOfDutyModernWarfare },
+            {"Control",Control },
+            {"Rage 2",Rage2 },
+            {"Metro Exodus",MetroExodus },
+            {"Spider Man",SpiderMan },
+            {"Kingdom Hearts 3",KingdomHearts3 },
+            {"Pokemon Lets Go Pikachu",PokemonLetsGoPikachu },
+            {"Pokemon Lets Go Eevee",PokemonLetsGoEevee },
+            {"Dragon Quest XI Echoes Of An Elusive Age",Dragonquest },
+            {"Far Cry 5",FarCry5 },
+            {"Cuphead",Cuphead },
+            {"Soul Hackers 2",SoulHacker2 },
+            {"Ghostwire Tokyo",GhostWireToyko },
+            {"Dying Light 2 Stay Human",DyingLight2 },
+            {"Pokemon Legends Arceus",PokemonLegendsArceus },
+            {"Battlefield 2042", BattleField2042},
+            {"Outriders",Outiders },
+            {"Immortals Fenyx Rising",ImmortalsFenyxRising },
+            {"A Plague Tale Innocence",APlagueTaleInnocence },
+            {"Far Cry New Dawn",FarCryNewDawn },
+            {"Battlefield V",BattlefieldV },
+            {"Hitman 2", Hitman2},
+            {"State Of Decay 2",StateOfDecay2 },
+            {"Mario + Rabbids Kingdom Battle",MarioRabbidsKingdomBattle },
+            {"Uncharted The Lost Legacy",UnchartedLostLegacy },
+            {"Mass Effect Andromeda",MassEffectAndromeda },
+            {"Ghost Recon Wildlands",GhostReconWildlands },
+            {"Resident Evil 7",ResidentEvil7 },
+
+
 
 
 
