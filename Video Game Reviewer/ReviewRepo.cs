@@ -287,6 +287,7 @@ namespace Video_Game_Reviewer
             {"Crackdown 3",Crackdown3 },
             {"Fallout 76",Fallout76 },
             {"Alien Isolation",AlienIsolation },
+            {"Babylons Fall",BabylonsFall },
 
 
 
