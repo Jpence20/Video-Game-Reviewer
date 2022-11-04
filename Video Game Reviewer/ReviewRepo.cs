@@ -132,6 +132,23 @@ namespace Video_Game_Reviewer
             Reviews MassEffectAndromeda = new("Dan Stapleton", "Mass Effect Andromeda", "Good", "Playstation 4 and Xbox One", 7.7);
             Reviews GhostReconWildlands = new("Brian Albert", "Ghost Recon Wildlands", "Good", "Playstation 4, Xbox One, and PC", 7.9);
             Reviews ResidentEvil7 = new("Chloi Rad", "Resident Evil 7", "Good", "Playstation4, Playstation 4 Pro,Playstation VR, and Xbox One", 7.7);
+            Reviews BioMutant = new("Luke Reilly", "Biomutant", "Okay", "Xbox Series X", 6);
+            Reviews Avengers = new("Tom Marks", "Marvel's Avengers", "Okay", "Playstation 4 Pro", 6);
+            Reviews Deathstranding = new("Tristan Ogilive", "Death Stranding", "Okay", "Playstation 4 Pro", 6.8);
+            Reviews Medievil = new("Travis Northup", "Medievil", "Okay", "Playstation 4 Pro", 6.5);
+            Reviews DaysGone = new("Lucy O'Brien", "Days Gone", "Okay", "Playstation 4 Pro", 6.5);
+            Reviews GhostReconBreakpoint = new("Brandin Tyrrel", "Ghost Recon Breakpoint", "Okay", "Xbox One X", 6);
+            Reviews WolfenSteinYoungBlood = new("Dan Stapleton", "Wolfenstein Youngblood", "Okay", "PC", 6.5);
+            Reviews Anthem = new("James Duggan", "Anthem", "Okay", "PC", 6.5);
+            Reviews StarWarsBattlefront2 = new("Tom Marks", "Star Wars Battlefront 2", "Okay", "PC", 6.5);
+            Reviews GrandTheftAutoTheTrilogy = new("Tristan Ogilive", "Grand Theft Auto The Trilogy", "Mediocre", "Playstation 5", 5);
+            Reviews Shenmue3 = new("Kyle Hilliard", "Shenmue 3", "Mediocre", "Playstation 4", 5.9);
+            Reviews Crackdown3 = new("Brandin Tyrrel", "Crackdown 3", "Mediocre", "Xbox One X and PC", 5);
+            Reviews Fallout76 = new("Brandin Tyrrel", "Fallout 76", "Mediocre", "PC,Xbox One X, and Playstation 4 Pro", 5);
+            Reviews AlienIsolation = new("Ryan Mccaffrey", "Alien Isolation", "Mediocre", "Xbox One, Playstation 4, and PC", 5);
+            Reviews BabylonsFall = new("Justin Koreis", "Babylons Fall", "Bad", "Playstation 5", 4);
+
+            
             
             
             var reviews = new Dictionary<string, Reviews>
@@ -256,6 +273,22 @@ namespace Video_Game_Reviewer
             {"Mass Effect Andromeda",MassEffectAndromeda },
             {"Ghost Recon Wildlands",GhostReconWildlands },
             {"Resident Evil 7",ResidentEvil7 },
+            {"Biomutant",BioMutant },
+            {"Avengers",Avengers },
+            {"Death Stranding",Deathstranding },
+            {"Medievil",Medievil },
+            {"Days Gone",DaysGone },
+            {"Ghost Recon Breakpoint",GhostReconBreakpoint },
+            {"Wolfenstein Youngblood",WolfenSteinYoungBlood },
+            {"Anthem",Anthem },
+            {"Star Wars Battlefront 2",StarWarsBattlefront2 },
+            {"Grand Theft Auto The Trilogy",GrandTheftAutoTheTrilogy },
+            {"Shenmue 3",Shenmue3 },
+            {"Crackdown 3",Crackdown3 },
+            {"Fallout 76",Fallout76 },
+            {"Alien Isolation",AlienIsolation },
+
+
 
 
 
