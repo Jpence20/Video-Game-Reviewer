@@ -81,6 +81,16 @@ namespace Video_Game_Reviewer
                 Console.WriteLine(writtenReviews);
             }
         }
+        public static void MyGamesListOrder()
+        {
+            var result = MyGamesList.GamesList
+               .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
+
+            foreach (GamesToPlay games in result.Values)
+            {
+                Console.WriteLine(games);
+            }
+        }
 
     }
 }

@@ -11,5 +11,9 @@ namespace Video_Game_Reviewer
         public static readonly Dictionary<string, WrittenReviews>? Wreview = dictionary;
     }
 
-   
+    public class MyGamesList
+    {
+        private static readonly Dictionary<string, GamesToPlay> dictionary = new();
+        public static readonly Dictionary<string, GamesToPlay>? GamesList = dictionary;
+    }
 }

@@ -19,7 +19,7 @@ namespace VideoGameReviewer
             Console.WriteLine("Choose if you want to see a review or write a review");
             Console.WriteLine("1.See Review");
             Console.WriteLine("2.Write Review");
-            Console.WriteLine("3.Exit");
+            Console.WriteLine("3.Make Game List");
             String choice = Console.ReadLine() ?? string.Empty;
             ChoiceSelection(choice);
 
@@ -45,8 +45,22 @@ namespace VideoGameReviewer
                         }
                     case "3":
                         {
+                            Console.WriteLine("1.Write Game Into List");
+                            Console.WriteLine("2.See List");
+                            Console.WriteLine("3.Exit");
+                            string selection = Console.ReadLine();
+
+
+                            GetGameListValues.GetValues();
+                            Selection();
                             break;
                         }
+                    case "4":
+                        {
+
+                            break;
+                        }
+                     
                     default:
                         {
                             Selection();

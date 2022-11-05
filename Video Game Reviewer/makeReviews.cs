@@ -39,7 +39,7 @@
             }
             return review;
         }
-      /*  public static int GetTimePlayed()
+        public static int GetTimePlayed()
         {
             Console.WriteLine("How many hours did you play");
             if (int.TryParse(Console.ReadLine(), out int timePlayed))
@@ -49,7 +49,7 @@
             else
                 Console.WriteLine("Please Enter a valid Number");
             return GetTimePlayed();
-        }*/
+        }
 
         public static string GetReviewSystem()
         {
@@ -75,12 +75,32 @@
             Console.WriteLine("Please Enter a Valid Number");
             return GetScore();
         }
-        
+
         public static string GetDate()
         {
             Console.WriteLine("When day do you beat this game");
-            string dateWritten = Console.ReadLine();
+            string dateWritten = Console.ReadLine() ?? string.Empty;
+            if (dateWritten == string.Empty)
+            {
+                Console.WriteLine("Please enter a Review");
+                GetReviewSystem();
+
+            }
             return dateWritten;
         }
+
+        public static string GetStartDate()
+        {
+            Console.WriteLine("What date did you start this game?");
+            string dateStarted = Console.ReadLine() ?? string.Empty;
+            if (dateStarted == string.Empty)
+            {
+                Console.WriteLine("Please enter a Review");
+                GetReviewSystem();
+
+            }
+            return dateStarted;
+        }
+
     }
 }
