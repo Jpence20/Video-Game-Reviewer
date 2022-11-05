@@ -12,11 +12,11 @@ namespace Video_Game_Reviewer
 
         public static Dictionary<string, Reviews> IGNReviews()
         {
-            Reviews modernWarfare2 = new("Matt Purslow", "Call of Duty Modern Warfare 2", "Great Game", "Playstation 5", 6);
-            Reviews GothamKnights = new("Travis Northup", "Gotham Knights", "Amazing Game", "Xbox Series X", 5);
-            Reviews PlagueTaleRequim = new("Travis Northup", "A Plague Tale Requiem", "Once in a generetion Game", "Xbox Series X", 8);
-            Reviews SparksofHope = new("Dan Stapleton", "Mario + Rabbids: Sparks of Hope", "Great Game", "Nitendo Switch", 9);
-            Reviews Overwatch2 = new("Simon Cardy", "Overwatch 2", "okay", "All Platforms", 8);
+            Reviews modernWarfare2 = new("Matt Purslow", "Call of Duty Modern Warfare 2", "Okay", "Playstation 5", 6);
+            Reviews GothamKnights = new("Travis Northup", "Gotham Knights", "Mediocre", "Xbox Series X", 5);
+            Reviews PlagueTaleRequim = new("Travis Northup", "A Plague Tale Requiem", "Great", "Xbox Series X", 8);
+            Reviews SparksofHope = new("Dan Stapleton", "Mario + Rabbids: Sparks of Hope", "Amazing", "Nitendo Switch", 9);
+            Reviews Overwatch2 = new("Simon Cardy", "Overwatch 2", "Great", "All Platforms", 8);
             Reviews Fifa23 = new("Jordan Oloman", "Fifa 23", "Good", "PC, Playstation 5 and Xbox Series X", 7);
             Reviews LastOfUsPart1 = new("Luke Reilly", "Last Of Us Part 1", "Amazing", "Playstation 5", 9);
             Reviews Xenoblade3 = new("Travis Northup", "Xenoblade 3", "Great", "Nintendo Switch", 8);
@@ -32,7 +32,6 @@ namespace Video_Game_Reviewer
             Reviews MetalGearSolid5 = new("Vince Ingenito", "Metal Gear Solid 5 The Phantom Pain", "MasterPiece", "Playstaion 4", 10);
             Reviews GrandTheftAuto5 = new("Keza MacDonald", "Grand Theft Auto 5", "MasterPiece", "Playstation 3 and Xbox 360",10);
             Reviews Bayonetta3 = new("Mithchell Saltzman", "Bayonetta 3", "Amazing", "Nintendo Switch", 9);
-            Reviews MarioRabbidsSparksOfHope = new("Dan Stapleton", "Mario + Rabbids", "Amazing", "Nintendo Switch", 9);
             Reviews TotalWarWarhammer3 = new("Leana Hafer", "Total War Warhammer 3", "Amazing", "PC", 9);
             Reviews HorizonForibbenWest = new("Simon Cardy", "Horizon Forbidden West", "Amazing", "Playstation 5", 9);
             Reviews HaloInfinite = new("Ryan Mccaffrey", "Halo Infinite Single Player", "Amazing", "Xbox Series X and PC", 9);
@@ -47,7 +46,7 @@ namespace Video_Game_Reviewer
             Reviews DemonSouls = new("Mitchell Saltzman", "Demon Souls", "Amazing", "Playstation 5", 9);
             Reviews MilesMorales = new("Jonathon Dornbush", "Marvel's Spider Man Miles Morales", "Amazing", "Playstation 5", 9);
             Reviews Hades = new("Nick Limon", "Hades", "Amazing", "PC", 9);
-            Reviews GhostOfTsushima = new("Mitchell Saltzman", "Ghost Of Tsushima", "Amazing", "PC", 9);
+            Reviews GhostOfTsushima = new("Mitchell Saltzman", "Ghost Of Tsushima", "Amazing", "Playstation4 Pro", 9);
             Reviews Valorant = new("Kyle Campbell", "Valorant", "Amazing", "PC", 9);
             Reviews ResidentEvil3 = new("Lucy O'Brien", "Resident Evil 3", "Amazing", "Playstation 4 Pro", 9);
             Reviews DoomEternal = new("Ryan Mccaffrey", "Doom Eternal", "Amazing", "PC", 9);
@@ -63,7 +62,7 @@ namespace Video_Game_Reviewer
             Reviews AstralChain = new("Steven Petite", "Astral Chain", "Amazing", "Nintendo Switch", 9);
             Reviews FireEmblemThreeHouses = new("Brendan Graeber", "Fire Emblem Three Houses", "Amazing", "Nintendo Switch", 9.5);
             Reviews SekiroShadowsDieTwice = new("Brandin Tyrrel", "Sekiro Shadows Die Twice", "Amazing", "Playstation 4 Pro", 9.5);
-            Reviews DevilMayCry5 = new("Mitchell Saltzman", "Devil May Cry 5", "Amazing", "Xbox Series X", 9.5);
+            Reviews DevilMayCry5 = new("Mitchell Saltzman", "Devil May Cry 5", "Amazing", "Xbox One X", 9.5);
             Reviews ResidentEvil2 = new("Daemon Hatfield", "Resident Evil 2", "Amazing", "Xbox One,Playstation 4, and PC", 9);
             Reviews SuperSmashBrosUltimate = new("Tom Marks", "Super Smash Bros Ultimate", "Amazing", "Nintendo Switch", 9.4);
             Reviews AssassinsCreedOdyssey = new("Brandin Tyrrel", "Assassin's Creed Odyssey", "Amazing", "Playstation 4 Pro,Playstation 4, Xbox One X, and Xbox One", 9.2);
@@ -72,7 +71,7 @@ namespace Video_Game_Reviewer
             Reviews OctopathTraveler = new("Seth G.Macy", "Octopath Traveler", "Amazing", "Nintendo Switch", 9.3);
             Reviews HollowKinght = new("Tom Marks", "Hollow Knights", "Amazing", "PC and Nintendo Switch", 9.4);
             Reviews MonsterHunterWorld = new("Joe Skrebels", "Monster Hunter World", "Amazing", "Playstaion 4 Pro", 9.5);
-            Reviews AssassinsCreedOrigins = new("Alanah Pearce", "Assassin's Creed Origins", "Amazing", "Xbox Series X, Playstation 4, and PC", 9);
+            Reviews AssassinsCreedOrigins = new("Alanah Pearce", "Assassin's Creed Origins", "Amazing", "Xbox One X, Playstation 4, and PC", 9);
             Reviews MarioKart8Deluxe = new("Jose Otero", "Mario Kart 8 Deluxe", "Amazing", "Nintendo Switch", 9.3);
             Reviews Persona5 = new("Andrew Goldfarb", "Persona 5", "Amazing", "Playstation 4", 9.7);
             Reviews HorizonZeroDawn = new("Lucy O'Brien", "Horizon Zero Dawn", "Amazing", "Playstation 4", 9.3);
@@ -103,7 +102,7 @@ namespace Video_Game_Reviewer
             Reviews WatchDogsLegion = new("Dan Stapleton", "Watch Dogs Legion", "Great", "PC", 8);
             Reviews Crash4 = new("Jonathon Dornbush", "Crash Bandicoot 4 Its About Time", "Great", "Playstation 4 Pro", 8);
             Reviews WasteLand3 = new("Leif Johnson", "Wasteland 3", "Great", "PC", 8);
-            Reviews FinalFantasy7Remake = new("Tom Marks", "Final Fantasy 7 Remake", "Great", "Playstation 5", 8);
+            Reviews FinalFantasy7Remake = new("Tom Marks", "Final Fantasy 7 Remake", "Great", "Playstation 4 Pro", 8);
             Reviews CallOfDutyModernWarfare = new("Ryan Mccaffrey", "Call Of Duty Modern Warfare", "Great", "Xbox Series X", 8.2);
             Reviews Control = new("Jonathon Dornbush", "Control", "Great", "Playstation 4 Pro", 8);
             Reviews Rage2 = new("Dan Stapleton", "Rage 2", "Great", "PC", 8);
@@ -173,7 +172,7 @@ namespace Video_Game_Reviewer
             {"Metal Gear Solid 5 The Phantom Pain",MetalGearSolid5 },
             {"Grand Theft Auto 5",GrandTheftAuto5 },
             {"Bayonetta 3",Bayonetta3 },
-            {"Mario + Rabbids Sparks Of Hope",MarioRabbidsSparksOfHope },
+           
             {"Total War Warhammer 3",TotalWarWarhammer3 },
             {"Horizon Forbidden West",HorizonForibbenWest },
             {"Halo Infinite",HaloInfinite },
