@@ -17,6 +17,6 @@ namespace Video_Game_Reviewer
 		}
 		
 
-        public override string ToString() => $"Position{position++}|Reviewed by: {Reviewer}|Game: {Game}| Review: {Review}|Reviewed on:{system}| Review Score:{Score}| Date Started:{DateStarted}| TimePlayed:{TimePlayed} ";
+        public override string ToString() => $"\r\nPosition{position++}|Reviewed by: {Reviewer}|Game: {Game}| Review: {Review}|Reviewed on:{system}| Review Score:{Score}| Date Started:{DateStarted}| TimePlayed:{TimePlayed} ";
     }
 }
