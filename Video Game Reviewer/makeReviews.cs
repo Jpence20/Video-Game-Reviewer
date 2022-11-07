@@ -1,4 +1,6 @@
-﻿namespace Video_Game_Reviewer
+﻿using VideoGameReviewer;
+
+namespace Video_Game_Reviewer
 {
     public class MakeReview
     {
@@ -29,6 +31,8 @@
         }
         public static string GetReview()
         {
+           
+
             Console.WriteLine("Write out your review.");
             string review = Console.ReadLine() ?? string.Empty;
             if (review == string.Empty)
@@ -67,18 +71,44 @@
 
         public static double GetScore()
         {
-            Console.WriteLine("What is your score for the game out of 10");
-            if (double.TryParse(Console.ReadLine(), out double score))
+            Console.WriteLine("If you are Writing a Review choose 1, if you are adding a game to a list select 2");
+            string selection = Console.ReadLine() ?? string.Empty;
+
+            switch (selection)
             {
-                return score;
+                case "1":
+                    {
+                        Console.WriteLine("What is your score for the game out of 10");
+                        if (double.TryParse(Console.ReadLine(), out double score))
+                        {
+                            return score;
+                        }
+                        Console.WriteLine("Please Enter a Valid Number");
+                        return GetScore();
+                    }
+                case "2":
+                    {
+                        Console.WriteLine("What is your score out of 10 for the game so far?");
+                        if (double.TryParse(Console.ReadLine(), out double score))
+                        {
+                            return score;
+                        }
+                        Console.WriteLine("Please Enter a Valid Number");
+                        return GetScore();
+                    }
+         
+                default:
+                    Console.WriteLine("Invalid Input");
+                   return GetScore();
+                    
             }
-            Console.WriteLine("Please Enter a Valid Number");
-            return GetScore();
+
+           
         }
 
         public static string GetDate()
         {
-            Console.WriteLine("When day do you beat this game");
+            Console.WriteLine("When day did you beat this game");
             string dateWritten = Console.ReadLine() ?? string.Empty;
             if (dateWritten == string.Empty)
             {

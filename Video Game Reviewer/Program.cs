@@ -20,7 +20,7 @@ namespace VideoGameReviewer
             Console.WriteLine("1.See Review");
             Console.WriteLine("2.Write Review");
             Console.WriteLine("3.Make Game List");
-            Console.WriteLine("4.Exit");
+            Console.WriteLine("Press any key to except 1,2 or 3 to Exit");
             String choice = Console.ReadLine() ?? string.Empty;
             ChoiceSelection(choice);
 
@@ -50,18 +50,9 @@ namespace VideoGameReviewer
                             Selection();
                             break;
                         }
-                    case "4":
-                        {
-
-                            break;
-                        }
+                   
                      
-                    default:
-                        {
-                            Selection();
-                            throw new ApplicationException("Unkown status:" + choice);
-
-                        }
+                   
                 }
             }
 
