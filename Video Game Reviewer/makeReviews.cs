@@ -1,4 +1,6 @@
 ﻿using VideoGameReviewer;
+using System;
+using System.Text.RegularExpressions;
 
 namespace Video_Game_Reviewer
 {
@@ -108,28 +110,37 @@ namespace Video_Game_Reviewer
 
         public static string GetDate()
         {
-            Console.WriteLine("When day did you beat this game");
-            string dateWritten = Console.ReadLine() ?? string.Empty;
-            if (dateWritten == string.Empty)
-            {
-                Console.WriteLine("Please enter a Review");
-                GetReviewSystem();
+           Console.WriteLine("When day did you beat this game? Please enter in dd/mm/year format");
+           Regex validateDate = new Regex("^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$");
 
+            string dateWritten = Console.ReadLine() ?? string.Empty;
+
+            if (Regex.Match(dateWritten, "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$").Success)
+            {
+                return dateWritten;
             }
-            return dateWritten;
+            else
+                Console.WriteLine("Please Enter in Correct date format");
+                return GetDate();
+                    
+                
+
+          
         }
 
         public static string GetStartDate()
         {
-            Console.WriteLine("What date did you start this game?");
-            string dateStarted = Console.ReadLine() ?? string.Empty;
-            if (dateStarted == string.Empty)
-            {
-                Console.WriteLine("Please enter a Review");
-                GetReviewSystem();
+            Console.WriteLine("What date did you start this game? Please enter in dd/mm/year format");
+            Regex validateDate = new Regex("^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$");
 
+            string dateStarted = Console.ReadLine() ?? string.Empty;
+            if (Regex.Match(dateStarted, "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$").Success)
+            {
+                return dateStarted;
             }
-            return dateStarted;
+            else
+                Console.WriteLine("Please Enter in Correct date format");
+            return GetStartDate();
         }
 
     }
