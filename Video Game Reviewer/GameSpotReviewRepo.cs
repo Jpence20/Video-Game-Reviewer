@@ -1,124 +1,118 @@
-﻿using System;
-using Microsoft.Win32.SafeHandles;
-using System.Collections.Specialized;
-using System.Xml.Schema;
-
-namespace Video_Game_Reviewer
+﻿namespace Video_Game_Reviewer
 {
 
-	public class GameSpotReviewRepo
+    public class GameSpotReviewRepo
 	{
         public static Dictionary<string, Reviews> GameSpot()
         {
             Reviews modernWarfare2 = new("S.E. Doster", "Call of Duty Modern Warfare 2", "Modern Warfare 2 had big shoes to fill, but the campaign includes a large serving of nostalgia and a fun variety of missions.", "Playstation 5", 8);
             Reviews GothamKnights = new("Mark Delaney", "Gotham Knights", "Gotham Knights takes the Arkham blueprint and reimagines it as a loot-brawler, often feeling similar, but where it's different, it's worse.", "Xbox Series X", 4);
-            Reviews PlagueTaleRequim = new("Travis Northup", "A Plague Tale Requiem", "Great", "Xbox Series X", 8);
-            Reviews SparksofHope = new("Dan Stapleton", "Mario + Rabbids: Sparks of Hope", "Amazing", "Nitendo Switch", 9);
-            Reviews Overwatch2 = new("Simon Cardy", "Overwatch 2", "Great", "All Platforms", 8);
-            Reviews Fifa23 = new("Jordan Oloman", "Fifa 23", "Good", "PC, Playstation 5 and Xbox Series X", 7);
-            Reviews LastOfUsPart1 = new("Luke Reilly", "Last Of Us Part 1", "Amazing", "Playstation 5", 9);
-            Reviews Xenoblade3 = new("Travis Northup", "Xenoblade 3", "Great", "Nintendo Switch", 8);
-            Reviews TheQuarry = new("Thomas Wilde", "The Quarry", "Good", "PC", 7);
-            Reviews EldenRing = new("Mitchell Saltzman", "Elden Ring", "MasterPiece", "PC,Xbox Series X, and Playstation 5", 10);
-            Reviews TheLastOfUsPart2 = new("Jonathon Dornbush", "The Last Of Us Part 2", "Masterpiece", "Playstation 4", 10);
-            Reviews Persona5Royal = new("Leana Hafer", "Persona 5 Royal", "MasterPiece", "Playstation 4", 10);
-            Reviews RedDeadRedemption2 = new("Luke Reilly", "Red Dead Redemption2", "MasterPiece", "Playstation 4 and Xbox One", 10);
-            Reviews GodOfWar = new("Jonathon Dornbush", "God of War", "Masterpiece", "Playstation 4", 10);
-            Reviews Celeste = new("Tom Marks", "Celeste", "MasterPiece", "PC,Xbox One,Playstation 4 , Nintendo Switch", 10);
-            Reviews SuperMarioOdyssey = new("Ryan Mcaffrey", "Super Mario Odyssey", "MasterPiece", "Nintendo Switch", 10);
-            Reviews BreathOfTheWild = new("Jose Otero", "The Legend Of Zelda Breath Of The Wild", "MasterPiece", "Nintendo Switch", 10);
-            Reviews MetalGearSolid5 = new("Vince Ingenito", "Metal Gear Solid 5 The Phantom Pain", "MasterPiece", "Playstaion 4", 10);
-            Reviews GrandTheftAuto5 = new("Keza MacDonald", "Grand Theft Auto 5", "MasterPiece", "Playstation 3 and Xbox 360", 10);
-            Reviews Bayonetta3 = new("Mithchell Saltzman", "Bayonetta 3", "Amazing", "Nintendo Switch", 9);
-            Reviews TotalWarWarhammer3 = new("Leana Hafer", "Total War Warhammer 3", "Amazing", "PC", 9);
-            Reviews HorizonForibbenWest = new("Simon Cardy", "Horizon Forbidden West", "Amazing", "Playstation 5", 9);
-            Reviews HaloInfinite = new("Ryan Mccaffrey", "Halo Infinite Single Player", "Amazing", "Xbox Series X and PC", 9);
-            Reviews MetroidDread = new("Samuel Claiborn", "Metroid Dread", "Amazing", "Nintendo Switch", 9);
-            Reviews TalesOfArise = new("Terence Wiggins", "Tales of Arise", "Amazing", "Playstation 5, Xbox Series X, and PC", 9);
-            Reviews GodOfWarRagnarok = new("Simon Cardy", "God Of War Ragnarok", "MasterPiece", "Playstation 5", 10);
-            Reviews DeathLoop = new("Matt Purslow", "DeathLoop", "MasterPiece", "Playstation 5", 10);
-            Reviews RatchetAndClankRiftApart = new("Jonathon Dornbush", "Ratchet And Clank Rift Apart", "Amazing", "Playstation 5", 9);
-            Reviews ItTakesTwo = new("Tristan Ogilive", "It Takes Two", "Amazing", "Xbox Series X", 9);
-            Reviews Hitman3 = new("Luke Reilly", "Hitman 3", "Amazing", "Xbox Series X", 9);
-            Reviews CyberPunk2077 = new("Tom Marks", "Cyberpunk 2077", "Amazing", "PC", 9);
-            Reviews DemonSouls = new("Mitchell Saltzman", "Demon Souls", "Amazing", "Playstation 5", 9);
-            Reviews MilesMorales = new("Jonathon Dornbush", "Marvel's Spider Man Miles Morales", "Amazing", "Playstation 5", 9);
-            Reviews Hades = new("Nick Limon", "Hades", "Amazing", "PC", 9);
-            Reviews GhostOfTsushima = new("Mitchell Saltzman", "Ghost Of Tsushima", "Amazing", "Playstation4 Pro", 9);
-            Reviews Valorant = new("Kyle Campbell", "Valorant", "Amazing", "PC", 9);
-            Reviews ResidentEvil3 = new("Lucy O'Brien", "Resident Evil 3", "Amazing", "Playstation 4 Pro", 9);
-            Reviews DoomEternal = new("Ryan Mccaffrey", "Doom Eternal", "Amazing", "PC", 9);
-            Reviews AnimalCrossingNewHorizon = new("Samuel Claiborn", "Animal Crossing New Horizons", "Amazing", "Nintendo Switch", 9);
-            Reviews Nioh2 = new("Mitchell Saltzman", "Nioh 2", "Amazing", "Playstation 4", 9);
-            Reviews OriAndTheWillOfTheWisps = new("Brandin Tyrrel", "Ori And The Will Of The Wisps", "Amazing", "Xbox One X", 9);
-            Reviews StarWarsJediFallenOrder = new("Dan Stapleton", "Star Wars Jedi Fallen Order", "Amazing", "PC,Xbox One X, and Playstation 4 Pro", 9);
-            Reviews PokemonSword = new("Casey Defreitas", "Pokemon Sword", "Amazing", "Nintendo Switch", 9);
-            Reviews PokemonShield = new("Casey Defreitas", "Pokemon Shield", "Amazing", "Nintendo Switch", 9);
-            Reviews LinksAwakening = new("Joe Skrebels", "The Legend Of Zelda Link's Awakening", "Amazing", "Nintendo Switch", 9);
-            Reviews Gears5 = new("Ryan Mccaffrey", "Gears 5", "Amazing", "Xbox One X", 9);
-            Reviews Borderlands3 = new("James Duggan", "Borderlands 3", "Amazing", "PC", 9);
-            Reviews AstralChain = new("Steven Petite", "Astral Chain", "Amazing", "Nintendo Switch", 9);
-            Reviews FireEmblemThreeHouses = new("Brendan Graeber", "Fire Emblem Three Houses", "Amazing", "Nintendo Switch", 9.5);
-            Reviews SekiroShadowsDieTwice = new("Brandin Tyrrel", "Sekiro Shadows Die Twice", "Amazing", "Playstation 4 Pro", 9.5);
-            Reviews DevilMayCry5 = new("Mitchell Saltzman", "Devil May Cry 5", "Amazing", "Xbox One X", 9.5);
-            Reviews ResidentEvil2 = new("Daemon Hatfield", "Resident Evil 2", "Amazing", "Xbox One,Playstation 4, and PC", 9);
-            Reviews SuperSmashBrosUltimate = new("Tom Marks", "Super Smash Bros Ultimate", "Amazing", "Nintendo Switch", 9.4);
-            Reviews AssassinsCreedOdyssey = new("Brandin Tyrrel", "Assassin's Creed Odyssey", "Amazing", "Playstation 4 Pro,Playstation 4, Xbox One X, and Xbox One", 9.2);
-            Reviews ShadowOfTheTombRaider = new("Lucy O'Brien", "Shadow Of The Tomb Raider", "Amazing", "Xbox One X", 9);
-            Reviews DeadCells = new("Brandin Tyrrel", "Dead Cells", "Amazing", "Xbox One X,Playstation 4 Pro,PC,and Nintendo Switch", 9.5);
-            Reviews OctopathTraveler = new("Seth G.Macy", "Octopath Traveler", "Amazing", "Nintendo Switch", 9.3);
-            Reviews HollowKinght = new("Tom Marks", "Hollow Knights", "Amazing", "PC and Nintendo Switch", 9.4);
-            Reviews MonsterHunterWorld = new("Joe Skrebels", "Monster Hunter World", "Amazing", "Playstaion 4 Pro", 9.5);
-            Reviews AssassinsCreedOrigins = new("Alanah Pearce", "Assassin's Creed Origins", "Amazing", "Xbox One X, Playstation 4, and PC", 9);
-            Reviews MarioKart8Deluxe = new("Jose Otero", "Mario Kart 8 Deluxe", "Amazing", "Nintendo Switch", 9.3);
-            Reviews Persona5 = new("Andrew Goldfarb", "Persona 5", "Amazing", "Playstation 4", 9.7);
-            Reviews HorizonZeroDawn = new("Lucy O'Brien", "Horizon Zero Dawn", "Amazing", "Playstation 4", 9.3);
-            Reviews Nioh = new("Chloi Rad", "Nioh", "Amazing", "Playstation 4", 9.6);
-            Reviews GearsOfWar4 = new("Ryan Mccaffrey", "Gears Of War 4", "Amazing", "Xbox One", 9.2);
-            Reviews Overwatch = new("Vince Ingenito", "Overwatch", "Amazing", "PC,Xbox One, and Playstation 4", 9.4);
-            Reviews Uncharted4 = new("Lucy O'Brien", "Uncharted 4 A Thief's End", "Amazing", "Playstation 4", 9);
-            Reviews RatchetAndClank = new("Marty Sliva", "Ratchet And Clank", "Amazing", "Playstation 4", 9);
-            Reviews DarkSouls3 = new("Chloi Rad", "Dark Souls 3", "Amazing", "PC", 9.5);
-            Reviews Xcom2 = new("Dan Stapleton", "Xcom 2", "Amazing", "PC", 9.3);
-            Reviews Fallout4 = new("Dan Stapleton", "Fallout 4", "Amazing", "Xbox One,Playstation 4, and PC", 9.5);
-            Reviews Halo5Guardians = new("Brian Albert", "Halo 5 Guardians", "Amazing", "Xbox One", 9);
-            Reviews UnchartedTheNathanDrakeCollection = new("Vince Ingenito", "Uncharted The Nathan Drake Collection", "Amazing", "Playstation 4", 9);
-            Reviews TheWitcher3 = new("Vince Ingenito", "The Witcher 3", "Amazing", "Playstation 4", 9.3);
-            Reviews CultOfTheLamb = new("Tom Marks", "Cult Of The Lamb", "Great", "PC", 8);
-            Reviews TinyTinasWonderLand = new("Travis Northup", "Tiny Tina's Wonderlands", "Great", "PC", 8);
-            Reviews ShinMegamiTenseiV = new("Leana Hafer", "Shin Megami Tensei V", "Great", "Nintendo Switch", 8);
-            Reviews GuardiansOfTheGalaxy = new("Tom Marks", "Marvel's Guardians Of The Galaxy", "Great", "Playstation 5", 8);
-            Reviews Back4Blood = new("Kyle Campbell", "Back 4 Blood", "Great", "PC", 8);
-            Reviews FarCry6 = new("Jon Ryan", "Far Cry 6", "Great", "Xbox Series X", 8);
-            Reviews KenaBridgeOfSpirits = new("Mitchell Saltzman", "Kena Bridge Of Spirits", "Great", "Playstation 5", 8);
-            Reviews ScarletNexus = new("Mitchell Saltzman", "Scarlet Nexus", "Great", "Playstation 5", 8);
-            Reviews ResidentEvilVillage = new("Tristan Ogilvie", "Resident Evil Village", "Great", "Playstation 5", 8);
-            Reviews Returnal = new("Mitchell Saltzman", "Returnal", "Great", "Playstation 5", 8);
-            Reviews SackBoyABigAdventure = new("Tom Marks", "Sackboy A Big Adventure", "Great", "Playstation 5", 8);
-            Reviews BugSnax = new("Simon Cardy", "Bugsnax", "Great", "Playstation 5", 8);
-            Reviews AssassinsCreedValhalla = new("Brandin Tyrrel", "Assassins Creed Valhalla", "Great", "Xbox Series X", 8);
-            Reviews WatchDogsLegion = new("Dan Stapleton", "Watch Dogs Legion", "Great", "PC", 8);
-            Reviews Crash4 = new("Jonathon Dornbush", "Crash Bandicoot 4 Its About Time", "Great", "Playstation 4 Pro", 8);
-            Reviews WasteLand3 = new("Leif Johnson", "Wasteland 3", "Great", "PC", 8);
-            Reviews FinalFantasy7Remake = new("Tom Marks", "Final Fantasy 7 Remake", "Great", "Playstation 4 Pro", 8);
-            Reviews CallOfDutyModernWarfare = new("Ryan Mccaffrey", "Call Of Duty Modern Warfare", "Great", "Xbox Series X", 8.2);
-            Reviews Control = new("Jonathon Dornbush", "Control", "Great", "Playstation 4 Pro", 8);
-            Reviews Rage2 = new("Dan Stapleton", "Rage 2", "Great", "PC", 8);
-            Reviews MetroExodus = new("Tristan Ogilvie", "Metro Exodus", "Great", "Xbox One x", 8.5);
-            Reviews SpiderMan = new("Jonathon Dornbush", "Marvel's Spider Man", "Great", "Playstation 4 Pro", 8.7);
-            Reviews KingdomHearts3 = new("Jonathon Dornbush", "Kingdom Hearts 3", "Great", "Playstation 4 Pro", 8.7);
-            Reviews PokemonLetsGoPikachu = new("Miranda Sanchez", "Pokemon Let's Go Pikachu", "Great", "Nintendo Switch", 8.3);
-            Reviews PokemonLetsGoEevee = new("Miranda Sanchez", "Pokemon Let's Go Eevee", "Great", "Nintendo Switch", 8.3);
-            Reviews Dragonquest = new("Jared Petty", "Dragon Quest XI Echoes Of An Elusive Age", "Great", "Playstation 4", 8.8);
-            Reviews FarCry5 = new("Daemon Hatfield", "Far Cry 5", "Great", "Playstation 4 and Xbox One", 8.9);
-            Reviews Cuphead = new("Joe Skrebels", "Cuphead", "Great", "Xbox One", 8.8);
-            Reviews SoulHacker2 = new("Cameron Hawkins", "Soul Hackers 2", "Good", "Xbox Series X", 7);
-            Reviews GhostWireToyko = new("Cam Shea", "Ghostwire Tokyo", "Good", "Playation 5", 7);
-            Reviews DyingLight2 = new("Travis Northup", "Dying Light 2 Stay Human", "Good", "Xbox Series X", 7);
-            Reviews PokemonLegendsArceus = new("Rebekah Valentine", "Pokemon Legends Arceus", "Good", "Nintendo Switch", 7);
-            Reviews BattleField2042 = new("stella Chung", "Battlefield 2042", "Good", "PC", 7);
-            Reviews Outiders = new("Jon Ryan", "Outriders", "Good", "PC", 7);
-            Reviews ImmortalsFenyxRising = new("Cam Shea", "Immortals Fenyx Rising", "Good", "Xbox Series X", 7);
+            Reviews PlagueTaleRequim = new("Richard Wakeling", "A Plague Tale Requiem", "A Plague Tale: Requiem eventually expands in scope and improves upon its predecessor's stealth action, but the heartrending story of two siblings battling against the odds is where it truly excels.", "PC", 7);
+            Reviews SparksofHope = new("Steve Watts", "Mario + Rabbids: Sparks of Hope", "Mario + Rabbids: Sparks of Hope is an improvement over its predecessor in every way, and one of the best modern Mario spin-offs.", "Nitendo Switch", 9);
+            Reviews Overwatch2 = new("Jessica Howard", "Overwatch 2", "Overwatch 2 improves upon the core gameplay and characters fans love, but loses some of its predecessor's spirit in the process.", "PC", 8);
+            Reviews Fifa23 = new("Richard Wakeling", "Fifa 23", "FIFA 23 makes incremental improvements to last year's game, but the looming presence of Ultimate Team's microtransactions cast a shadow over everything.", "Playstation 5", 7);
+            Reviews Xenoblade3 = new("Jake Dekker", "Xenoblade 3", "Xenoblade Chronicles 3 is another heartfelt adventure paired with some of the best combat in the series.", "Nintendo Switch", 8);
+            Reviews EldenRing = new("Tamoor Hussain", "Elden Ring", "From Software's latest is a masterpiece of open-world design that places exploration and player agency at the heart of the experience.", "PC", 10);
+            Reviews TheLastOfUsPart2 = new("Kallie Plagge", "The Last Of Us Part 2", "The Last of Us Part II is messy, bleak, and brutal.", "Playstation 4", 8);
+            Reviews Persona5Royal = new("Michael Higham", "Persona 5 Royal", "Changing the world takes heart.", "Playstation 4", 10);
+            Reviews RedDeadRedemption2 = new("Kallie Plagge", "Red Dead Redemption2", "Yee (and I cannot stress this enough) haw.", "Playstation 4 and Xbox One", 9);
+            Reviews GodOfWar = new("Peter Brown", "God of War", "The power of myth.", "Playstation 4", 9);
+            Reviews Celeste = new("Oscar Dayus", "Celeste", "A game about climbing a mountain", "Nintendo Switch", 10);
+            Reviews SuperMarioOdyssey = new("Peter Brown", "Super Mario Odyssey", "Shoot for the moon.", "Nintendo Switch", 10);
+            Reviews BreathOfTheWild = new("Peter Brown", "The Legend Of Zelda Breath Of The Wild", "A breathtaking masterpiece.", "Nintendo Switch", 10);
+            Reviews MetalGearSolid5 = new("Peter Brown", "Metal Gear Solid 5 The Phantom Pain", "As it was in the beginning, so shall it be in the end.", "Playstaion 4", 10);
+            Reviews GrandTheftAuto5 = new("Carolyn Petit", "Grand Theft Auto 5", "City of Angels and Demons", "Playstation 3", 9);
+            Reviews Bayonetta3 = new("Jessica Howard", "Bayonetta 3", "Bayonetta 3 is a show-stopping spectacle that feels familiar in all the right ways while also adding mechanics that are sure to delight old and new fans alike.", "Nintendo Switch", 9);
+            Reviews TotalWarWarhammer3 = new("Daniel Starkey", "Total War Warhammer 3", "Skulls for the Skull Throne!", "PC", 9);
+            Reviews HorizonForibbenWest = new("Phil Hornshaw", "Horizon Forbidden West", "Horizon Forbidden West sometimes packs in so much that it gets in its own way, but the many well-drawn characters populating its quests keep it compelling.", "Playstation 5", 8);
+            Reviews HaloInfinite = new("Jordan Ramee", "Halo Infinite Single Player", "Halo Infinite transforms the series' two-decade-old formula for the better, giving protagonist Master Chief more characterization and implementing an open world.", "Xbox Series X", 9);
+            Reviews MetroidDread = new("Steven Petite", "Metroid Dread", "Metroid Dread is a stellar adventure that sticks to its roots and is better off because of it", "Nintendo Switch", 8);
+            Reviews TalesOfArise = new("Heidi Kemps", "Tales of Arise", "Tales of Arise is a lengthy, beautiful RPG adventure, but has messy combat and uneven pacing on occasion.", "Playstation 5", 7);
+            Reviews GodOfWarRagnarok = new("Tamoor Hussain", "God Of War Ragnarok", "Sony Santa Monica brings back what made the original God of War reboot great and delivers another fantastic story with exceptional writing.", "Playstation 5", 9);
+            Reviews DeathLoop = new("Tamoor Hussain", "DeathLoop", "Arkane Lyon's follow-up to Dishonored is a masterclass in open-ended action game design.", "Playstation 5", 10);
+            Reviews RatchetAndClankRiftApart = new("Steve Watts", "Ratchet And Clank Rift Apart", "Ratchet & Clank: Rift Apart looks and plays better than ever thanks to new-generation hardware, but it's still the same lovable, goofy series at heart.", "Playstation 5", 9);
+            Reviews ItTakesTwo = new("Andrew King", "It Takes Two", "It Takes Two is out of sight.", "Xbox Series X, PC, Playstation 4 and Xbox One", 9);
+            Reviews Hitman3 = new("Phil Hornshaw", "Hitman 3", "Hitman 3 doesn't make changes to the World of Assassination formula--instead, it refines it through excellent level design.", "PC", 9);
+            Reviews CyberPunk2077 = new("Kallie Plagge", "Cyberpunk 2077", "Cyberpunk 2077 has standout side quests and strong main characters, though its buggy, superficial world and lack of purpose bring it down.", "PC", 7);
+            Reviews DemonSouls = new("Kevin VanOrd", "Demon Souls", "Brutally challenging and utterly engrossing, this innovative role-playing game is one of the year's best.", "Playstation 5", 9);
+            Reviews MilesMorales = new("Jordan Ramee", "Marvel's Spider Man Miles Morales", "Marvel's Spider-Man: Miles Morales sticks a bit too close to its predecessor in terms of mechanics, but manages to stand on its own through its story and characters.", "Playstation 4", 7);
+            Reviews Hades = new("Suriel Vazquez", "Hades", "The reason to keep coming back to Hades isn't just the thrills you'll get battling through hell, but the characters and stories you learn about along the way.", "PC and Nintendo Switch", 9);
+            Reviews GhostOfTsushima = new("Edmond Tran", "Ghost Of Tsushima", "Ghost of Tsushima has some dull edges, but strikes a lot of highs with its cinematic stylings.", "Playstation 4", 7);
+            Reviews Valorant = new("Michael Higham", "Valorant", "Valorant hooks you match after match with tight, tactical gameplay, albeit in rather barebones fashion.", "PC", 7);
+            Reviews ResidentEvil3 = new("Alessandro Fillari", "Resident Evil 3", "The remake of Resident Evil 3 makes a strong first impression, and its online companion game Resistance has some interesting ideas, but they both struggle to follow through.", "Playstation 4", 6);
+            Reviews DoomEternal = new("Phil Hornshaw", "Doom Eternal", "Doom Eternal intensifies the battles with Hell's hordes by requiring you to constantly calculate the best ways to rip, tear, and stay alive.", "PC,Nintendo Switch, Xbox One, and playstation 4", 8);
+            Reviews AnimalCrossingNewHorizon = new("Kallie Plagge", "Animal Crossing New Horizons", "Animal Crossing: New Horizons gives you more creative freedom and more to do on any given day while preserving what makes the series special.", "Nintendo Switch", 9);
+            Reviews Nioh2 = new("Mike Epstein", "Nioh 2", "Nioh 2 is even tougher than the original, and you'll get on its level or happily die trying.", "Playstation 4", 8);
+            Reviews OriAndTheWillOfTheWisps = new("Steve Watts", "Ori And The Will Of The Wisps", "oon Studios returns with a sophomore effort every bit as graceful and lovely as Ori and the Blind Forest.", "Xbox One ", 9);
+            Reviews StarWarsJediFallenOrder = new("Phil Hornshaw", "Star Wars Jedi Fallen Order", "By increasing difficulty, ratcheting back Force powers, and developing compelling characters, Jedi: Fallen Order delivers a worthy expansion to the Star Wars galaxy.", "Playstation 4 ", 8);
+            Reviews PokemonSword = new("Kallie Plagge", "Pokemon Sword", "More like Gen M8.", "Nintendo Switch", 9);
+            Reviews PokemonShield = new("Kallie Plagge", "Pokemon Shield", "More like Gen M8.", "Nintendo Switch", 9);
+            Reviews LinksAwakening = new("Peter Brown", "The Legend Of Zelda Link's Awakening", "The definitive version of the beloved Game Boy classic arrives on Switch.", "Nintendo Switch", 8);
+            Reviews Gears5 = new("Phil Hornshaw", "Gears 5", "With new additions, Gears 5 makes its cover-shooter core more adaptive to different playstyles.", "Xbox One and PC", 7);
+            Reviews Borderlands3 = new("Jordan Ramee", "Borderlands 3", "What is up, brothers and sisters? God-Queen Tyreen coming to ya live. We got something real special for ya today.", "PC", 8);
+            Reviews AstralChain = new("Michael Higham", "Astral Chain", "There's nothing quite like the look and feel of Astral Chain.", "Nintendo Switch", 8);
+            Reviews FireEmblemThreeHouses = new("kallie Plage", "Fire Emblem Three Houses", "I live to teach.", "Nintendo Switch", 9);
+          
+            Reviews SekiroShadowsDieTwice = new("", "Sekiro Shadows Die Twice", "Amazing", "Playstation 4 Pro", 9.5);
+            Reviews DevilMayCry5 = new("", "Devil May Cry 5", "Amazing", "Xbox One X", 9.5);
+            Reviews ResidentEvil2 = new("", "Resident Evil 2", "Amazing", "Xbox One,Playstation 4, and PC", 9);
+            Reviews SuperSmashBrosUltimate = new("", "Super Smash Bros Ultimate", "Amazing", "Nintendo Switch", 9.4);
+            Reviews AssassinsCreedOdyssey = new("", "Assassin's Creed Odyssey", "Amazing", "Playstation 4 Pro,Playstation 4, Xbox One X, and Xbox One", 9.2);
+            Reviews ShadowOfTheTombRaider = new("", "Shadow Of The Tomb Raider", "Amazing", "Xbox One X", 9);
+            Reviews DeadCells = new("", "Dead Cells", "Amazing", "Xbox One X,Playstation 4 Pro,PC,and Nintendo Switch", 9.5);
+            Reviews OctopathTraveler = new("", "Octopath Traveler", "Amazing", "Nintendo Switch", 9.3);
+            Reviews HollowKinght = new("", "Hollow Knights", "Amazing", "PC and Nintendo Switch", 9.4);
+            Reviews MonsterHunterWorld = new("", "Monster Hunter World", "Amazing", "Playstaion 4 Pro", 9.5);
+            Reviews AssassinsCreedOrigins = new("", "Assassin's Creed Origins", "Amazing", "Xbox One X, Playstation 4, and PC", 9);
+            Reviews MarioKart8Deluxe = new("", "Mario Kart 8 Deluxe", "Amazing", "Nintendo Switch", 9.3);
+            Reviews Persona5 = new("", "Persona 5", "Amazing", "Playstation 4", 9.7);
+            Reviews HorizonZeroDawn = new("", "Horizon Zero Dawn", "Amazing", "Playstation 4", 9.3);
+            Reviews Nioh = new("", "Nioh", "Amazing", "Playstation 4", 9.6);
+            Reviews GearsOfWar4 = new("", "Gears Of War 4", "Amazing", "Xbox One", 9.2);
+            Reviews Overwatch = new("", "Overwatch", "Amazing", "PC,Xbox One, and Playstation 4", 9.4);
+            Reviews Uncharted4 = new("", "Uncharted 4 A Thief's End", "Amazing", "Playstation 4", 9);
+            Reviews RatchetAndClank = new("", "Ratchet And Clank", "Amazing", "Playstation 4", 9);
+            Reviews DarkSouls3 = new("", "Dark Souls 3", "Amazing", "PC", 9.5);
+            Reviews Xcom2 = new("", "Xcom 2", "Amazing", "PC", 9.3);
+            Reviews Fallout4 = new("", "Fallout 4", "Amazing", "Xbox One,Playstation 4, and PC", 9.5);
+            Reviews Halo5Guardians = new("", "Halo 5 Guardians", "Amazing", "Xbox One", 9);
+            Reviews UnchartedTheNathanDrakeCollection = new("", "Uncharted The Nathan Drake Collection", "Amazing", "Playstation 4", 9);
+            Reviews TheWitcher3 = new("", "The Witcher 3", "Amazing", "Playstation 4", 9.3);
+            Reviews CultOfTheLamb = new("", "Cult Of The Lamb", "Great", "PC", 8);
+            Reviews TinyTinasWonderLand = new("", "Tiny Tina's Wonderlands", "Great", "PC", 8);
+            Reviews ShinMegamiTenseiV = new("", "Shin Megami Tensei V", "Great", "Nintendo Switch", 8);
+            Reviews GuardiansOfTheGalaxy = new("", "Marvel's Guardians Of The Galaxy", "Great", "Playstation 5", 8);
+            Reviews Back4Blood = new("", "Back 4 Blood", "Great", "PC", 8);
+            Reviews FarCry6 = new("", "Far Cry 6", "Great", "Xbox Series X", 8);
+            Reviews KenaBridgeOfSpirits = new("", "Kena Bridge Of Spirits", "Great", "Playstation 5", 8);
+            Reviews ScarletNexus = new("", "Scarlet Nexus", "Great", "Playstation 5", 8);
+            Reviews ResidentEvilVillage = new("", "Resident Evil Village", "Great", "Playstation 5", 8);
+            Reviews Returnal = new("", "Returnal", "Great", "Playstation 5", 8);
+            Reviews SackBoyABigAdventure = new("", "Sackboy A Big Adventure", "Great", "Playstation 5", 8);
+            Reviews BugSnax = new("", "Bugsnax", "Great", "Playstation 5", 8);
+            Reviews AssassinsCreedValhalla = new("", "Assassins Creed Valhalla", "Great", "Xbox Series X", 8);
+            Reviews WatchDogsLegion = new("", "Watch Dogs Legion", "Great", "PC", 8);
+            Reviews Crash4 = new("", "Crash Bandicoot 4 Its About Time", "Great", "Playstation 4 Pro", 8);
+            Reviews WasteLand3 = new("", "Wasteland 3", "Great", "PC", 8);
+            Reviews FinalFantasy7Remake = new("", "Final Fantasy 7 Remake", "Great", "Playstation 4 Pro", 8);
+            Reviews CallOfDutyModernWarfare = new("", "Call Of Duty Modern Warfare", "Great", "Xbox Series X", 8.2);
+            Reviews Control = new("", "Control", "Great", "Playstation 4 Pro", 8);
+            Reviews Rage2 = new("", "Rage 2", "Great", "PC", 8);
+            Reviews MetroExodus = new("", "Metro Exodus", "Great", "Xbox One x", 8.5);
+            Reviews SpiderMan = new("", "Marvel's Spider Man", "Great", "Playstation 4 Pro", 8.7);
+            Reviews KingdomHearts3 = new("", "Kingdom Hearts 3", "Great", "Playstation 4 Pro", 8.7);
+            Reviews PokemonLetsGoPikachu = new("", "Pokemon Let's Go Pikachu", "Great", "Nintendo Switch", 8.3);
+            Reviews PokemonLetsGoEevee = new("", "Pokemon Let's Go Eevee", "Great", "Nintendo Switch", 8.3);
+            Reviews Dragonquest = new("", "Dragon Quest XI Echoes Of An Elusive Age", "Great", "Playstation 4", 8.8);
+            Reviews FarCry5 = new("", "Far Cry 5", "Great", "Playstation 4 and Xbox One", 8.9);
+            Reviews Cuphead = new("", "Cuphead", "Great", "Xbox One", 8.8);
+            Reviews SoulHacker2 = new("", "Soul Hackers 2", "Good", "Xbox Series X", 7);
+            Reviews GhostWireToyko = new("", "Ghostwire Tokyo", "Good", "Playation 5", 7);
+            Reviews DyingLight2 = new("", "Dying Light 2 Stay Human", "Good", "Xbox Series X", 7);
+            Reviews PokemonLegendsArceus = new("", "Pokemon Legends Arceus", "Good", "Nintendo Switch", 7);
+            Reviews BattleField2042 = new("", "Battlefield 2042", "Good", "PC", 7);
+            Reviews Outiders = new("", "Outriders", "Good", "PC", 7);
+            Reviews ImmortalsFenyxRising = new("", "Immortals Fenyx Rising", "Good", "Xbox Series X", 7);
             Reviews APlagueTaleInnocence = new("Steven Petite", "A Plague Tale Innocence", "Good", "Playstation 4", 7);
             Reviews FarCryNewDawn = new("Daemon Harfield", "Far Cry New Dawn", "Good", "Playstation 4 Pro,Xbox One X, and PC", 7.5);
             Reviews BattlefieldV = new("James Duggan", "Battlefield V", "Good", "PC", 7.5);
@@ -153,9 +147,9 @@ namespace Video_Game_Reviewer
             {"Mario + Rabbids Sparks of Hope", SparksofHope },
             {"Overwatch 2",Overwatch2 },
             {"Fifa 23",Fifa23 },
-            {"The Last of Us Part 1",LastOfUsPart1 },
+          
             {"Xenoblade 3",Xenoblade3 },
-            {"The Quarry",TheQuarry },
+          
             {"Elden Ring",EldenRing },
             {"The Last Of Us Part 2",TheLastOfUsPart2 },
             {"Persona 5 Royal",Persona5Royal },
