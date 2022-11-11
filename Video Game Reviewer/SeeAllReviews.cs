@@ -4,7 +4,9 @@ namespace Video_Game_Reviewer
 {
     public class SeeAllReviews
     {
-        public static void SeeAllReviewsGames()
+        //These methods take all the reviews in a dictionary and allows them all to be seen when the option see all reviews is selected
+       
+        /*public static void SeeAllReviewsGames()
         {
             var result = ReviewRepo.IGNReviews().Union(EasyAlliesReviewsRepo.EasyAllies()).Union(GameSpotReviewRepo.GameSpot()).Union(AngryJoeReviewRepo.AngryJoe())
                 .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
@@ -13,7 +15,7 @@ namespace Video_Game_Reviewer
             {
                 Console.WriteLine(review);
             }
-        }
+        }*/
 
         public static void SeeAllIgnReviews()
         {
@@ -61,16 +63,7 @@ namespace Video_Game_Reviewer
             }
         }
 
-        public static void ScoreSearching()
-        {
-            var result = SearchByScoreRepos.ScoreSearch10()
-               .GroupBy(d => d.Key).ToDictionary(d => d.Key, d => d.First().Value);
-
-            foreach (Reviews review in result.Values)
-            {
-                Console.WriteLine(review);
-            }
-        }
+       
         public static void MyReviews()
         {
             var result = MyReviewsRepo.Wreview
