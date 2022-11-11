@@ -114,30 +114,30 @@
             Reviews ImmortalsFenyxRising = new("Suriel Vazquez", "Immortals Fenyx Rising", "It doesn't match the highs from the games it cribs from, but Immortals Fenyx Rising is a breezy, lighthearted romp.", "Xbox Series X and Playstation 5", 7);
             Reviews APlagueTaleInnocence = new("Khee Hoon Chan", "A Plague Tale Innocence", "Bleak and unsettling.", "Playstation 4, Xbox One, and PC", 8);
           
-            Reviews FarCryNewDawn = new("", "Far Cry New Dawn", "Good", "Playstation 4 Pro,Xbox One X, and PC", 7.5);
-            Reviews BattlefieldV = new("", "Battlefield V", "Good", "PC", 7.5);
-            Reviews Hitman2 = new("", "Hitman 2", "Good", "Xbox One X, Playstation 4 and PC", 7.7);
-            Reviews StateOfDecay2 = new("Dan Stapleton", "State Of Decay 2", "Good", "Xbox One", 7.5);
-            Reviews MarioRabbidsKingdomBattle = new("Dan Stapleton", "Mario + Rabbids Kingdom Battle", "Good", "Nintendo Switch", 7.7);
-            Reviews UnchartedLostLegacy = new("Marty Sliva", "Uncharted The Lost Legacy", "Good", "Playstation 4", 7.5);
-            Reviews MassEffectAndromeda = new("Dan Stapleton", "Mass Effect Andromeda", "Good", "Playstation 4 and Xbox One", 7.7);
-            Reviews GhostReconWildlands = new("Brian Albert", "Ghost Recon Wildlands", "Good", "Playstation 4, Xbox One, and PC", 7.9);
-            Reviews ResidentEvil7 = new("Chloi Rad", "Resident Evil 7", "Good", "Playstation4, Playstation 4 Pro,Playstation VR, and Xbox One", 7.7);
-            Reviews BioMutant = new("Luke Reilly", "Biomutant", "Okay", "Xbox Series X", 6);
-            Reviews Avengers = new("Tom Marks", "Marvel's Avengers", "Okay", "Playstation 4 Pro", 6);
-            Reviews Deathstranding = new("Tristan Ogilive", "Death Stranding", "Okay", "Playstation 4 Pro", 6.8);
-            Reviews Medievil = new("Travis Northup", "Medievil", "Okay", "Playstation 4 Pro", 6.5);
-            Reviews DaysGone = new("Lucy O'Brien", "Days Gone", "Okay", "Playstation 4 Pro", 6.5);
-            Reviews GhostReconBreakpoint = new("Brandin Tyrrel", "Ghost Recon Breakpoint", "Okay", "Xbox One X", 6);
-            Reviews WolfenSteinYoungBlood = new("Dan Stapleton", "Wolfenstein Youngblood", "Okay", "PC", 6.5);
-            Reviews Anthem = new("James Duggan", "Anthem", "Okay", "PC", 6.5);
-            Reviews StarWarsBattlefront2 = new("Tom Marks", "Star Wars Battlefront 2", "Okay", "PC", 6.5);
-            Reviews GrandTheftAutoTheTrilogy = new("Tristan Ogilive", "Grand Theft Auto The Trilogy", "Mediocre", "Playstation 5", 5);
-            Reviews Shenmue3 = new("Kyle Hilliard", "Shenmue 3", "Mediocre", "Playstation 4", 5.9);
-            Reviews Crackdown3 = new("Brandin Tyrrel", "Crackdown 3", "Mediocre", "Xbox One X and PC", 5);
-            Reviews Fallout76 = new("Brandin Tyrrel", "Fallout 76", "Mediocre", "PC,Xbox One X, and Playstation 4 Pro", 5);
-            Reviews AlienIsolation = new("Ryan Mccaffrey", "Alien Isolation", "Mediocre", "Xbox One, Playstation 4, and PC", 5);
-            Reviews BabylonsFall = new("Justin Koreis", "Babylons Fall", "Bad", "Playstation 5", 4);
+            Reviews FarCryNewDawn = new("Edmond Tran", "Far Cry New Dawn", "Tape it up.", "Playstation 4,Xbox One X, and PC", 6);
+            Reviews BattlefieldV = new("Michael higham", "Battlefield V", "Beauty in the wake of utter destruction.", "PC", 8);
+            Reviews Hitman2 = new("Edmond Tran", "Hitman 2", "Hitman baby, one more time.", "Xbox One X, Playstation 4 and PC", 8);
+            Reviews StateOfDecay2 = new("Alessandro Barbosa", "State Of Decay 2", "Zombie pest control.", "Xbox One and PC", 5);
+            Reviews MarioRabbidsKingdomBattle = new("Edmond Tran", "Mario + Rabbids Kingdom Battle", "A new kind of Mario party", "Nintendo Switch", 9);
+            Reviews UnchartedLostLegacy = new("Miguel Concepcion", "Uncharted The Lost Legacy", "Lost and found.", "Playstation 4", 9);
+            Reviews MassEffectAndromeda = new("Scott ButterWorth", "Mass Effect Andromeda", "The fault in our stars.", "Playstation 4", 6);
+            Reviews GhostReconWildlands = new("Miguel Concepcion", "Ghost Recon Wildlands", "Safety in numbers.", "Playstation 4, Xbox One, and PC", 7);
+            Reviews ResidentEvil7 = new("", "Resident Evil 7 Biohazard", "", "Playstation4, Playstation 4 Pro,Playstation VR, and Xbox One", 7.7);
+            Reviews BioMutant = new("", "Biomutant", "", "Xbox Series X", 6);
+            Reviews Avengers = new("", "Marvel's Avengers", "", "Playstation 4 Pro", 6);
+            Reviews Deathstranding = new("", "Death Stranding", "", "Playstation 4 Pro", 6.8);
+            Reviews Medievil = new("", "Medievil", "", "Playstation 4 Pro", 6.5);
+            Reviews DaysGone = new("", "Days Gone", "", "Playstation 4 Pro", 6.5);
+            Reviews GhostReconBreakpoint = new("", "Ghost Recon Breakpoint", "", "Xbox One X", 6);
+            Reviews WolfenSteinYoungBlood = new("", "Wolfenstein Youngblood", "", "PC", 6.5);
+            Reviews Anthem = new("", "Anthem", "", "PC", 6.5);
+            Reviews StarWarsBattlefront2 = new("", "Star Wars Battlefront 2", "", "PC", 6.5);
+            Reviews GrandTheftAutoTheTrilogy = new("", "Grand Theft Auto The Trilogy", "", "Playstation 5", 5);
+            Reviews Shenmue3 = new("", "Shenmue 3", "", "Playstation 4", 5.9);
+            Reviews Crackdown3 = new("", "Crackdown 3", "", "Xbox One X and PC", 5);
+            Reviews Fallout76 = new("", "Fallout 76", "", "PC,Xbox One X, and Playstation 4 Pro", 5);
+            Reviews AlienIsolation = new("", "Alien Isolation", "", "Xbox One, Playstation 4, and PC", 5);
+            Reviews BabylonsFall = new("", "Babylons Fall", "", "Playstation 5", 4);
 
             var reviews = new Dictionary<string, Reviews>
         {
@@ -260,7 +260,7 @@
             {"Uncharted The Lost Legacy",UnchartedLostLegacy },
             {"Mass Effect Andromeda",MassEffectAndromeda },
             {"Ghost Recon Wildlands",GhostReconWildlands },
-            {"Resident Evil 7",ResidentEvil7 },
+            {"Resident Evil 7 ",ResidentEvil7 },
             {"Biomutant",BioMutant },
             {"Avengers",Avengers },
             {"Death Stranding",Deathstranding },

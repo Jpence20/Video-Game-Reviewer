@@ -130,7 +130,7 @@ namespace Video_Game_Reviewer
             Reviews UnchartedLostLegacy = new("Marty Sliva", "Uncharted The Lost Legacy", "Good", "Playstation 4", 7.5);
             Reviews MassEffectAndromeda = new("Dan Stapleton", "Mass Effect Andromeda", "Good", "Playstation 4 and Xbox One", 7.7);
             Reviews GhostReconWildlands = new("Brian Albert", "Ghost Recon Wildlands", "Good", "Playstation 4, Xbox One, and PC", 7.9);
-            Reviews ResidentEvil7 = new("Chloi Rad", "Resident Evil 7", "Good", "Playstation4, Playstation 4 Pro,Playstation VR, and Xbox One", 7.7);
+            Reviews ResidentEvil7 = new("Chloi Rad", "Resident Evil 7 Biohazard", "Good", "Playstation4, Playstation 4 Pro,Playstation VR, and Xbox One", 7.7);
             Reviews BioMutant = new("Luke Reilly", "Biomutant", "Okay", "Xbox Series X", 6);
             Reviews Avengers = new("Tom Marks", "Marvel's Avengers", "Okay", "Playstation 4 Pro", 6);
             Reviews Deathstranding = new("Tristan Ogilive", "Death Stranding", "Okay", "Playstation 4 Pro", 6.8);
@@ -271,7 +271,7 @@ namespace Video_Game_Reviewer
             {"Uncharted The Lost Legacy",UnchartedLostLegacy },
             {"Mass Effect Andromeda",MassEffectAndromeda },
             {"Ghost Recon Wildlands",GhostReconWildlands },
-            {"Resident Evil 7",ResidentEvil7 },
+            {"Resident Evil 7 Biohazard",ResidentEvil7 },
             {"Biomutant",BioMutant },
             {"Avengers",Avengers },
             {"Death Stranding",Deathstranding },
