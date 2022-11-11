@@ -9,6 +9,6 @@
             this.DateWritten = dateWritten;
 
         }
-        public override string ToString() => $"\r\nReviewed by {Reviewer}:\r\nGame: {Game}\r\nReview: {Review}\r\nReviewed on:{system}\r\nReview Score:{Score}\r\n Date:{DateWritten}";
+        public override string ToString() => $"\r\nReviewed by {Reviewer}:\r\nGame: {Game}\r\nReview: {Review}\r\nReviewed on:{System}\r\nReview Score:{Score}\r\n Date:{DateWritten}";
     }
 }

@@ -111,7 +111,7 @@ namespace Video_Game_Reviewer
         public static string GetDate()
         {
            Console.WriteLine("When day did you beat this game? Please enter in dd/mm/year format");
-           Regex validateDate = new Regex("^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$");
+           
 
             string dateWritten = Console.ReadLine() ?? string.Empty;
 
@@ -131,7 +131,7 @@ namespace Video_Game_Reviewer
         public static string GetStartDate()
         {
             Console.WriteLine("What date did you start this game? Please enter in dd/mm/year format");
-            Regex validateDate = new Regex("^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$");
+           
 
             string dateStarted = Console.ReadLine() ?? string.Empty;
             if (Regex.Match(dateStarted, "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$").Success)

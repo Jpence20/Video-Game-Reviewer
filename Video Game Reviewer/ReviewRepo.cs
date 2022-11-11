@@ -62,14 +62,14 @@ namespace Video_Game_Reviewer
             Reviews AstralChain = new("Steven Petite", "Astral Chain", "Amazing", "Nintendo Switch", 9);
             Reviews FireEmblemThreeHouses = new("Brendan Graeber", "Fire Emblem Three Houses", "Amazing", "Nintendo Switch", 9.5);
             Reviews SekiroShadowsDieTwice = new("Brandin Tyrrel", "Sekiro Shadows Die Twice", "Amazing", "Playstation 4 Pro", 9.5);
-            Reviews DevilMayCry5 = new("Mitchell Saltzman", "Devil May Cry 5", "Amazing", "Xbox One X", 9.5);
+            Reviews DevilMayCry5 = new("Mitchell Saltzman", "Devil May Cry 5", "Amazing", "Xbox One ", 9.5);
             Reviews ResidentEvil2 = new("Daemon Hatfield", "Resident Evil 2", "Amazing", "Xbox One,Playstation 4, and PC", 9);
             Reviews SuperSmashBrosUltimate = new("Tom Marks", "Super Smash Bros Ultimate", "Amazing", "Nintendo Switch", 9.4);
-            Reviews AssassinsCreedOdyssey = new("Brandin Tyrrel", "Assassin's Creed Odyssey", "Amazing", "Playstation 4 Pro,Playstation 4, Xbox One X, and Xbox One", 9.2);
+            Reviews AssassinsCreedOdyssey = new("Brandin Tyrrel", "Assassin's Creed Odyssey", "Amazing", "Playstation 4 Pro,Playstation 4,and Xbox One", 9.2);
             Reviews ShadowOfTheTombRaider = new("Lucy O'Brien", "Shadow Of The Tomb Raider", "Amazing", "Xbox One X", 9);
             Reviews DeadCells = new("Brandin Tyrrel", "Dead Cells", "Amazing", "Xbox One X,Playstation 4 Pro,PC,and Nintendo Switch", 9.5);
             Reviews OctopathTraveler = new("Seth G.Macy", "Octopath Traveler", "Amazing", "Nintendo Switch", 9.3);
-            Reviews HollowKinght = new("Tom Marks", "Hollow Knights", "Amazing", "PC and Nintendo Switch", 9.4);
+            Reviews HollowKinght = new("Tom Marks", "Hollow Knight", "Amazing", "PC and Nintendo Switch", 9.4);
             Reviews MonsterHunterWorld = new("Joe Skrebels", "Monster Hunter World", "Amazing", "Playstaion 4 Pro", 9.5);
             Reviews AssassinsCreedOrigins = new("Alanah Pearce", "Assassin's Creed Origins", "Amazing", "Xbox One X, Playstation 4, and PC", 9);
             Reviews MarioKart8Deluxe = new("Jose Otero", "Mario Kart 8 Deluxe", "Amazing", "Nintendo Switch", 9.3);
@@ -85,7 +85,7 @@ namespace Video_Game_Reviewer
             Reviews Fallout4 = new("Dan Stapleton", "Fallout 4", "Amazing", "Xbox One,Playstation 4, and PC", 9.5);
             Reviews Halo5Guardians = new("Brian Albert", "Halo 5 Guardians", "Amazing", "Xbox One", 9);
             Reviews UnchartedTheNathanDrakeCollection = new("Vince Ingenito", "Uncharted The Nathan Drake Collection", "Amazing", "Playstation 4", 9);
-            Reviews TheWitcher3 = new("Vince Ingenito", "The Witcher 3", "Amazing", "Playstation 4", 9.3);
+            Reviews TheWitcher3 = new("Vince Ingenito", "The Witcher 3 Wild Hunt", "Amazing", "Playstation 4", 9.3);
             Reviews CultOfTheLamb = new("Tom Marks", "Cult Of The Lamb", "Great", "PC", 8);
             Reviews TinyTinasWonderLand = new("Travis Northup", "Tiny Tina's Wonderlands", "Great", "PC", 8);
             Reviews ShinMegamiTenseiV = new("Leana Hafer", "Shin Megami Tensei V", "Great", "Nintendo Switch", 8);
@@ -103,10 +103,10 @@ namespace Video_Game_Reviewer
             Reviews Crash4 = new("Jonathon Dornbush", "Crash Bandicoot 4 Its About Time", "Great", "Playstation 4 Pro", 8);
             Reviews WasteLand3 = new("Leif Johnson", "Wasteland 3", "Great", "PC", 8);
             Reviews FinalFantasy7Remake = new("Tom Marks", "Final Fantasy 7 Remake", "Great", "Playstation 4 Pro", 8);
-            Reviews CallOfDutyModernWarfare = new("Ryan Mccaffrey", "Call Of Duty Modern Warfare", "Great", "Xbox Series X", 8.2);
+            Reviews CallOfDutyModernWarfare = new("Ryan Mccaffrey", "Call Of Duty Modern Warfare", "Great", "Xbox Series ", 8.2);
             Reviews Control = new("Jonathon Dornbush", "Control", "Great", "Playstation 4 Pro", 8);
             Reviews Rage2 = new("Dan Stapleton", "Rage 2", "Great", "PC", 8);
-            Reviews MetroExodus = new("Tristan Ogilvie", "Metro Exodus", "Great", "Xbox One x", 8.5);
+            Reviews MetroExodus = new("Tristan Ogilvie", "Metro Exodus", "Great", "Xbox One X", 8.5);
             Reviews SpiderMan = new("Jonathon Dornbush", "Marvel's Spider Man", "Great", "Playstation 4 Pro", 8.7);
             Reviews KingdomHearts3 = new("Jonathon Dornbush", "Kingdom Hearts 3", "Great", "Playstation 4 Pro", 8.7);
             Reviews PokemonLetsGoPikachu = new("Miranda Sanchez", "Pokemon Let's Go Pikachu", "Great", "Nintendo Switch", 8.3);
@@ -226,7 +226,7 @@ namespace Video_Game_Reviewer
             {"Fallout 4",Fallout4 },
             {"Halo 5 Guardians",Halo5Guardians },
             {"Uncharted The Nathan Drake Collection",UnchartedTheNathanDrakeCollection },
-            {"The Witcher 3",TheWitcher3 },
+            {"The Witcher 3 Wild Hunt",TheWitcher3 },
             {"Cult Of The Lamb",CultOfTheLamb },
             {"Tiny Tinas Wonderland",TinyTinasWonderLand },
             {"Shin Megami Tensei V",ShinMegamiTenseiV },
