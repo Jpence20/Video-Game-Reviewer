@@ -3,6 +3,7 @@ using Microsoft.Win32.SafeHandles;
 using System.Collections.Specialized;
 using System.Xml.Schema;
 using System.Text.RegularExpressions;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Video_Game_Reviewer
 {
@@ -46,47 +47,27 @@ namespace Video_Game_Reviewer
             Reviews Deathstranding = new("AngryJoe", "Death Stranding", "This is not going to be everyone's cup of tea, with some giving this game or higher depending on how they like the game.", "Playstation 4", 7);
             Reviews CallOfDutyModernWarfare = new("AngryJoe", "Call Of Duty Modern Warfare", "Cod misses the top tier, but that doesn't mean its a bad game, its a good frame work to build on", "PC", 7);
             Reviews Medievil = new("Delrith", "Medievil", "The fact that the original was a great game and the fact that it's just general fun, but some points are deducted for some technical issues.", "Playstation 4 ", 7);
-            Reviews Borderlands3 = new("AngryJoe", "Borderlands 3", "", "PC", 7);
-            
-            
-            
-            Reviews Control = new("AngryJoe", "Control", "", "Playstation 4 Pro", 9);
-        
-           
-            Reviews APlagueTaleInnocence = new("", "A Plague Tale Innocence", "", "Playstation 4 Pro", 8);
-            Reviews DaysGone = new("", "Days Gone", " ", "Playstation 4 Pro", 7.5);
-            Reviews SekiroShadowsDieTwice = new("AngryJoe", "Sekiro Shadows Die Twice", "", "Playstation 4 Pro", 9.5);
-            Reviews DevilMayCry5 = new("AngryJoe", "Devil May Cry 5", "", "Xbox One X", 9);
-            Reviews Anthem = new("AngryJoe", "Anthem", "", "Playstation 4 Pro", 4);
-         
-          
-            Reviews FarCryNewDawn = new("", "Far Cry New Dawn", "", "Playstation 4 Pro", 7);
-            
-            Reviews ResidentEvil2 = new("AngryJoe", "Resident Evil 2", "", "Playstation 4 Pro", 9);
-            
-            Reviews Fallout76 = new("AngryJoe", "Fallout 76", "", "PC", 3);
-            Reviews BattlefieldV = new("AngryJoe", "BattleField V", "", "PC", 6);
-           
-            Reviews Hitman2 = new("", "Hitman 2", "", "Playstation 4 Pro", 8.0);
-            Reviews AssassinsCreedOdyssey = new("AngryJoe", "Assassin's Creed Odyssey", "", "Playstation 4 Pro", 7);
-            Reviews ShadowOfTheTombRaider = new("AngryJoe", "Shadow Of The Tomb Raider", "", "Xbox One X", 7);
-            Reviews SpiderMan = new("AngryJoe", "Marvel's Spider Man", "", "Playstation 4 Pro", 9);
-            
-            
-            Reviews StateOfDecay2 = new("", "State Of Decay 2", "", "PC and Xbox One X", 6.0);
-            
-            Reviews AssassinsCreedOrigins = new("", "Assassin's Creed Origins", "", "Xbox One X", 7);
-            Reviews Cuphead = new("", "Cuphead", "", "Xbox One", 9);
-            
-            
-            Reviews MassEffectAndromeda = new("AngryJoe", "Mass Effect Andromeda", "", "Playstation 4", 6);
-            Reviews BreathOfTheWild = new("AngryJoe", "The Legend Of Zelda Breath Of The Wild", "", "Nintendo Switch", 9);
-            
-            
+            Reviews Borderlands3 = new("AngryJoe", "Borderlands 3", "BadAss Seal of Approval,It should be experienced even with the the weak story and writing", "PC", 8);
+            Reviews Control = new("AngryJoe", "Control", "So of the annoyances of the map, dialouge, and middle section, bring down what could have been a great game.", "Playstation 4", 7);
+            Reviews APlagueTaleInnocence = new("Delrith", "A Plague Tale Innocence", "BadAss Seal of Approval - it would be a damn shame to miss out on this one", "Playstation 4", 9);
+            Reviews DaysGone = new("Delrith", "Days Gone", "Although buggy at sometimes,it kept mecaptivated all the way though", "Playstation 4 ", 8);
+            Reviews SekiroShadowsDieTwice = new("Delrith", "Sekiro Shadows Die Twice", "Sekrio lives up to the reputation that FromSoft have made for themselves", "Playstation 4 ", 8);
+            Reviews DevilMayCry5 = new("AngryJoe", "Devil May Cry 5", "BadAss Seal of Approval - Capcom is getting the Devil May Cry series back on track", "PC", 9);
+            Reviews Anthem = new("AngryJoe", "Anthem", "Bugs, poor launch state, glitches, and lack of content, ruins what could be an average game", "PC ", 4);
+            Reviews FarCryNewDawn = new("Delrith", "Far Cry New Dawn", "Overall, the experience felt really short, and feels half of the price of Far Cry 5 and half of the game as well", "PC", 7);
+            Reviews ResidentEvil2 = new("AngryJoe", "Resident Evil 2", "BAdAss Seal of Approval - the game has so much content with the four playthroughs for the main story, then the additional modes, makes the experience worth it", "Playstation 4", 9);
+            Reviews Fallout76 = new("AngryJoe", "Fallout 76", "It's just awful, boring, and nothing is worst than boring", "PC", 3);
+            Reviews BattlefieldV = new("AngryJoe", "BattleField V", "Battlefield is a shadow of its former self, Battlefield V could have show us what Battlfield can be, but fails to do that", "PC", 5);
+            Reviews Hitman2 = new("Delrith", "Hitman 2", "Offers dozens of Hours of Amusment", "Playstation 4", 9);
+            Reviews AssassinsCreedOdyssey = new("AngryJoe", "Assassin's Creed Odyssey", "This game is capable of a 9, but there is so much content here, but the micro transactions hurt the game", "PC", 7);
+            Reviews ShadowOfTheTombRaider = new("AngryJoe", "Shadow Of The Tomb Raider", "The lack of innovation and weakness in the story holds this one from pasting hte debut game in the trilogy", "PC", 7);
+            Reviews SpiderMan = new("AngryJoe", "Marvel's Spider Man", " BadAss Seal of Approval - Game has high quality product and an interesting story, and huge open world city with tons of content", "Playstation 4", 9);
+            Reviews StateOfDecay2 = new("Delrith", "State Of Decay 2", "i was simply disappoint, every system was below average and the game lacks a lot of interesting features", "PC and Xbox One", 6);
+            Reviews AssassinsCreedOrigins = new("Delrith", "Assassin's Creed Origins", "Game is good for a good amount of time,its just not great or amazing ", "PC And Xbox One", 7);
+            Reviews Cuphead = new("AngryJoe", "Cuphead", "BadAss Seal of Approval - This game isn't for everyone, but this game from a small team proves to be a stylish and achallenging game", "Xbox One", 10);
+            Reviews MassEffectAndromeda = new("AngryJoe", "Mass Effect Andromeda", "When you don't add anything thing new, and mess up on the writing Mass Effect does not live up the previous games.", "PC", 6);
+            Reviews BreathOfTheWild = new("AngryJoe", "The Legend Of Zelda Breath Of The Wild", "BadAss Seal of Approval - The way the weapons break, the lack of voice acting and the story holds this back from being a 10 out of 10 game.", "Nintendo Switch", 9);
             Reviews ResidentEvil7 = new("AngryJoe", "Resident Evil 7", "", "Playstation 4 with ProPlaystation VR", 9);
-            Reviews Overwatch = new("", "Overwatch", "", "PC", 9);
-            
-            
             Reviews UmbrellaCorps = new("AngryJoe", "Umbrella Corps", "", "Playstation 4", 2);
 
 
@@ -140,39 +121,27 @@ namespace Video_Game_Reviewer
          
 
            
-            {"Overwatch",Overwatch },
+         
             {"Uncharted 4 A Thiefs End",Uncharted4 },
-           
-            {"Tiny Tinas Wonderland",TinyTinasWonderLand },
-          
+            {"Tiny Tinas Wonderland",TinyTinasWonderLand },        
             {"Guardians Of The Galaxy",GuardiansOfTheGalaxy },
-            {"Back 4 Blood",Back4Blood },
-          
-            {"Resident Evil Village",ResidentEvilVillage },
-           
-          
+            {"Back 4 Blood",Back4Blood },          
+            {"Resident Evil Village",ResidentEvilVillage },          
             {"Assassins Creed Valhalla",AssassinsCreedValhalla },
-            {"Watch Dogs Legion",WatchDogsLegion },
-           
+            {"Watch Dogs Legion",WatchDogsLegion },          
             {"Final Fantasy 7 Remake",FinalFantasy7Remake },
             {"Call Of Duty Modern Warfare",CallOfDutyModernWarfare },
-            {"Control",Control },
-           
-            {"Spider Man",SpiderMan },
-          
-            {"Cuphead",Cuphead },
-            
-            {"Dying Light 2 Stay Human",DyingLight2 },
-           
+            {"Control",Control },           
+            {"Spider Man",SpiderMan },          
+            {"Cuphead",Cuphead },           
+            {"Dying Light 2 Stay Human",DyingLight2 },          
             {"Battlefield 2042", BattleField2042},
-            {"Outriders",Outiders },
-         
+            {"Outriders",Outiders },         
             {"A Plague Tale Innocence",APlagueTaleInnocence },
             {"Far Cry New Dawn",FarCryNewDawn },
             {"Battlefield V",BattlefieldV },
             {"Hitman 2", Hitman2},
             {"State Of Decay 2",StateOfDecay2 },
-          
             {"Mass Effect Andromeda",MassEffectAndromeda },
             {"Resident Evil 7",ResidentEvil7 },
             {"Biomutant",BioMutant },

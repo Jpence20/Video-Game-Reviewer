@@ -16,7 +16,7 @@
             this.Score = score;
 
         }
-        public override string ToString() => $"\r\nReviewed by {Reviewer}\r\nGame: {Game}\r\nReview TagLine: {Review}\r\nReviewed on: {System}\r\nReview Score: {Score}\r\n";
+        public override string ToString() => $"\r\nReviewed by {Reviewer}\r\nGame: {Game}\r\nReview TagLine: {Review}\r\nReviewed on: {System}\r\nReview Score out of 10: {Score}\r\n";
     }
 
 
