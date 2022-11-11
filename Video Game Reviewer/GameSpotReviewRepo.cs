@@ -122,22 +122,22 @@
             Reviews UnchartedLostLegacy = new("Miguel Concepcion", "Uncharted The Lost Legacy", "Lost and found.", "Playstation 4", 9);
             Reviews MassEffectAndromeda = new("Scott ButterWorth", "Mass Effect Andromeda", "The fault in our stars.", "Playstation 4", 6);
             Reviews GhostReconWildlands = new("Miguel Concepcion", "Ghost Recon Wildlands", "Safety in numbers.", "Playstation 4, Xbox One, and PC", 7);
-            Reviews ResidentEvil7 = new("", "Resident Evil 7 Biohazard", "", "Playstation4, Playstation 4 Pro,Playstation VR, and Xbox One", 7.7);
-            Reviews BioMutant = new("", "Biomutant", "", "Xbox Series X", 6);
-            Reviews Avengers = new("", "Marvel's Avengers", "", "Playstation 4 Pro", 6);
-            Reviews Deathstranding = new("", "Death Stranding", "", "Playstation 4 Pro", 6.8);
-            Reviews Medievil = new("", "Medievil", "", "Playstation 4 Pro", 6.5);
-            Reviews DaysGone = new("", "Days Gone", "", "Playstation 4 Pro", 6.5);
-            Reviews GhostReconBreakpoint = new("", "Ghost Recon Breakpoint", "", "Xbox One X", 6);
-            Reviews WolfenSteinYoungBlood = new("", "Wolfenstein Youngblood", "", "PC", 6.5);
-            Reviews Anthem = new("", "Anthem", "", "PC", 6.5);
-            Reviews StarWarsBattlefront2 = new("", "Star Wars Battlefront 2", "", "PC", 6.5);
-            Reviews GrandTheftAutoTheTrilogy = new("", "Grand Theft Auto The Trilogy", "", "Playstation 5", 5);
-            Reviews Shenmue3 = new("", "Shenmue 3", "", "Playstation 4", 5.9);
-            Reviews Crackdown3 = new("", "Crackdown 3", "", "Xbox One X and PC", 5);
-            Reviews Fallout76 = new("", "Fallout 76", "", "PC,Xbox One X, and Playstation 4 Pro", 5);
-            Reviews AlienIsolation = new("", "Alien Isolation", "", "Xbox One, Playstation 4, and PC", 5);
-            Reviews BabylonsFall = new("", "Babylons Fall", "", "Playstation 5", 4);
+            Reviews ResidentEvil7 = new("Scott ButterWorth", "Resident Evil 7 Biohazard", "Terror reborn.", "Playstation 4, and Xbox One", 8);
+            Reviews BioMutant = new("Richard Wakeling", "Biomutant", "Biomutant presents a different take on the post-apocalypse, but a forgettable story and uneven gameplay hold it back.", "PC", 6);
+            Reviews Avengers = new("Phil Hornshaw", "Marvel's Avengers", "Avengers feels like two separate games smashed together, and while they don't always sync up, both parts are linked by deep, intelligent combat spread across varied heroes.", "Playstation 4,PC, and Xbox One", 7);
+            Reviews Deathstranding = new("Kallie Plagge", "Death Stranding", "Alone but not lonely.", "Playstation 4", 9);
+            
+            Reviews DaysGone = new("Kallie Plagge", "Days Gone", "Days Gone has its exciting moments, but it fails to say anything interesting or meaningful about its story and characters. ", "Playstation 4", 5);
+            Reviews GhostReconBreakpoint = new("Richard Wakeling", "Ghost Recon Breakpoint", "Ghost Recon Breakpoint is a confused mishmash of disparate ideas that struggle to coalesce in an enjoyable way.", "Xbox One X, Playstation 4, and PC", 4);
+          
+            Reviews Anthem = new("Kallie Plagge", "Anthem", "Stronger alone", "PC and Xbox One", 6);
+            Reviews StarWarsBattlefront2 = new("Alessandro Fillari", "Star Wars Battlefront 2", "Two steps forward, three steps back.", "PC, Xbox One, and Playstation 4", 6);
+            Reviews GrandTheftAutoTheTrilogy = new("Justin Clark", "Grand Theft Auto The Trilogy", "Rockstar's remastered trilogy is, appropriately, an absolute car wreck of creative neglect.", "PC", 4);
+            Reviews Shenmue3 = new("Heidi Kemps", "Shenmue 3", "Be careful what you wish for.", "Playstation 4", 5);
+            Reviews Crackdown3 = new("Chris Pereira", "Crackdown 3", "A disappointing, dated return.", "Xbox One", 5);
+            Reviews Fallout76 = new("Edmond Tran", "Fallout 76", "Take me home. To the place I belong.", "PC, Playstation 4, and Abox One", 5);
+            Reviews AlienIsolation = new("Kevin VanOrd", "Alien Isolation", "Imperfect organism.", "Xbox One, Playstation 4, and PC", 6);
+            
 
             var reviews = new Dictionary<string, Reviews>
         {
@@ -260,14 +260,14 @@
             {"Uncharted The Lost Legacy",UnchartedLostLegacy },
             {"Mass Effect Andromeda",MassEffectAndromeda },
             {"Ghost Recon Wildlands",GhostReconWildlands },
-            {"Resident Evil 7 ",ResidentEvil7 },
+            {"Resident Evil 7 BioHazard",ResidentEvil7 },
             {"Biomutant",BioMutant },
             {"Avengers",Avengers },
             {"Death Stranding",Deathstranding },
-            {"Medievil",Medievil },
+           
             {"Days Gone",DaysGone },
             {"Ghost Recon Breakpoint",GhostReconBreakpoint },
-            {"Wolfenstein Youngblood",WolfenSteinYoungBlood },
+          
             {"Anthem",Anthem },
             {"Star Wars Battlefront 2",StarWarsBattlefront2 },
             {"Grand Theft Auto The Trilogy",GrandTheftAutoTheTrilogy },
@@ -275,7 +275,7 @@
             {"Crackdown 3",Crackdown3 },
             {"Fallout 76",Fallout76 },
             {"Alien Isolation",AlienIsolation },
-            {"Babylons Fall",BabylonsFall },
+            
         };
             return reviews;
         }
