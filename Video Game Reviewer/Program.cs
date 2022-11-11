@@ -19,7 +19,7 @@ namespace VideoGameReviewer
             Console.WriteLine("Choose if you want to see a review or write a review");
             Console.WriteLine("1.See Review");
             Console.WriteLine("2.Write Review");
-            Console.WriteLine("3.Make Game List");
+            Console.WriteLine("3.Make or see Game List");
             Console.WriteLine("Press any key to except 1,2 or 3 to Exit");
             String choice = Console.ReadLine() ?? string.Empty;
             ChoiceSelection(choice);

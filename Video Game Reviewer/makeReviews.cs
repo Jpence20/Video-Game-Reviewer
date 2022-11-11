@@ -110,12 +110,12 @@ namespace Video_Game_Reviewer
 
         public static string GetDate()
         {
-           Console.WriteLine("When day did you beat this game? Please enter in dd/mm/year format");
+           Console.WriteLine("When day did you beat this game? Please enter in mm/dd/year format");
            
 
             string dateWritten = Console.ReadLine() ?? string.Empty;
 
-            if (Regex.Match(dateWritten, "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$").Success)
+            if (Regex.Match(dateWritten, "(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)[0-9]{2}").Success)
             {
                 return dateWritten;
             }
@@ -130,11 +130,11 @@ namespace Video_Game_Reviewer
 
         public static string GetStartDate()
         {
-            Console.WriteLine("What date did you start this game? Please enter in dd/mm/year format");
+            Console.WriteLine("What date did you start this game? Please enter in mm/dd/year format");
            
 
             string dateStarted = Console.ReadLine() ?? string.Empty;
-            if (Regex.Match(dateStarted, "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$").Success)
+            if (Regex.Match(dateStarted, "(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)[0-9]{2}").Success)
             {
                 return dateStarted;
             }
