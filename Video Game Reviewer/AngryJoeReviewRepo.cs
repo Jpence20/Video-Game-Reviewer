@@ -67,9 +67,15 @@ namespace Video_Game_Reviewer
             Reviews Cuphead = new("AngryJoe", "Cuphead", "BadAss Seal of Approval - This game isn't for everyone, but this game from a small team proves to be a stylish and achallenging game", "Xbox One", 10);
             Reviews MassEffectAndromeda = new("AngryJoe", "Mass Effect Andromeda", "When you don't add anything thing new, and mess up on the writing Mass Effect does not live up the previous games.", "PC", 6);
             Reviews BreathOfTheWild = new("AngryJoe", "The Legend Of Zelda Breath Of The Wild", "BadAss Seal of Approval - The way the weapons break, the lack of voice acting and the story holds this back from being a 10 out of 10 game.", "Nintendo Switch", 9);
-            Reviews ResidentEvil7 = new("AngryJoe", "Resident Evil 7", "", "Playstation 4 with ProPlaystation VR", 9);
-            Reviews UmbrellaCorps = new("AngryJoe", "Umbrella Corps", "", "Playstation 4", 2);
-
+            Reviews ResidentEvil7 = new("AngryJoe", "Resident Evil 7", "BAdAss Seal of Approval - It stops the downward spiral of resident evil", "Playstation 4 And Playstation 4 VR", 8);
+            Reviews UmbrellaCorps = new("AngryJoe", "Umbrella Corps", "Braindead Clueless Game", "Playstation 4", 2);
+            Reviews TheWitcher3 = new("AngryJoe", "The Witcher 3 Wild Hunt", "Legendary Status and BadAss Seal of Approval - The characters, world, quests, make it one of the best games I have ever played", "PC",10);
+            Reviews Fallout4 = new("AngryJoe", "Fallout 4", "The game is better then the sum of its parts, the overall pull of exploring, building characters, and roleplaying gives this game a lot of content", "PC",8);
+            Reviews TheOuterWorlds = new("AngryJoe", "The Outer Worlds", "BadAss Seal of Approval -I think its really solid, and you can play this game over and over", "PC",8);
+            Reviews StarWarsbattleFront2 = new("AngryJoe", "Star Wars Battlefront 2", "It takes two steps forward and then falls off the side of the cliff", "PC", 6);
+            Reviews GhostReconBreakpoint = new("AngryJoe", "Ghost Recon Breakpoint", "Considering the microTransactions, and how boring this game is don't waaste your time with this game", "PC", 4);
+            Reviews DungeonandDragonsDarkAlliance = new("AngryJoe", "Dungeons and Dragons Dark Alliance", "Worst Game of 2021", "PC", 2);
+            
 
 
 
@@ -81,25 +87,17 @@ namespace Video_Game_Reviewer
         {
            {"Red Dead Redemption 2",RedDeadRedemption2  },
             {"God Of War",GodOfWar },
-            
             {"Unchated 4 A Thiefs End",Uncharted4 },
             {"A Plague Tale Requiem",PlagueTaleRequim },
-           
             {"The Last of Us Part 1",LastOfUsPart1 },
-          
             {"Elden Ring",EldenRing },
             {"The Last Of Us Part 2",TheLastOfUsPart2 },
-
-
             {"The Legend Of Zelda Breath Of The Wild",BreathOfTheWild },
             {"Horizon Forbidden West",HorizonForibbenWest },
             {"Halo Infinite",HaloInfinite },
-           
             {"Hitman 3",Hitman3 },
             {"Cyberpunk 2077",CyberPunk2077 },
-          
             {"Spider Man Miles Morales",MilesMorales },
-          
             {"Ghost Of Tsushima",GhostOfTsushima },
             {"Resident Evil 3",ResidentEvil3 },
             {"Doom Eternal",DoomEternal },
@@ -107,21 +105,13 @@ namespace Video_Game_Reviewer
             {"Nioh 2",Nioh2 },
             {"Ori And The Will Of The Wisps",OriAndTheWillOfTheWisps },
             {"Star Wars Jedi Fallen Order",StarWarsJediFallenOrder },
-          
             {"Borderlands 3",Borderlands3 },
-           
             {"Sekiro Shadows Die Twice",SekiroShadowsDieTwice },
             {"Devil May Cry 5",DevilMayCry5 },
             {"Resident Evil 2",ResidentEvil2 },
-          
             {"Assassins Creed Odyssey",AssassinsCreedOdyssey },
             {"Shadow Of The Tomb Raider",ShadowOfTheTombRaider },
-         
             {"Assassins Creed Origins",AssassinsCreedOrigins },
-         
-
-           
-         
             {"Uncharted 4 A Thiefs End",Uncharted4 },
             {"Tiny Tinas Wonderland",TinyTinasWonderLand },        
             {"Guardians Of The Galaxy",GuardiansOfTheGalaxy },
@@ -153,6 +143,7 @@ namespace Video_Game_Reviewer
             {"Shenmue 3",Shenmue3 },
             {"Fallout 76",Fallout76 },
             {"Umbrella Corps",UmbrellaCorps },
+            {"The Witcher 3 Wild Hunt",TheWitcher3 },
         };
 
             return reviews;
