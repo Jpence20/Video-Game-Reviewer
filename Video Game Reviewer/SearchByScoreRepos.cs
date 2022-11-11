@@ -1,6 +1,6 @@
 ﻿namespace Video_Game_Reviewer
 {
-    public class SearchByScoreRepos
+   /* public class SearchByScoreRepos
     {
         public static Dictionary<string, Reviews> ScoreSearch10()
         {
@@ -18,5 +18,5 @@
 
             return reviews;
         }
-    }
+    }*/
 }

@@ -6,6 +6,7 @@ namespace Video_Game_Reviewer
 {
     public class MakeReview
     {
+        //All of these methods make up the write a review and make games list section. 
         public static string GetReviewer()
         {
 

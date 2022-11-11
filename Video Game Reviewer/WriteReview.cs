@@ -2,7 +2,7 @@
 {
     public class WriteReview
     {
-
+        //Gets values when Writing a review
         public static WrittenReviews SaveReview()
         {
 

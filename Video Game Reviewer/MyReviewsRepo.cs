@@ -5,6 +5,7 @@ using System.Xml.Schema;
 
 namespace Video_Game_Reviewer
 {
+    //These are the dictionarys for the custom Written Reviews and Games that get add to a list to paly
    public class MyReviewsRepo
     {
         private static readonly Dictionary<string, WrittenReviews> dictionary = new();

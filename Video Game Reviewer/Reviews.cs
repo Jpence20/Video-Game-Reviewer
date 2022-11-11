@@ -1,5 +1,6 @@
 ﻿namespace Video_Game_Reviewer
 {
+    //Class for the different elements of The reviews in the dictionaries
     public class Reviews
     {
         public string Reviewer { get; set; }
@@ -16,6 +17,7 @@
             this.Score = score;
 
         }
+        //puts the reviews into a certain format when search for.
         public override string ToString() => $"\r\nReviewed by {Reviewer}\r\nGame: {Game}\r\nReview TagLine: {Review}\r\nReviewed on: {System}\r\nReview Score out of 10: {Score}\r\n";
     }
 

@@ -2,8 +2,8 @@
 namespace Video_Game_Reviewer
 {
 
-
-	public class GamesToPlay : Reviews
+    //Class for the different elements of Games List entries
+    public class GamesToPlay : Reviews
 	{
 		public String DateStarted { get; set; }
 		public int TimePlayed { get; set; }
@@ -15,8 +15,8 @@ namespace Video_Game_Reviewer
 			this.TimePlayed = TimePlayed;
 
 		}
-		
 
+        //puts the entires into a certain format when looking at the list of games to play.
         public override string ToString() => $"\r\nPosition{position++}|Reviewed by: {Reviewer}|Game: {Game}| Review: {Review}|Reviewed on:{System}| Review Score:{Score}| Date Started:{DateStarted}| TimePlayed:{TimePlayed} ";
     }
 }

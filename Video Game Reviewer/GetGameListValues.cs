@@ -4,6 +4,7 @@ namespace Video_Game_Reviewer
 {
 	public class GetGameListValues
 	{
+        //Logic Get values for the games to play list entries
 		public static GamesToPlay GetValues()
 		{
             string reviewer = MakeReview.GetReviewer();

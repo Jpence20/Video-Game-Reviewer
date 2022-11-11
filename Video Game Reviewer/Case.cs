@@ -5,7 +5,7 @@ namespace Video_Game_Reviewer
     public class Case : WriteReview
     {
 
-
+        //logic for navigating the see reviews section
         public static void Case1()
         {
 
@@ -15,14 +15,12 @@ namespace Video_Game_Reviewer
             Console.WriteLine("2.Easy Allies");
             Console.WriteLine("3.GameSpot");
             Console.WriteLine("4.AngryJoe");
-            Console.WriteLine("5.See all Reviews");
-            Console.WriteLine("6.See My reviews");
+            Console.WriteLine("5.See My reviews");
             string IGN = "1";
             string EasyAllies = "2";
             string GameSpot = "3";
             string AngryJoe = "4";
-            string seeAllReviews = "5";
-            string seeMyReviews = "6";
+            string seeMyReviews = "5";
             string Exit = "0";
 
             string input = Console.ReadLine() ?? string.Empty;
@@ -225,11 +223,6 @@ namespace Video_Game_Reviewer
                         Case1();
                         break;
                 }
-            }
-            else if (input == seeAllReviews)
-            {
-                SeeAllReviews.SeeAllReviewsGames();
-                Program.Selection();
             }
             else if (input == Exit)
             {
