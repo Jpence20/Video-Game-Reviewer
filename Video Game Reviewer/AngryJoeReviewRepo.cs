@@ -144,6 +144,11 @@ namespace Video_Game_Reviewer
             {"Fallout 76",Fallout76 },
             {"Umbrella Corps",UmbrellaCorps },
             {"The Witcher 3 Wild Hunt",TheWitcher3 },
+            {"Fallout 4",Fallout4 },
+            {"The Outer Worlds",TheOuterWorlds },
+            {"Star Wars Battlefront 2",StarWarsbattleFront2 },
+            {"Ghost Recon Breakpoint",GhostReconBreakpoint },
+            {"Dungeons and Dragons Dark Alliance",DungeonandDragonsDarkAlliance },
         };
 
             return reviews;
