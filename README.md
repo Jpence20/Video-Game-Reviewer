@@ -25,7 +25,7 @@ But if you select 2 you will manually be able to type to find a review.
 #### Special Rules for searching for a game
 When searching for a specfic game there is certain rules that have to be followed to allowed for the game to show up
 1) All words in a game title must be captialized. EX. God Of War would work, while god of war wouldn't.
-2) There is no puncation at all. Ex The Witcher 3: Wild Hunt, to search for this game you would type it in as The Witcher 3 Wild Hunt.
+2) There is no puncatuation at all. Ex The Witcher 3: Wild Hunt, to search for this game you would type it in as The Witcher 3 Wild Hunt.
 3) You must use the game's full title. Ex. You couldn't search Breath of the wild, it would have to be The Legend Of Zelda Breath Of The Wild
 4) If you search for a game and follow all these rules and still can't find a review for it, that means that company didn't review that game or that game was too old for the scope of this project. 
 I will include a text file with all the games that were reviews across the the different reviewers.
