@@ -31,7 +31,7 @@ When searching for a specfic game there is certain rules that have to be followe
 I will include a text file with all the games that were reviews across the the different reviewers.
 Also when searching for a game you reviewed, you will need to search for in the same way you type the name of the game in. Ex When writing your reviewed if you typed in horizon zero dawn, then thats how you would need to search for it, since that was how you type it in.
 
-Note. I would like to update how you search to a more alogrithm based search to where you can type in a name similar to the name and have it pop up, but since dictionarys make you use a specfic key to search that is why these rules are important.
+Note. I would like to update how you search to a more alogrithm based search to where you can type in a name similar to the name and have it pop up, but since dictionaries make you use a specfic key to search that is why these rules are important.
 
 ### Instructions Continued
 After you get done looking at reviews, you can then choose to either write a review or make a list of games to play. 
