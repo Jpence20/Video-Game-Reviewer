@@ -94,8 +94,14 @@ namespace Video_Game_Reviewer
                         Console.WriteLine("What is your score out of 10 for the game so far?");
                         if (double.TryParse(Console.ReadLine(), out double score))
                         {
+                            if(score >10 || score < 1)
+                            {
+                                Console.WriteLine("Please Enter a Valid Number");
+                                return GetScore();
+                            }
                             return score;
                         }
+                    
                         Console.WriteLine("Please Enter a Valid Number");
                         return GetScore();
                     }
@@ -111,7 +117,7 @@ namespace Video_Game_Reviewer
 
         public static string GetDate()
         {
-           Console.WriteLine("When day did you beat this game? Please enter in mm/dd/year format");
+           Console.WriteLine("When day did you beat this game? Please enter in mm/dd/yyyy format");
            
 
             string dateWritten = Console.ReadLine() ?? string.Empty;
@@ -131,7 +137,7 @@ namespace Video_Game_Reviewer
 
         public static string GetStartDate()
         {
-            Console.WriteLine("What date did you start this game? Please enter in mm/dd/year format");
+            Console.WriteLine("What date did you start this game? Please enter in mm/dd/yyyy format");
            
 
             string dateStarted = Console.ReadLine() ?? string.Empty;
