@@ -84,6 +84,11 @@ namespace Video_Game_Reviewer
                         Console.WriteLine("What is your score for the game out of 10");
                         if (double.TryParse(Console.ReadLine(), out double score))
                         {
+                            if (score > 10 || score < 1)
+                            {
+                                Console.WriteLine("Please Enter a Valid Number");
+                                return GetScore();
+                            }
                             return score;
                         }
                         Console.WriteLine("Please Enter a Valid Number");
