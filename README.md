@@ -4,7 +4,7 @@ The purpose of this project is to be an all in one stop for video game reviews. 
 ## Features
 1) Master Loop - This features allows you to go and look at different reviews, write reviews, and add games to list as much as you want and allows you to exit the app whenever you want.
 2) Create an additional Class - This can be seen with a parent class of Review and passing on all its properties to the WrittenReview Class and GamesToPlay class, but of these use some if not all the properties from the Reviews class, while also having there own properties.
-3) Create a Dictionary - This is how all the Reviews for each company,your written reviews, and the games to a lsit are saved. So when you search for a review you are pulling an entry from that dictionary and seeing it. For example if you search for The Witcher 3 Wild Hunt in the IGN dictionary it pulls the entry from IGN dictionary and presents it too you.
+3) Create a Dictionary - This is how all the Reviews for each company,your written reviews, and the games to a list are saved. So when you search for a review you are pulling an entry from that dictionary and seeing it. For example if you search for The Witcher 3 Wild Hunt in the IGN dictionary it pulls the entry from IGN dictionary and presents it too you.
 4) Implement a Regex Expression - For the parts where you can Write a review or add a game to a list, it asks the user to put in a start date in the mm/dd/year format, this expression makes sure that the user puts in that format, and if they don't it asks them to redo it.
 
 ### Instructions
