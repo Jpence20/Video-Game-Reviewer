@@ -41,4 +41,4 @@ From there you can go to see review and select see my reviews and see the review
 
 Then wil the make or see games list, if you select 1 write games into list, it will ask you similar questions to the write review (I still need to go in a change the wording of these questions), after that you can select 2 and see the entries in a list, whith the most recent entry being in position 1, for example if you enter five entries into the list the first entry is in position 5 since it was the first game entered.
 
-
+I also include a text file with all the games in the program, so if you want to search the reviews for a game, you know what is in there.
