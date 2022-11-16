@@ -53,6 +53,9 @@ namespace Video_Game_Reviewer
                             if (success)
                             {
                                 Console.WriteLine($"The review you ask for is \r\n {allReviews[name]}");
+                                Console.WriteLine("Any Key to clear review");
+                                Console.ReadLine();
+                                Console.Clear();
                                 Program.Selection();
                             }
                             else
