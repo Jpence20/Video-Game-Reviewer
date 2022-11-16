@@ -14,7 +14,7 @@ namespace VideoGameReviewer
         {
 
             Console.WriteLine("******************************");
-            Console.WriteLine("*      Video Game Reviews    *");
+            Console.WriteLine("*      Video Game Reviewer    *");
             Console.WriteLine("******************************");
             Console.WriteLine("Choose if you want to see a review or write a review");
             Console.WriteLine("1.See Review");
