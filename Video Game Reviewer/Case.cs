@@ -9,13 +9,13 @@ namespace Video_Game_Reviewer
         public static void Case1()
         {
 
-            Console.WriteLine("Who do you want to see reviews from?");
-            Console.WriteLine("0.Exit");
-            Console.WriteLine("1.IGN");
-            Console.WriteLine("2.Easy Allies");
-            Console.WriteLine("3.GameSpot");
-            Console.WriteLine("4.AngryJoe");
-            Console.WriteLine("5.See My reviews");
+            Console.WriteLine("Who do you want to see reviews from?\r\n");
+            Console.WriteLine("0.Exit\r\n");
+            Console.WriteLine("1.IGN\r\n");
+            Console.WriteLine("2.Easy Allies\r\n");
+            Console.WriteLine("3.GameSpot\r\n");
+            Console.WriteLine("4.AngryJoe\r\n");
+            Console.WriteLine("5.See My reviews\r\n");
             string IGN = "1";
             string EasyAllies = "2";
             string GameSpot = "3";

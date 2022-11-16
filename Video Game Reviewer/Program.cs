@@ -50,8 +50,14 @@ namespace VideoGameReviewer
                             Selection();
                             break;
                         }
-                   
-                     
+                    case "4":
+                        {
+                            break;
+                        }
+                    default:
+                            Selection();
+                            break;
+                        
                    
                 }
             }
