@@ -30,7 +30,7 @@ namespace Video_Game_Reviewer
 
 
 
-                Console.WriteLine("Do you want to see all reviews or chose one to see");
+                Console.WriteLine("Do you want to see all reviews or do you want to search for one");
                 Console.WriteLine("1.See all Reviews");
                 Console.WriteLine("2.Find a review");
                 Console.WriteLine("3.Exit");
@@ -92,7 +92,7 @@ namespace Video_Game_Reviewer
                 var allReviews = EasyAlliesReviewsRepo.EasyAllies();
 
 
-                Console.WriteLine("Do you want to see all reviews or chose one to see");
+                Console.WriteLine("Do you want to see all reviews or do you want to search for one");
                 Console.WriteLine("1.See all Reviews");
                 Console.WriteLine("2.Find a review");
                 Console.WriteLine("3.Exit");
@@ -150,7 +150,7 @@ namespace Video_Game_Reviewer
                 var allReviews = GameSpotReviewRepo.GameSpot();
 
 
-                Console.WriteLine("Do you want to see all reviews or chose one to see");
+                Console.WriteLine("Do you want to see all reviews or do you want to search for one");
                 Console.WriteLine("1.See all Reviews");
                 Console.WriteLine("2.Find a review");
                 Console.WriteLine("3.Exit");
@@ -208,7 +208,7 @@ namespace Video_Game_Reviewer
                 var allReviews = AngryJoeReviewRepo.AngryJoe();
 
 
-                Console.WriteLine("Do you want to see all reviews or chose one to see");
+                Console.WriteLine("Do you want to see all reviews or do you want to search for one");
                 Console.WriteLine("1.See all Reviews");
                 Console.WriteLine("2.Find a review");
                 Console.WriteLine("3.Exit");
