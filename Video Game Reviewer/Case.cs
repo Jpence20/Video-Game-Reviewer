@@ -40,6 +40,9 @@ namespace Video_Game_Reviewer
                 {
                     case "1":
                         SeeAllReviews.SeeAllIgnReviews();
+                        Console.WriteLine(" Press any Key to clear review");
+                        Console.ReadLine();
+                        Console.Clear();
                         Program.Selection();
                         break;
                     case "2":
@@ -52,15 +55,18 @@ namespace Video_Game_Reviewer
 
                             if (success)
                             {
-                                Console.WriteLine($"The review you ask for is \r\n {allReviews[name]}");
-                                Console.WriteLine("Any Key to clear review");
+                                Console.WriteLine($"\r\nThe review you ask for is {allReviews[name]}");
+                                Console.WriteLine(" Press any Key to clear review");
                                 Console.ReadLine();
                                 Console.Clear();
                                 Program.Selection();
                             }
                             else
                             {
-                                Console.WriteLine($"There is no review named {name}");
+                                Console.WriteLine($"\r\nThere is no review named {name}");
+                                Console.WriteLine(" Press any Key to clear review");
+                                Console.ReadLine();
+                                Console.Clear();
                                 Program.Selection();
                             }
 
@@ -96,6 +102,9 @@ namespace Video_Game_Reviewer
                 {
                     case "1":
                         SeeAllReviews.SeeAllEasyAlliesReviews();
+                        Console.WriteLine(" Press any Key to clear review");
+                        Console.ReadLine();
+                        Console.Clear();
                         Program.Selection();
                         break;
                     case "2":
@@ -108,12 +117,18 @@ namespace Video_Game_Reviewer
 
                             if (success)
                             {
-                                Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                                Console.WriteLine($"\r\nThe review you ask for is {allReviews[name]}");
+                                Console.WriteLine(" Press any Key to clear review");
+                                Console.ReadLine();
+                                Console.Clear();
                                 Program.Selection();
                             }
                             else
                             {
-                                Console.WriteLine($"There is no review named {name}");
+                                Console.WriteLine($"\r\nThere is no review named {name}");
+                                Console.WriteLine(" Press any Key to clear review");
+                                Console.ReadLine();
+                                Console.Clear();
                                 Program.Selection();
                             }
 
@@ -145,6 +160,9 @@ namespace Video_Game_Reviewer
                 {
                     case "1":
                         SeeAllReviews.SeeAllGameSpotReviews();
+                        Console.WriteLine(" Press any Key to clear review");
+                        Console.ReadLine();
+                        Console.Clear();
                         Program.Selection();
                         break;
                     case "2":
@@ -157,12 +175,18 @@ namespace Video_Game_Reviewer
 
                             if (success)
                             {
-                                Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                                Console.WriteLine($"\r\nThe review you ask for is {allReviews[name]}");
+                                Console.WriteLine(" Press any Key to clear review");
+                                Console.ReadLine();
+                                Console.Clear();
                                 Program.Selection();
                             }
                             else
                             {
-                                Console.WriteLine($"There is no review named {name}");
+                                Console.WriteLine($"\r\nThere is no review named {name}");
+                                Console.WriteLine(" Press any Key to clear review");
+                                Console.ReadLine();
+                                Console.Clear();
                                 Program.Selection();
                             }
 
@@ -194,6 +218,9 @@ namespace Video_Game_Reviewer
                 {
                     case "1":
                         SeeAllReviews.SeeAllAngryJoeReviews();
+                        Console.WriteLine("Press any Key to clear review");
+                        Console.ReadLine();
+                        Console.Clear();
                         Program.Selection();
                         break;
                     case "2":
@@ -206,12 +233,18 @@ namespace Video_Game_Reviewer
 
                             if (success)
                             {
-                                Console.WriteLine($"The review you ask for is {allReviews[name]}");
+                                Console.WriteLine($"\r\nThe review you ask for is {allReviews[name]}");
+                                Console.WriteLine(" Press any Key to clear review");
+                                Console.ReadLine();
+                                Console.Clear();
                                 Program.Selection();
                             }
                             else
                             {
-                                Console.WriteLine($"There is no review named {name}");
+                                Console.WriteLine($"\r\nThere is no review named {name}");
+                                Console.WriteLine(" Press any Key to clear review");
+                                Console.ReadLine();
+                                Console.Clear();
                                 Program.Selection();
                             }
 
@@ -234,6 +267,9 @@ namespace Video_Game_Reviewer
             else if (input == seeMyReviews)
             {
                 SeeAllReviews.MyReviews();
+                Console.WriteLine(" Press any Key to clear review");
+                Console.ReadLine();
+                Console.Clear();
                 Program.Selection();
 
 
