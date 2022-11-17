@@ -36,7 +36,7 @@ namespace Video_Game_Reviewer
         {
            
 
-            Console.WriteLine("Write out your review.");
+            Console.WriteLine("What are your thoughts on the game?");
             string review = Console.ReadLine() ?? string.Empty;
             if (review == string.Empty)
             {
